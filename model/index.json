@@ -13679,6 +13679,12 @@
 "layer": "bone",
 "side": "r"
 },
+"Skin": {
+"base": "Skin",
+"group": "Integument",
+"layer": "skin",
+"side": ""
+},
 "Small saphenous vein.l": {
 "base": "Small saphenous vein",
 "group": "Systemic veins",

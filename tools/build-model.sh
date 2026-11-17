@@ -6,3 +6,6 @@ mkdir -p model .cache/build/raw
 
 # 1. Z-Anatomy 층 내보내기
 blender -b .cache/zanatomy/Z-Anatomy/Startup.blend --python-exit-code 1 --python tools/export_layers.py
+
+# 2. BodyParts3D 피부를 Z-Anatomy 좌표에 맞춰 내보내기 (확인용 렌더: -- --render)
+blender -b .cache/zanatomy/Z-Anatomy/Startup.blend --python-exit-code 1 --python tools/export_skin.py
