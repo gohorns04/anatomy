@@ -88,6 +88,11 @@ def main():
         for obj, name in items:
             evaluated = obj.evaluated_get(depsgraph)
             mesh = bpy.data.meshes.new_from_object(evaluated, depsgraph=depsgraph)
+            if len(mesh.polygons) == 0:  # 굵기 없는 곡선 등은 그릴 면이 없다
+                bpy.data.meshes.remove(mesh)
+                index.pop(name, None)
+                print('SKIP empty', name)
+                continue
             mesh.name = name
             copy = bpy.data.objects.new(name, mesh)
             copy.matrix_world = obj.matrix_world.copy()

@@ -35,6 +35,13 @@ class Role(unittest.TestCase):
         self.assertEqual(role('Femur.i', 'MESH'), 'skip')
         self.assertEqual(role('Camera', 'CAMERA'), 'skip')
 
+    def test_membranes_that_cover_muscles_are_skipped(self):
+        for n in ['Fascia lata.l', 'Investing abdominal fascia', 'Subdeltoid bursa.r', 'Tendon sheath of tibialis anterior.l',
+                  'Synovial sheaths of digits of hand.l', 'Lateral intermuscular septum of arm.r', 'Anterior layer of thoracolumbar fascia.l']:
+            self.assertEqual(role(n, 'MESH'), 'skip', n)
+        for n in ['Iliotibial tract.l', 'Calcaneal tendon.r', 'Tensor fasciae latae.l', 'Palmar aponeurosis.l']:
+            self.assertEqual(role(n, 'MESH'), 'display', n)
+
     def test_liver_segments_overlap_whole_liver(self):
         self.assertEqual(role('Anterior lateral segment of liver (VI)', 'MESH'), 'skip')
         self.assertEqual(role('Posterior segment of liver (I)', 'MESH'), 'skip')

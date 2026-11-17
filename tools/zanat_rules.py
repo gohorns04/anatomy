@@ -31,7 +31,11 @@ def split_suffix(name):
 
 
 # 전체 메시와 표면이 겹치는 하위 조각 (측정: 간 구역 조각은 꼭짓점의 44~67%가 간 표면과 일치)
-EXCLUDE = [re.compile(r'segment of liver')]
+EXCLUDE = [
+    re.compile(r'segment of liver'),
+    # 근육을 덮어 가리는 막 구조물(근막, 윤활주머니, 힘줄집, 근육사이막)은 근육층에서 뺀다.
+    re.compile(r'\bfascia\b|bursa|tendon sheath|synovial sheath|intermuscular septum', re.I),
+]
 
 
 def role(name, obj_type):

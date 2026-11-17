@@ -9,3 +9,6 @@ blender -b .cache/zanatomy/Z-Anatomy/Startup.blend --python-exit-code 1 --python
 
 # 2. BodyParts3D 피부를 Z-Anatomy 좌표에 맞춰 내보내기 (확인용 렌더: -- --render)
 blender -b .cache/zanatomy/Z-Anatomy/Startup.blend --python-exit-code 1 --python tools/export_skin.py
+
+# 3. 단순화와 meshopt 압축
+node tools/compress.mjs

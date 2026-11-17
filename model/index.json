@@ -101,18 +101,6 @@
 "layer": "organ",
 "side": "r"
 },
-"(Iliopectineal bursa).l": {
-"base": "Iliopectineal bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"(Iliopectineal bursa).r": {
-"base": "Iliopectineal bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "(Intermediate deep inguinal node).l": {
 "base": "Intermediate deep inguinal node",
 "group": "Lymphoid system",
@@ -521,30 +509,6 @@
 "layer": "bone",
 "side": "r"
 },
-"Anserine bursa.l": {
-"base": "Anserine bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Anserine bursa.r": {
-"base": "Anserine bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Antebrachial fascia.l": {
-"base": "Antebrachial fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Antebrachial fascia.r": {
-"base": "Antebrachial fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Anterior axillary nodes.l": {
 "base": "Anterior axillary nodes",
 "group": "Lymphoid system",
@@ -887,18 +851,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Anterior intermuscular septum of leg.l": {
-"base": "Anterior intermuscular septum of leg",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Anterior intermuscular septum of leg.r": {
-"base": "Anterior intermuscular septum of leg",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Anterior interosseous nerve of forearm.l": {
 "base": "Anterior interosseous nerve of forearm",
 "group": "Median nerve",
@@ -927,18 +879,6 @@
 "base": "Anterior jugular vein",
 "group": "Systemic veins",
 "layer": "vessel",
-"side": "r"
-},
-"Anterior layer of thoracolumbar fascia.l": {
-"base": "Anterior layer of thoracolumbar fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Anterior layer of thoracolumbar fascia.r": {
-"base": "Anterior layer of thoracolumbar fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Anterior ligament of fibular head.l": {
@@ -1763,18 +1703,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Bicipitoradial bursa.l": {
-"base": "Bicipitoradial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Bicipitoradial bursa.r": {
-"base": "Bicipitoradial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "Bifurcation of pulmonary trunk": {
 "base": "Bifurcation of pulmonary trunk",
 "group": "Pulmonary arteries",
@@ -1815,18 +1743,6 @@
 "base": "Brachial artery",
 "group": "Systemic arteries",
 "layer": "vessel",
-"side": "r"
-},
-"Brachial fascia.l": {
-"base": "Brachial fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Brachial fascia.r": {
-"base": "Brachial fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Brachial nodes.l": {
@@ -1946,18 +1862,6 @@
 "Bucinator.r": {
 "base": "Bucinator",
 "group": "Facial muscles",
-"layer": "muscle",
-"side": "r"
-},
-"Bursa of piriformis muscle.l": {
-"base": "Bursa of piriformis muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Bursa of piriformis muscle.r": {
-"base": "Bursa of piriformis muscle",
-"group": "Bursae",
 "layer": "muscle",
 "side": "r"
 },
@@ -2219,18 +2123,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Ciliary body-curve.l": {
-"base": "Ciliary body-curve",
-"group": "Ciliary body",
-"layer": "nerve",
-"side": "l"
-},
-"Ciliary body-curve.r": {
-"base": "Ciliary body-curve",
-"group": "Head",
-"layer": "nerve",
-"side": "r"
-},
 "Cingulate gyrus (Posteroventral part*).l": {
 "base": "Cingulate gyrus (Posteroventral part*)",
 "group": "Fornicate gyrus",
@@ -2366,18 +2258,6 @@
 "Clavicular part of deltoid muscle.r": {
 "base": "Clavicular part of deltoid muscle",
 "group": "Deltoid muscle",
-"layer": "muscle",
-"side": "r"
-},
-"Clavipectoral fascia.l": {
-"base": "Clavipectoral fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Clavipectoral fascia.r": {
-"base": "Clavipectoral fascia",
-"group": "Fascia",
 "layer": "muscle",
 "side": "r"
 },
@@ -2525,18 +2405,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Common flexor tendon sheath.l": {
-"base": "Common flexor tendon sheath",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Common flexor tendon sheath.r": {
-"base": "Common flexor tendon sheath",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
 "Common hepatic artery": {
 "base": "Common hepatic artery",
 "group": "Aorta",
@@ -2663,18 +2531,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Common tendon sheath of fibularis muscles.l": {
-"base": "Common tendon sheath of fibularis muscles",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Common tendon sheath of fibularis muscles.r": {
-"base": "Common tendon sheath of fibularis muscles",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
 "Conoid ligament.l": {
 "base": "Conoid ligament",
 "group": "Coracoclavicular ligament",
@@ -2697,18 +2553,6 @@
 "base": "Coraco-acromial ligament",
 "group": "Fibrous joints of pectoral girdle",
 "layer": "bone",
-"side": "r"
-},
-"Coracobrachial bursa.l": {
-"base": "Coracobrachial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Coracobrachial bursa.r": {
-"base": "Coracobrachial bursa",
-"group": "Bursae",
-"layer": "muscle",
 "side": "r"
 },
 "Coracobrachialis muscle.l": {
@@ -2981,18 +2825,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Crural fascia.l": {
-"base": "Crural fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Crural fascia.r": {
-"base": "Crural fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Cubital nodes.l": {
 "base": "Cubital nodes",
 "group": "Main divisions",
@@ -3215,18 +3047,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Deep infrapatellar bursa.l": {
-"base": "Deep infrapatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Deep infrapatellar bursa.r": {
-"base": "Deep infrapatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "Deep palmar arch.l": {
 "base": "Deep palmar arch",
 "group": "Systemic arteries",
@@ -3321,18 +3141,6 @@
 "base": "Deep venous palmar arch",
 "group": "Systemic veins",
 "layer": "vessel",
-"side": "r"
-},
-"Deltoid fascia.l": {
-"base": "Deltoid fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Deltoid fascia.r": {
-"base": "Deltoid fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Depressor anguli oris.l": {
@@ -3434,12 +3242,6 @@
 "Diaphragm": {
 "base": "Diaphragm",
 "group": "Muscles",
-"layer": "muscle",
-"side": ""
-},
-"Diaphragmatic fascia": {
-"base": "Diaphragmatic fascia",
-"group": "Abdominal part of muscular system",
 "layer": "muscle",
 "side": ""
 },
@@ -3777,18 +3579,6 @@
 "base": "Dorsal digital veins of hand",
 "group": "Systemic veins",
 "layer": "vessel",
-"side": "r"
-},
-"Dorsal fascia of hand.l": {
-"base": "Dorsal fascia of hand",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Dorsal fascia of hand.r": {
-"base": "Dorsal fascia of hand",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Dorsal intercarpal ligaments.l": {
@@ -4414,18 +4204,6 @@
 "group": "Cranial dura",
 "layer": "nerve",
 "side": ""
-},
-"Fascia lata.l": {
-"base": "Fascia lata",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Fascia lata.r": {
-"base": "Fascia lata",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
 },
 "Femoral artery.l": {
 "base": "Femoral artery",
@@ -5453,18 +5231,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Iliopsoas fascia.l": {
-"base": "Iliopsoas fascia",
-"group": "Abdominal part of muscular system",
-"layer": "muscle",
-"side": "l"
-},
-"Iliopsoas fascia.r": {
-"base": "Iliopsoas fascia",
-"group": "Abdominal part of muscular system",
-"layer": "muscle",
-"side": "r"
-},
 "Iliotibial tract.l": {
 "base": "Iliotibial tract",
 "group": "Superficial muscles",
@@ -5987,18 +5753,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Inferior subtendinous bursa of biceps femoris muscle.l": {
-"base": "Inferior subtendinous bursa of biceps femoris muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Inferior subtendinous bursa of biceps femoris muscle.r": {
-"base": "Inferior subtendinous bursa of biceps femoris muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "Inferior superficial inguinal nodes.l": {
 "base": "Inferior superficial inguinal nodes",
 "group": "Scene Collection",
@@ -6406,18 +6160,6 @@
 "group": "Scene Collection",
 "layer": "nerve",
 "side": ""
-},
-"Intermuscular gluteal bursae.l": {
-"base": "Intermuscular gluteal bursae",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Intermuscular gluteal bursae.r": {
-"base": "Intermuscular gluteal bursae",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
 },
 "Internal abdominal oblique muscle.l": {
 "base": "Internal abdominal oblique muscle",
@@ -6887,18 +6629,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Investing abdominal fascia.l": {
-"base": "Investing abdominal fascia",
-"group": "Abdominal part of muscular system",
-"layer": "muscle",
-"side": "l"
-},
-"Investing abdominal fascia.r": {
-"base": "Investing abdominal fascia",
-"group": "Abdominal part of muscular system",
-"layer": "muscle",
-"side": "r"
-},
 "Iris.l": {
 "base": "Iris",
 "group": "Head",
@@ -7205,18 +6935,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Lateral femoral intermuscular septum.l": {
-"base": "Lateral femoral intermuscular septum",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Lateral femoral intermuscular septum.r": {
-"base": "Lateral femoral intermuscular septum",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Lateral frontobasal artery.l": {
 "base": "Lateral frontobasal artery",
 "group": "Common carotid artery",
@@ -7282,18 +7000,6 @@
 "group": "Scene Collection",
 "layer": "nerve",
 "side": ""
-},
-"Lateral intermuscular septum of arm.l": {
-"base": "Lateral intermuscular septum of arm",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Lateral intermuscular septum of arm.r": {
-"base": "Lateral intermuscular septum of arm",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
 },
 "Lateral meniscus.l": {
 "base": "Lateral meniscus",
@@ -7492,18 +7198,6 @@
 "group": "Scene Collection",
 "layer": "nerve",
 "side": ""
-},
-"Lateral subtendinous bursa of gastrocnemius muscle.l": {
-"base": "Lateral subtendinous bursa of gastrocnemius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Lateral subtendinous bursa of gastrocnemius muscle.r": {
-"base": "Lateral subtendinous bursa of gastrocnemius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
 },
 "Lateral superior jugular node.l": {
 "base": "Lateral superior jugular node",
@@ -8369,18 +8063,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Masseteric fascia.l": {
-"base": "Masseteric fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Masseteric fascia.r": {
-"base": "Masseteric fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Mastoid nodes.l": {
 "base": "Mastoid nodes",
 "group": "Lymphoid system",
@@ -8567,18 +8249,6 @@
 "layer": "organ",
 "side": "r"
 },
-"Medial femoral intermuscular septum.l": {
-"base": "Medial femoral intermuscular septum",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Medial femoral intermuscular septum.r": {
-"base": "Medial femoral intermuscular septum",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Medial geniculate body.l": {
 "base": "Medial geniculate body",
 "group": "Diencephalon",
@@ -8624,18 +8294,6 @@
 "Medial head of triceps brachii.r": {
 "base": "Medial head of triceps brachii",
 "group": "Posterior compartment of arm",
-"layer": "muscle",
-"side": "r"
-},
-"Medial intermuscular septum of arm.l": {
-"base": "Medial intermuscular septum of arm",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Medial intermuscular septum of arm.r": {
-"base": "Medial intermuscular septum of arm",
-"group": "Fascia",
 "layer": "muscle",
 "side": "r"
 },
@@ -8788,18 +8446,6 @@
 "group": "Bronchi",
 "layer": "organ",
 "side": ""
-},
-"Medial subtendinous bursa of gastrocnemius muscle.l": {
-"base": "Medial subtendinous bursa of gastrocnemius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Medial subtendinous bursa of gastrocnemius muscle.r": {
-"base": "Medial subtendinous bursa of gastrocnemius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
 },
 "Medial sural cutaneous nerve.l": {
 "base": "Medial sural cutaneous nerve",
@@ -9111,18 +8757,6 @@
 "base": "Middle glenohumeral ligament",
 "group": "Glenohumeral ligaments",
 "layer": "bone",
-"side": "r"
-},
-"Middle layer of thoracolumbar fascia.l": {
-"base": "Middle layer of thoracolumbar fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Middle layer of thoracolumbar fascia.r": {
-"base": "Middle layer of thoracolumbar fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Middle lobar artery of right lung": {
@@ -10787,18 +10421,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Pectoral fascia.l": {
-"base": "Pectoral fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Pectoral fascia.r": {
-"base": "Pectoral fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Pectoralis minor muscle.l": {
 "base": "Pectoralis minor muscle",
 "group": "Muscles",
@@ -10876,18 +10498,6 @@
 "group": "Endocrine glands",
 "layer": "organ",
 "side": ""
-},
-"Piriformis fascia.l": {
-"base": "Piriformis fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Piriformis fascia.r": {
-"base": "Piriformis fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
 },
 "Piriformis muscle.l": {
 "base": "Piriformis muscle",
@@ -11141,18 +10751,6 @@
 "layer": "bone",
 "side": "r"
 },
-"Plantar tendon sheath of fibularis longus muscle.l": {
-"base": "Plantar tendon sheath of fibularis longus muscle",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Plantar tendon sheath of fibularis longus muscle.r": {
-"base": "Plantar tendon sheath of fibularis longus muscle",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
 "Plantar venous arch.l": {
 "base": "Plantar venous arch",
 "group": "Systemic veins",
@@ -11217,18 +10815,6 @@
 "base": "Popliteal artery",
 "group": "Systemic arteries",
 "layer": "vessel",
-"side": "r"
-},
-"Popliteal fascia.l": {
-"base": "Popliteal fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Popliteal fascia.r": {
-"base": "Popliteal fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Popliteal vein.l": {
@@ -11675,18 +11261,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Posterior intermuscular septum of leg.l": {
-"base": "Posterior intermuscular septum of leg",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Posterior intermuscular septum of leg.r": {
-"base": "Posterior intermuscular septum of leg",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Posterior interosseous artery.l": {
 "base": "Posterior interosseous artery",
 "group": "Systemic arteries",
@@ -11721,18 +11295,6 @@
 "base": "Posterior lateral nasal branches of sphenopalatine artery.",
 "group": "Common carotid artery",
 "layer": "vessel",
-"side": "r"
-},
-"Posterior layer of thoracolumbar fascia.l": {
-"base": "Posterior layer of thoracolumbar fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Posterior layer of thoracolumbar fascia.r": {
-"base": "Posterior layer of thoracolumbar fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Posterior leaflet of left atrioventricular valve": {
@@ -13301,30 +12863,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Sciatic bursa of gluteus maximus muscle.l": {
-"base": "Sciatic bursa of gluteus maximus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Sciatic bursa of gluteus maximus muscle.r": {
-"base": "Sciatic bursa of gluteus maximus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Sciatic bursa of obturator internus.l": {
-"base": "Sciatic bursa of obturator internus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Sciatic bursa of obturator internus.r": {
-"base": "Sciatic bursa of obturator internus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "Sciatic nerve.l": {
 "base": "Sciatic nerve",
 "group": "Sciatic nerve",
@@ -13395,18 +12933,6 @@
 "base": "Second rib",
 "group": "Ribs",
 "layer": "bone",
-"side": "r"
-},
-"Semimembranosus bursa.l": {
-"base": "Semimembranosus bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Semimembranosus bursa.r": {
-"base": "Semimembranosus bursa",
-"group": "Bursae",
-"layer": "muscle",
 "side": "r"
 },
 "Semimembranosus muscle.l": {
@@ -14027,18 +13553,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Subacromial bursa.l": {
-"base": "Subacromial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subacromial bursa.r": {
-"base": "Subacromial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "Subaortic nodes": {
 "base": "Subaortic nodes",
 "group": "Trunk",
@@ -14079,126 +13593,6 @@
 "base": "Subcostal artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": "r"
-},
-"Subcutaneous acromial bursa.l": {
-"base": "Subcutaneous acromial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous acromial bursa.r": {
-"base": "Subcutaneous acromial bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous bursa of lateral malleolus.l": {
-"base": "Subcutaneous bursa of lateral malleolus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous bursa of lateral malleolus.r": {
-"base": "Subcutaneous bursa of lateral malleolus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous bursa of medial malleolus.l": {
-"base": "Subcutaneous bursa of medial malleolus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous bursa of medial malleolus.r": {
-"base": "Subcutaneous bursa of medial malleolus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous bursa of tuberosity of tibia.l": {
-"base": "Subcutaneous bursa of tuberosity of tibia",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous bursa of tuberosity of tibia.r": {
-"base": "Subcutaneous bursa of tuberosity of tibia",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous calcaneal bursa.l": {
-"base": "Subcutaneous calcaneal bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous calcaneal bursa.r": {
-"base": "Subcutaneous calcaneal bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous infrapatellar bursa.l": {
-"base": "Subcutaneous infrapatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous infrapatellar bursa.r": {
-"base": "Subcutaneous infrapatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous prepatellar bursa.l": {
-"base": "Subcutaneous prepatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous prepatellar bursa.r": {
-"base": "Subcutaneous prepatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subcutaneous trochanteric bursa.l": {
-"base": "Subcutaneous trochanteric bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subcutaneous trochanteric bursa.r": {
-"base": "Subcutaneous trochanteric bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subdeltoid bursa.l": {
-"base": "Subdeltoid bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subdeltoid bursa.r": {
-"base": "Subdeltoid bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subfacial prepatellar bursa.l": {
-"base": "Subfacial prepatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subfacial prepatellar bursa.r": {
-"base": "Subfacial prepatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
 "side": "r"
 },
 "Sublingual gland.l": {
@@ -14330,126 +13724,6 @@
 "Subscapularis muscle.r": {
 "base": "Subscapularis muscle",
 "group": "Rotator cuff muscles",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of iliacus muscle.l": {
-"base": "Subtendinous bursa of iliacus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of iliacus muscle.r": {
-"base": "Subtendinous bursa of iliacus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of infraspinatus muscle.l": {
-"base": "Subtendinous bursa of infraspinatus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of infraspinatus muscle.r": {
-"base": "Subtendinous bursa of infraspinatus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of obturator internus.l": {
-"base": "Subtendinous bursa of obturator internus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of obturator internus.r": {
-"base": "Subtendinous bursa of obturator internus",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of sartorius muscle.l": {
-"base": "Subtendinous bursa of sartorius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of sartorius muscle.r": {
-"base": "Subtendinous bursa of sartorius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of teres major muscle.l": {
-"base": "Subtendinous bursa of teres major muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of teres major muscle.r": {
-"base": "Subtendinous bursa of teres major muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of tibialis anterior.l": {
-"base": "Subtendinous bursa of tibialis anterior",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of tibialis anterior.r": {
-"base": "Subtendinous bursa of tibialis anterior",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of trapezius muscle.l": {
-"base": "Subtendinous bursa of trapezius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of trapezius muscle.r": {
-"base": "Subtendinous bursa of trapezius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous bursa of triceps brachii muscle.l": {
-"base": "Subtendinous bursa of triceps brachii muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous bursa of triceps brachii muscle.r": {
-"base": "Subtendinous bursa of triceps brachii muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous calcaneal bursa.l": {
-"base": "Subtendinous calcaneal bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous calcaneal bursa.r": {
-"base": "Subtendinous calcaneal bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Subtendinous prepatellar bursa.l": {
-"base": "Subtendinous prepatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Subtendinous prepatellar bursa.r": {
-"base": "Subtendinous prepatellar bursa",
-"group": "Bursae",
 "layer": "muscle",
 "side": "r"
 },
@@ -14585,18 +13859,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Superficial investing cervical fascia.l": {
-"base": "Superficial investing cervical fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Superficial investing cervical fascia.r": {
-"base": "Superficial investing cervical fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "r"
-},
 "Superficial lateral cervical nodes.l": {
 "base": "Superficial lateral cervical nodes",
 "group": "Neck",
@@ -14607,18 +13869,6 @@
 "base": "Superficial lateral cervical nodes",
 "group": "Neck",
 "layer": "organ",
-"side": "r"
-},
-"Superficial layer of temporal fascia.l": {
-"base": "Superficial layer of temporal fascia",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Superficial layer of temporal fascia.r": {
-"base": "Superficial layer of temporal fascia",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Superficial palmar arch.l": {
@@ -14758,18 +14008,6 @@
 "group": "Pulmonary veins",
 "layer": "vessel",
 "side": ""
-},
-"Superior bursa of biceps femoris muscle.l": {
-"base": "Superior bursa of biceps femoris muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Superior bursa of biceps femoris muscle.r": {
-"base": "Superior bursa of biceps femoris muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
 },
 "Superior cerebellar artery.l": {
 "base": "Superior cerebellar artery",
@@ -15443,18 +14681,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Suprapatellar bursa.l": {
-"base": "Suprapatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Suprapatellar bursa.r": {
-"base": "Suprapatellar bursa",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
 "Suprarenal gland.l": {
 "base": "Suprarenal gland",
 "group": "Endocrine glands",
@@ -15617,18 +14843,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Synovial sheaths of digits of hand.l": {
-"base": "Synovial sheaths of digits of hand",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Synovial sheaths of digits of hand.r": {
-"base": "Synovial sheaths of digits of hand",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
 "Talocalcaneal interosseous ligament.l": {
 "base": "Talocalcaneal interosseous ligament",
 "group": "Subtalar joint",
@@ -15776,102 +14990,6 @@
 "Tendon of extensor digitorum longus.r": {
 "base": "Tendon of extensor digitorum longus",
 "group": "Anterior compartment of leg",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath - abd. pollicis longus - ext. pollicis brevis.l": {
-"base": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath - abd. pollicis longus - ext. pollicis brevis.r": {
-"base": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of extensor digitorum and extensor indicis.l": {
-"base": "Tendon sheath of extensor digitorum and extensor indicis",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of extensor digitorum and extensor indicis.r": {
-"base": "Tendon sheath of extensor digitorum and extensor indicis",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of extensor digitorum longus.l": {
-"base": "Tendon sheath of extensor digitorum longus",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of extensor digitorum longus.r": {
-"base": "Tendon sheath of extensor digitorum longus",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of extensors carpi radialis.l": {
-"base": "Tendon sheath of extensors carpi radialis",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of extensors carpi radialis.r": {
-"base": "Tendon sheath of extensors carpi radialis",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of flexor digitorum longus.l": {
-"base": "Tendon sheath of flexor digitorum longus",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of flexor digitorum longus.r": {
-"base": "Tendon sheath of flexor digitorum longus",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of flexor hallucis longus.l": {
-"base": "Tendon sheath of flexor hallucis longus",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of flexor hallucis longus.r": {
-"base": "Tendon sheath of flexor hallucis longus",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of tibialis anterior.l": {
-"base": "Tendon sheath of tibialis anterior",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of tibialis anterior.r": {
-"base": "Tendon sheath of tibialis anterior",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "r"
-},
-"Tendon sheath of tibialis posterior muscle.l": {
-"base": "Tendon sheath of tibialis posterior muscle",
-"group": "Tendon sheaths",
-"layer": "muscle",
-"side": "l"
-},
-"Tendon sheath of tibialis posterior muscle.r": {
-"base": "Tendon sheath of tibialis posterior muscle",
-"group": "Tendon sheaths",
 "layer": "muscle",
 "side": "r"
 },
@@ -16211,12 +15329,6 @@
 "layer": "organ",
 "side": ""
 },
-"Transversalis fascia": {
-"base": "Transversalis fascia",
-"group": "Abdominal part of muscular system",
-"layer": "muscle",
-"side": ""
-},
 "Transverse acetabular ligament.l": {
 "base": "Transverse acetabular ligament",
 "group": "Hip joint",
@@ -16311,18 +15423,6 @@
 "base": "Transverse humeral ligament",
 "group": "Glenohumeral joint",
 "layer": "bone",
-"side": "r"
-},
-"Transverse intermuscular septum of leg.l": {
-"base": "Transverse intermuscular septum of leg",
-"group": "Fascia",
-"layer": "muscle",
-"side": "l"
-},
-"Transverse intermuscular septum of leg.r": {
-"base": "Transverse intermuscular septum of leg",
-"group": "Fascia",
-"layer": "muscle",
 "side": "r"
 },
 "Transverse ligament of knee.l": {
@@ -16563,42 +15663,6 @@
 "base": "Triradiate cartilage",
 "group": "Cartilaginous joints of pelvic girdle",
 "layer": "bone",
-"side": "r"
-},
-"Trochanteric bursa of gluteus maximus muscle.l": {
-"base": "Trochanteric bursa of gluteus maximus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Trochanteric bursa of gluteus maximus muscle.r": {
-"base": "Trochanteric bursa of gluteus maximus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Trochanteric bursa of gluteus medius muscle.l": {
-"base": "Trochanteric bursa of gluteus medius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Trochanteric bursa of gluteus medius muscle.r": {
-"base": "Trochanteric bursa of gluteus medius muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "r"
-},
-"Trochanteric bursa of gluteus minimus muscle.l": {
-"base": "Trochanteric bursa of gluteus minimus muscle",
-"group": "Bursae",
-"layer": "muscle",
-"side": "l"
-},
-"Trochanteric bursa of gluteus minimus muscle.r": {
-"base": "Trochanteric bursa of gluteus minimus muscle",
-"group": "Bursae",
-"layer": "muscle",
 "side": "r"
 },
 "Trochlea of superior oblique muscle.l": {
