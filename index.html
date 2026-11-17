@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko" data-system="muscle">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>몸 탐험</title>
+  <meta name="description" content="몸 그림을 눌러 근육과 뼈를 알아보는 해부학 탐험">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1 class="brand">몸 탐험</h1>
+    <div class="seg" role="group" aria-label="계층" data-control="system">
+      <button type="button" data-value="muscle" aria-pressed="true">근육</button>
+      <button type="button" data-value="bone" aria-pressed="false">뼈</button>
+    </div>
+  </header>
+
+  <main class="stage" id="stage">
+    <div class="figure" id="figure" aria-live="polite"></div>
+    <p class="hint" id="hint">궁금한 부위를 눌러 보세요</p>
+  </main>
+
+  <footer class="bottom">
+    <div class="seg seg-side" role="group" aria-label="보는 면" data-control="side">
+      <button type="button" data-value="front" aria-pressed="true">앞</button>
+      <button type="button" data-value="back" aria-pressed="false">뒤</button>
+    </div>
+  </footer>
+
+  <section class="sheet" id="sheet" aria-labelledby="sheet-title" aria-hidden="true" inert>
+    <button type="button" class="sheet-close" id="sheet-close" aria-label="닫기">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="sheet-body" id="sheet-body"></div>
+  </section>
+</body>
+</html>
