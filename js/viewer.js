@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { createTapHandler } from './tap.js';
 
 const COLORS = {
   skin: 0xe3b598,
@@ -18,7 +19,8 @@ const ORIGIN = 0xd7263d;
 const INSERTION = 0x1f6fd1;
 const GHOST_OPACITY = 0.15;
 const TAP_SLOP = 6; // px
-const DOUBLE_TAP_MS = 320;
+const DOUBLE_TAP_MS = 300;
+const DOUBLE_TAP_SLOP = 30; // px
 
 function baseMaterial(color, layer) {
   return new THREE.MeshStandardMaterial({
@@ -193,7 +195,12 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   const raycaster = new THREE.Raycaster();
   const ndc = new THREE.Vector2();
   let down = null;
-  let lastTap = 0;
+  const tap = createTapHandler({
+    onSingle: (x, y) => onPick(pickAt(x, y)),
+    onDouble: () => resetView(),
+    delay: DOUBLE_TAP_MS,
+    slop: DOUBLE_TAP_SLOP,
+  });
 
   function pickAt(clientX, clientY) {
     const rect = canvas.getBoundingClientRect();
@@ -206,24 +213,14 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   }
 
   canvas.addEventListener('pointerdown', (e) => {
-    down = e.isPrimary ? { x: e.clientX, y: e.clientY, multi: false } : null;
-  });
-  canvas.addEventListener('pointerdown', (e) => {
-    if (!e.isPrimary && down) down.multi = true;
+    if (e.isPrimary) down = { x: e.clientX, y: e.clientY, multi: false };
+    else if (down) down.multi = true;
   });
   canvas.addEventListener('pointerup', (e) => {
     if (!down || !e.isPrimary || down.multi) return;
     const moved = Math.hypot(e.clientX - down.x, e.clientY - down.y);
     down = null;
-    if (moved > TAP_SLOP) return;
-    const now = performance.now();
-    if (now - lastTap < DOUBLE_TAP_MS) {
-      lastTap = 0;
-      resetView();
-      return;
-    }
-    lastTap = now;
-    onPick(pickAt(e.clientX, e.clientY));
+    if (moved <= TAP_SLOP) tap(e.clientX, e.clientY);
   });
 
   // ── 크기와 렌더 루프 ──

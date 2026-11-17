@@ -25,7 +25,7 @@
     "insertion": "위팔뼈 큰결절능선(결절사이고랑의 가쪽 능선)",
     "action": "팔 모음·안쪽돌림. 빗장뼈 부분은 팔 굽힘, 복장갈비 부분은 굽힌 팔을 아래로 당김",
     "innervation": "가쪽·안쪽가슴신경 (C5–T1)",
-    "fact": "빗장뼈 쪽과 흉골 쪽 두 부분이 있어서, 팔을 드는 각도에 따라 주로 쓰이는 부분이 달라요.",
+    "fact": "빗장뼈 부분, 복장갈비 부분, 배 부분이 있어서, 팔을 드는 각도에 따라 주로 쓰이는 부분이 달라요.",
     "bases": [
       "Clavicular head of pectoralis major muscle",
       "Abdominal part of pectoralis major muscle"
@@ -760,7 +760,7 @@
     "name_en": "Cervical vertebrae",
     "name_la": "Vertebrae cervicales",
     "summary": "목을 이루는 일곱 개의 척추뼈로, 머리를 받치고 여러 방향으로 움직이게 해요.",
-    "landmarks": "작은 척추뼈몸통, 가로구멍(척추동맥 통로), 끝이 갈라진 가시돌기",
+    "landmarks": "작은 척추뼈몸통, 가로구멍(척추동맥 통로), 끝이 갈라진 가시돌기(C3–C6)",
     "joints": "척추사이원반, 척추뼈고리관절 (위아래 목뼈)",
     "fact": "목이 긴 기린도 목뼈는 사람처럼 7개예요. C7의 가시돌기는 목 뒤에서 가장 잘 만져져서 '솟을뼈'라고 불러요.",
     "bases": [
@@ -798,7 +798,7 @@
     "summary": "가슴 높이의 열두 개 척추뼈로, 갈비뼈와 관절을 이뤄 가슴우리의 뒷벽을 만들어요.",
     "landmarks": "하트 모양 척추뼈몸통, 갈비오목, 아래로 기운 긴 가시돌기",
     "joints": "갈비척추관절 (갈비뼈), 척추사이원반, 척추뼈고리관절",
-    "fact": "갈비뼈와 관절을 이루는 유일한 척추뼈라서 몸통과 가로돌기에 갈비오목이 있어요.",
+    "fact": "갈비뼈와 관절을 이루는 유일한 척추뼈라서 몸통에 갈비오목이 있고, T1–T10은 가로돌기에도 갈비오목이 있어요.",
     "bases": [
       "Vertebra T1",
       "Vertebra T2",
@@ -1075,7 +1075,7 @@
     "name_la": "Vesica urinaria",
     "summary": "소변을 모아 두는 근육 주머니예요.",
     "role": "콩팥에서 요관을 따라 내려온 소변을 모았다가 내보내요. 골반 안, 두덩결합 바로 뒤에 있어요.",
-    "fact": "보통 300~500mL쯤 차면 소변이 마렵다고 느껴요."
+    "fact": "150~250mL쯤 차면 처음 마려운 느낌이 들고, 400mL 안팎이면 강하게 마려워요."
   },
   "Thyroid gland": {
     "kind": "other",
@@ -1096,7 +1096,8 @@
     "fact": "지름이 약 2.5~3cm로 몸에서 가장 굵은 혈관이에요.",
     "bases": [
       "Thoracic aorta",
-      "Abdominal aorta"
+      "Abdominal aorta",
+      "Aortic arch"
     ]
   },
   "Superior vena cava": {
@@ -1119,7 +1120,10 @@
     "name_la": "Truncus pulmonalis",
     "summary": "오른심실에서 나와 허파로 가는 굵은 동맥이에요.",
     "role": "산소가 적은 피를 좌우 폐동맥으로 나눠 허파로 보내요. 대동맥 앞에서 시작해 대동맥활 아래에서 갈라져요.",
-    "fact": "동맥인데도 산소가 적은 피가 흐르는 예외적인 혈관이에요."
+    "fact": "동맥인데도 산소가 적은 피가 흐르는 예외적인 혈관이에요.",
+    "bases": [
+      "Bifurcation of pulmonary trunk"
+    ]
   },
   "Internal jugular vein": {
     "kind": "other",
@@ -1127,7 +1131,7 @@
     "name_en": "Internal jugular vein",
     "name_la": "Vena jugularis interna",
     "summary": "목 양옆을 따라 내려가는 굵은 정맥이에요.",
-    "role": "뇌와 얼굴, 목의 피를 모아 빗장밑정맥과 만나 위대정맥으로 보내요. 목빗근 아래, 온목동맥 옆을 지나요.",
+    "role": "뇌와 얼굴, 목의 피를 모아요. 목빗근 아래 온목동맥 옆을 지나 빗장밑정맥과 만나 팔머리정맥을 이루고, 좌우 팔머리정맥이 합쳐져 위대정맥이 돼요.",
     "fact": "중심정맥관을 넣을 때 자주 쓰는 혈관이에요."
   },
   "Brachial artery": {
@@ -1154,7 +1158,7 @@
     "name_en": "Femoral artery",
     "name_la": "Arteria femoralis",
     "summary": "다리 전체로 피를 보내는 주된 동맥이에요.",
-    "role": "샅고랑인대 아래에서 시작해 넙다리 앞안쪽을 따라 내려가 무릎 뒤에서 오금동맥이 돼요.",
+    "role": "샅고랑인대 아래에서 시작해 넙다리 앞안쪽을 따라 내려가다, 넙다리 아래쪽의 모음근틈새를 지나 오금으로 들어가며 오금동맥이 돼요.",
     "fact": "샅고랑 바로 아래에서 맥박을 만질 수 있고, 심장 카테터 시술의 통로로도 쓰여요."
   },
   "Great saphenous vein": {

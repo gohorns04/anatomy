@@ -61,3 +61,18 @@ test('mesh without content returns null', () => {
   assert.equal(contentFor('Femur.l', fakeIndex, {}), null);
   assert.equal(contentFor('Not a mesh', index, content), null);
 });
+
+test('review corrections stay in content', () => {
+  assert.match(content['Internal jugular vein'].role, /팔머리정맥/);
+  assert.match(content['Femoral artery'].role, /모음근틈새/);
+  assert.match(content['Urinary bladder'].fact, /150~250mL/);
+  assert.match(content['Vertebra T6'].fact, /T1–T10/);
+  assert.match(content['Vertebra C5'].landmarks, /C3–C6/);
+  assert.match(content['Sternocostal head of pectoralis major muscle'].fact, /배 부분/);
+});
+
+test('aortic arch and pulmonary bifurcation resolve to their vessel entries', () => {
+  const name = (base) => Object.keys(index).find((k) => index[k].base === base);
+  assert.equal(contentFor(name('Aortic arch'), index, content)?.name_ko, '대동맥');
+  assert.equal(contentFor(name('Bifurcation of pulmonary trunk'), index, content)?.name_ko, '폐동맥줄기');
+});

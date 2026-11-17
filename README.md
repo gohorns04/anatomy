@@ -49,7 +49,7 @@ npm run build:model
 - Z-Anatomy (Gauthier Kervyn, Marcin Zielinski), CC BY-SA 4.0
 - BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International
 
-`model/`의 변환된 모델 파일은 CC BY-SA 4.0으로 배포해요(`model/LICENSE.txt`). 한국어 내용은 표준 해부학 지식을 바탕으로 작성한 교양용 설명이며 의학적 조언이 아니에요.
+`model/`의 변환된 모델 파일과, 그 모델을 렌더한 아이콘(`icons/`)은 CC BY-SA 4.0으로 배포해요(`model/LICENSE.txt`). 한국어 내용은 표준 해부학 지식을 바탕으로 작성한 교양용 설명이며 의학적 조언이 아니에요.
 
 ## GitHub Pages 배포
 

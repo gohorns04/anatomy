@@ -151,13 +151,13 @@
 },
 "Abductor digiti minimi of foot.l": {
 "base": "Abductor digiti minimi of foot",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Abductor digiti minimi of foot.r": {
 "base": "Abductor digiti minimi of foot",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -175,13 +175,13 @@
 },
 "Abductor hallucis.l": {
 "base": "Abductor hallucis",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Abductor hallucis.r": {
 "base": "Abductor hallucis",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -445,13 +445,13 @@
 },
 "Anterior belly of digastric muscle.l": {
 "base": "Anterior belly of digastric muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Anterior belly of digastric muscle.r": {
 "base": "Anterior belly of digastric muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -493,13 +493,13 @@
 },
 "Anterior cells of ethmoid bone.l": {
 "base": "Anterior cells of ethmoid bone",
-"group": "Scene Collection",
+"group": "Skeletal system",
 "layer": "bone",
 "side": "l"
 },
 "Anterior cells of ethmoid bone.r": {
 "base": "Anterior cells of ethmoid bone",
-"group": "Scene Collection",
+"group": "Skeletal system",
 "layer": "bone",
 "side": "r"
 },
@@ -577,7 +577,7 @@
 },
 "Anterior corticospinal tract": {
 "base": "Anterior corticospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -703,13 +703,13 @@
 },
 "Anterior fasciculus proprius": {
 "base": "Anterior fasciculus proprius",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
 "Anterior horn of spinal cord": {
 "base": "Anterior horn of spinal cord",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -943,13 +943,13 @@
 },
 "Anterior spinocerebellar tract": {
 "base": "Anterior spinocerebellar tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
 "Anterior spinothalamic tract": {
 "base": "Anterior spinothalamic tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -1867,7 +1867,7 @@
 },
 "Central canal": {
 "base": "Central canal",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -2335,13 +2335,13 @@
 },
 "Common tendinous ring.l": {
 "base": "Common tendinous ring",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Common tendinous ring.r": {
 "base": "Common tendinous ring",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -2659,7 +2659,7 @@
 },
 "Cuneate fasciculus": {
 "base": "Cuneate fasciculus",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -2857,13 +2857,13 @@
 },
 "Deep part of masseter.l": {
 "base": "Deep part of masseter",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Deep part of masseter.r": {
 "base": "Deep part of masseter",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -3391,13 +3391,13 @@
 },
 "Dorsal interossei muscles of foot.l": {
 "base": "Dorsal interossei muscles of foot",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Dorsal interossei muscles of foot.r": {
 "base": "Dorsal interossei muscles of foot",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -3649,13 +3649,13 @@
 },
 "Epicranial aponeurosis.l": {
 "base": "Epicranial aponeurosis",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Epicranial aponeurosis.r": {
 "base": "Epicranial aponeurosis",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -3721,13 +3721,13 @@
 },
 "Extensor digitorum brevis.l": {
 "base": "Extensor digitorum brevis",
-"group": "Deep fibular nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Extensor digitorum brevis.r": {
 "base": "Extensor digitorum brevis",
-"group": "Deep fibular nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -3757,13 +3757,13 @@
 },
 "Extensor hallucis brevis.l": {
 "base": "Extensor hallucis brevis",
-"group": "Deep fibular nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Extensor hallucis brevis.r": {
 "base": "Extensor hallucis brevis",
-"group": "Deep fibular nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -4231,13 +4231,13 @@
 },
 "Flexor digiti minimi of foot.l": {
 "base": "Flexor digiti minimi of foot",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Flexor digiti minimi of foot.r": {
 "base": "Flexor digiti minimi of foot",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -4459,13 +4459,13 @@
 },
 "Frontalis muscle.l": {
 "base": "Frontalis muscle",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Frontalis muscle.r": {
 "base": "Frontalis muscle",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -4507,13 +4507,13 @@
 },
 "Genioglossus muscle.l": {
 "base": "Genioglossus muscle",
-"group": "Hypoglossal nerve (XII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Genioglossus muscle.r": {
 "base": "Genioglossus muscle",
-"group": "Hypoglossal nerve (XII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -4639,7 +4639,7 @@
 },
 "Gracile fasciculus": {
 "base": "Gracile fasciculus",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -4813,13 +4813,13 @@
 },
 "Hyoglossus muscle.l": {
 "base": "Hyoglossus muscle",
-"group": "Hypoglossal nerve (XII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Hyoglossus muscle.r": {
 "base": "Hyoglossus muscle",
-"group": "Hypoglossal nerve (XII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -4873,13 +4873,13 @@
 },
 "Iliacus muscle.l": {
 "base": "Iliacus muscle",
-"group": "Femoral nerve",
+"group": "Branches of posterior part of lumbar plexus",
 "layer": "muscle",
 "side": "l"
 },
 "Iliacus muscle.r": {
 "base": "Iliacus muscle",
-"group": "Femoral nerve",
+"group": "Branches of posterior part of lumbar plexus",
 "layer": "muscle",
 "side": "r"
 },
@@ -5185,13 +5185,13 @@
 },
 "Inferior head of lateral pterygoid muscle.l": {
 "base": "Inferior head of lateral pterygoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Inferior head of lateral pterygoid muscle.r": {
 "base": "Inferior head of lateral pterygoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -5323,13 +5323,13 @@
 },
 "Inferior oblique muscle.l": {
 "base": "Inferior oblique muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Inferior oblique muscle.r": {
 "base": "Inferior oblique muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -5377,13 +5377,13 @@
 },
 "Inferior parathyroid gland.l": {
 "base": "Inferior parathyroid gland",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": "l"
 },
 "Inferior parathyroid gland.r": {
 "base": "Inferior parathyroid gland",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": "r"
 },
@@ -5425,13 +5425,13 @@
 },
 "Inferior rectus muscle.l": {
 "base": "Inferior rectus muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Inferior rectus muscle.r": {
 "base": "Inferior rectus muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -5491,13 +5491,13 @@
 },
 "Inferior tarsus.l": {
 "base": "Inferior tarsus",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Inferior tarsus.r": {
 "base": "Inferior tarsus",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -5635,13 +5635,13 @@
 },
 "Infraspinatus muscle.l": {
 "base": "Infraspinatus muscle",
-"group": "Suprascapular nerve",
+"group": "Rotator cuff muscles",
 "layer": "muscle",
 "side": "l"
 },
 "Infraspinatus muscle.r": {
 "base": "Infraspinatus muscle",
-"group": "Suprascapular nerve",
+"group": "Rotator cuff muscles",
 "layer": "muscle",
 "side": "r"
 },
@@ -5797,13 +5797,13 @@
 },
 "Intermediolateral nucleus": {
 "base": "Intermediolateral nucleus",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
 "Intermediomedial nucleus": {
 "base": "Intermediomedial nucleus",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -6349,7 +6349,7 @@
 },
 "Laryngopharynx": {
 "base": "Laryngopharynx",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": ""
 },
@@ -6451,7 +6451,7 @@
 },
 "Lateral corticospinal tract": {
 "base": "Lateral corticospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -6481,7 +6481,7 @@
 },
 "Lateral fasciculus proprius": {
 "base": "Lateral fasciculus proprius",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -6523,13 +6523,13 @@
 },
 "Lateral head of flexor hallucis brevis.l": {
 "base": "Lateral head of flexor hallucis brevis",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Lateral head of flexor hallucis brevis.r": {
 "base": "Lateral head of flexor hallucis brevis",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -6559,7 +6559,7 @@
 },
 "Lateral intermediate substance": {
 "base": "Lateral intermediate substance",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -6709,7 +6709,7 @@
 },
 "Lateral reticulospinal tract": {
 "base": "Lateral reticulospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -6739,7 +6739,7 @@
 },
 "Lateral spinothalamic tract": {
 "base": "Lateral spinothalamic tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -6835,7 +6835,7 @@
 },
 "Lateral vestibulospinal tract": {
 "base": "Lateral vestibulospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -7069,25 +7069,25 @@
 },
 "Levator palpebrae superioris.l": {
 "base": "Levator palpebrae superioris",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Levator palpebrae superioris.r": {
 "base": "Levator palpebrae superioris",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
 "Levator scapulae.l": {
 "base": "Levator scapulae",
-"group": "Dorsal scapular nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "l"
 },
 "Levator scapulae.r": {
 "base": "Levator scapulae",
-"group": "Dorsal scapular nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "r"
 },
@@ -7447,13 +7447,13 @@
 },
 "Lumbrical muscles of foot.l": {
 "base": "Lumbrical muscles of foot",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Lumbrical muscles of foot.r": {
 "base": "Lumbrical muscles of foot",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -7729,13 +7729,13 @@
 },
 "Medial head of flexor hallucis brevis.l": {
 "base": "Medial head of flexor hallucis brevis",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Medial head of flexor hallucis brevis.r": {
 "base": "Medial head of flexor hallucis brevis",
-"group": "Medial plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -7873,31 +7873,31 @@
 },
 "Medial pterygoid muscle.l": {
 "base": "Medial pterygoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Medial pterygoid muscle.r": {
 "base": "Medial pterygoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
 "Medial rectus muscle.l": {
 "base": "Medial rectus muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Medial rectus muscle.r": {
 "base": "Medial rectus muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
 "Medial reticulospinal tract": {
 "base": "Medial reticulospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -7945,7 +7945,7 @@
 },
 "Medial vestibulospinal tract": {
 "base": "Medial vestibulospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -8113,13 +8113,13 @@
 },
 "Middle cells of ethmoid bone.l": {
 "base": "Middle cells of ethmoid bone",
-"group": "Scene Collection",
+"group": "Skeletal system",
 "layer": "bone",
 "side": "l"
 },
 "Middle cells of ethmoid bone.r": {
 "base": "Middle cells of ethmoid bone",
-"group": "Scene Collection",
+"group": "Skeletal system",
 "layer": "bone",
 "side": "r"
 },
@@ -8395,7 +8395,7 @@
 },
 "Mucosa of nasal cavity": {
 "base": "Mucosa of nasal cavity",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": ""
 },
@@ -8545,13 +8545,13 @@
 },
 "Mylohyoid muscle.l": {
 "base": "Mylohyoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Mylohyoid muscle.r": {
 "base": "Mylohyoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -8599,7 +8599,7 @@
 },
 "Nasopharynx": {
 "base": "Nasopharynx",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": ""
 },
@@ -8671,13 +8671,13 @@
 },
 "Node of arch of azygos vein": {
 "base": "Node of arch of azygos vein",
-"group": "Scene Collection",
+"group": "Lymphoid organs",
 "layer": "organ",
 "side": ""
 },
 "Node of ligamentum arteriosum": {
 "base": "Node of ligamentum arteriosum",
-"group": "Scene Collection",
+"group": "Lymphoid organs",
 "layer": "organ",
 "side": ""
 },
@@ -8773,7 +8773,7 @@
 },
 "Nucleus proprius": {
 "base": "Nucleus proprius",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -8929,13 +8929,13 @@
 },
 "Oblique head of adductor hallucis.l": {
 "base": "Oblique head of adductor hallucis",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Oblique head of adductor hallucis.r": {
 "base": "Oblique head of adductor hallucis",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -9109,13 +9109,13 @@
 },
 "Occipitalis muscle.l": {
 "base": "Occipitalis muscle",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Occipitalis muscle.r": {
 "base": "Occipitalis muscle",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -9397,7 +9397,7 @@
 },
 "Oropharynx": {
 "base": "Oropharynx",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": ""
 },
@@ -10045,13 +10045,13 @@
 },
 "Plantar interossei muscles.l": {
 "base": "Plantar interossei muscles",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Plantar interossei muscles.r": {
 "base": "Plantar interossei muscles",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -10309,13 +10309,13 @@
 },
 "Posterior belly of digastric muscle.l": {
 "base": "Posterior belly of digastric muscle",
-"group": "Facial nerve (VII)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Posterior belly of digastric muscle.r": {
 "base": "Posterior belly of digastric muscle",
-"group": "Facial nerve (VII)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -10357,13 +10357,13 @@
 },
 "Posterior cells of ethmoid bone.l": {
 "base": "Posterior cells of ethmoid bone",
-"group": "Scene Collection",
+"group": "Skeletal system",
 "layer": "bone",
 "side": "l"
 },
 "Posterior cells of ethmoid bone.r": {
 "base": "Posterior cells of ethmoid bone",
-"group": "Scene Collection",
+"group": "Skeletal system",
 "layer": "bone",
 "side": "r"
 },
@@ -10567,7 +10567,7 @@
 },
 "Posterior fasciculus proprius": {
 "base": "Posterior fasciculus proprius",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -10585,7 +10585,7 @@
 },
 "Posterior horn of spinal cord": {
 "base": "Posterior horn of spinal cord",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -10819,7 +10819,7 @@
 },
 "Posterior spinocerebellar tract": {
 "base": "Posterior spinocerebellar tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -10939,7 +10939,7 @@
 },
 "Posterolateral tract": {
 "base": "Posterolateral tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -11419,13 +11419,13 @@
 },
 "Quadratus plantae muscle.l": {
 "base": "Quadratus plantae muscle",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Quadratus plantae muscle.r": {
 "base": "Quadratus plantae muscle",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -11707,25 +11707,25 @@
 },
 "Rhomboid major muscle.l": {
 "base": "Rhomboid major muscle",
-"group": "Dorsal scapular nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "l"
 },
 "Rhomboid major muscle.r": {
 "base": "Rhomboid major muscle",
-"group": "Dorsal scapular nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "r"
 },
 "Rhomboid minor muscle.l": {
 "base": "Rhomboid minor muscle",
-"group": "Dorsal scapular nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "l"
 },
 "Rhomboid minor muscle.r": {
 "base": "Rhomboid minor muscle",
-"group": "Dorsal scapular nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "r"
 },
@@ -11935,7 +11935,7 @@
 },
 "Rubrospinal tract": {
 "base": "Rubrospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -12295,13 +12295,13 @@
 },
 "Serratus anterior muscle.l": {
 "base": "Serratus anterior muscle",
-"group": "Long thoracic nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "l"
 },
 "Serratus anterior muscle.r": {
 "base": "Serratus anterior muscle",
-"group": "Long thoracic nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "r"
 },
@@ -12463,7 +12463,7 @@
 },
 "Soft palate": {
 "base": "Soft palate",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": ""
 },
@@ -12517,19 +12517,19 @@
 },
 "Spinal ganglion.l": {
 "base": "Spinal ganglion",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": "l"
 },
 "Spinal ganglion.r": {
 "base": "Spinal ganglion",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": "r"
 },
 "Spinal reticular process": {
 "base": "Spinal reticular process",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -12571,7 +12571,7 @@
 },
 "Spinotectal tract": {
 "base": "Spinotectal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -12631,13 +12631,13 @@
 },
 "Sternocleidomastoid muscle.l": {
 "base": "Sternocleidomastoid muscle",
-"group": "Accessory nerve (XI)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Sternocleidomastoid muscle.r": {
 "base": "Sternocleidomastoid muscle",
-"group": "Accessory nerve (XI)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -12751,13 +12751,13 @@
 },
 "Stylohyoid muscle.l": {
 "base": "Stylohyoid muscle",
-"group": "Facial nerve (VII)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Stylohyoid muscle.r": {
 "base": "Stylohyoid muscle",
-"group": "Facial nerve (VII)",
+"group": "Cervical part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -12799,13 +12799,13 @@
 },
 "Subclavius muscle.l": {
 "base": "Subclavius muscle",
-"group": "Subclavian nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "l"
 },
 "Subclavius muscle.r": {
 "base": "Subclavius muscle",
-"group": "Subclavian nerve",
+"group": "Supraclavicular branches of brachial plexus",
 "layer": "muscle",
 "side": "r"
 },
@@ -13069,13 +13069,13 @@
 },
 "Superficial part of masseter.l": {
 "base": "Superficial part of masseter",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Superficial part of masseter.r": {
 "base": "Superficial part of masseter",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -13339,13 +13339,13 @@
 },
 "Superior head of lateral pterygoid muscle.l": {
 "base": "Superior head of lateral pterygoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Superior head of lateral pterygoid muscle.r": {
 "base": "Superior head of lateral pterygoid muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -13495,13 +13495,13 @@
 },
 "Superior parathyroid gland.l": {
 "base": "Superior parathyroid gland",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": "l"
 },
 "Superior parathyroid gland.r": {
 "base": "Superior parathyroid gland",
-"group": "Scene Collection",
+"group": "Visceral systems",
 "layer": "organ",
 "side": "r"
 },
@@ -13555,13 +13555,13 @@
 },
 "Superior rectus muscle.l": {
 "base": "Superior rectus muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Superior rectus muscle.r": {
 "base": "Superior rectus muscle",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -13633,13 +13633,13 @@
 },
 "Superior tarsus.l": {
 "base": "Superior tarsus",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Superior tarsus.r": {
 "base": "Superior tarsus",
-"group": "Oculomotor nerve (III)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -13819,13 +13819,13 @@
 },
 "Supraspinatus muscle.l": {
 "base": "Supraspinatus muscle",
-"group": "Suprascapular nerve",
+"group": "Rotator cuff muscles",
 "layer": "muscle",
 "side": "l"
 },
 "Supraspinatus muscle.r": {
 "base": "Supraspinatus muscle",
-"group": "Suprascapular nerve",
+"group": "Rotator cuff muscles",
 "layer": "muscle",
 "side": "r"
 },
@@ -13957,7 +13957,7 @@
 },
 "Tectospinal tract": {
 "base": "Tectospinal tract",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },
@@ -14011,13 +14011,13 @@
 },
 "Temporalis muscle.l": {
 "base": "Temporalis muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Temporalis muscle.r": {
 "base": "Temporalis muscle",
-"group": "Trigeminal nerve (V)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -14035,13 +14035,13 @@
 },
 "Temporoparietalis muscle.l": {
 "base": "Temporoparietalis muscle",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "l"
 },
 "Temporoparietalis muscle.r": {
 "base": "Temporoparietalis muscle",
-"group": "Facial nerve (VII)",
+"group": "Cranial part of muscular system",
 "layer": "muscle",
 "side": "r"
 },
@@ -14455,13 +14455,13 @@
 },
 "Transverse head of adductor hallucis.l": {
 "base": "Transverse head of adductor hallucis",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "l"
 },
 "Transverse head of adductor hallucis.r": {
 "base": "Transverse head of adductor hallucis",
-"group": "Lateral plantar nerve",
+"group": "Muscles of foot",
 "layer": "muscle",
 "side": "r"
 },
@@ -15337,7 +15337,7 @@
 },
 "White matter of spinal cord": {
 "base": "White matter of spinal cord",
-"group": "Scene Collection",
+"group": "Nervous system & Sense organs",
 "layer": "nerve",
 "side": ""
 },

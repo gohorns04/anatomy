@@ -39,11 +39,25 @@ const key = (base) => base.toLowerCase().replace(/ muscle$/, '');
 // "Long head of biceps brachii" → "biceps brachii" (근육 전체)
 const wholeOf = (base) => base.match(/^.+? (?:head|part|belly) of (.+)$/i)?.[1];
 
+// 표시 메시가 묶음 이름(예: 넙다리네갈래근 힘줄)에만 붙어 있는 근육
+const GROUP_MARKERS = {
+  'rectus femoris': 'quadriceps femoris',
+  'vastus lateralis': 'quadriceps femoris',
+  'vastus medialis': 'quadriceps femoris',
+  'vastus intermedius': 'quadriceps femoris',
+  gastrocnemius: 'triceps surae',
+  soleus: 'triceps surae',
+  'psoas major': 'iliopsoas',
+  iliacus: 'iliopsoas',
+  'extensor digitorum': 'common extensor tendon',
+};
+
 export function insertionNamesFor(meshName, insertionNames) {
   const { base, suffix: side } = splitName(meshName);
   const wanted = new Set([key(base)]);
   const whole = wholeOf(base);
   if (whole) wanted.add(key(whole));
+  for (const k of [...wanted]) if (GROUP_MARKERS[k]) wanted.add(GROUP_MARKERS[k]);
   const origins = [];
   const insertions = [];
   for (const name of insertionNames) {

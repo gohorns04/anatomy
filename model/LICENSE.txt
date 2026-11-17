@@ -10,3 +10,5 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 변경 사항: 층별 분리, 곡선의 메시 변환, 단순화, meshopt 압축, BodyParts3D 피부 메시의 좌표 정렬.
 변환 스크립트: tools/ (앱 코드와 변환 스크립트는 이 라이선스의 대상이 아닙니다.)
+
+아이콘(icons/icon-*.png)도 이 모델을 렌더한 것이므로 같은 CC BY-SA 4.0 조건으로 배포합니다.

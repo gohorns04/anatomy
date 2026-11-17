@@ -87,3 +87,16 @@ test('insertions: real data samples (deltoid, pectoralis, masseter)', () => {
   assert.deepEqual(insertionNamesFor('Superficial part of masseter.l', names),
     { origins: ['Masseter.ol'], insertions: ['Masseter.el'] });
 });
+
+test('insertions: muscles whose markers live under a group name (quadriceps, triceps surae, iliopsoas, common extensor)', () => {
+  const buf = readFileSync(new URL('../model/insertions.glb', import.meta.url));
+  const json = JSON.parse(buf.subarray(20, 20 + buf.readUInt32LE(12)).toString('utf8'));
+  const names = json.nodes.filter((n) => n.mesh !== undefined).map((n) => n.name);
+  assert.ok(insertionNamesFor('Rectus femoris muscle.l', names).insertions.includes('Quadriceps femoris muscle.el'));
+  assert.ok(insertionNamesFor('Vastus medialis muscle.r', names).insertions.includes('Quadriceps femoris muscle.er'));
+  assert.ok(insertionNamesFor('Soleus muscle.l', names).insertions.includes('Triceps surae muscle.el'));
+  assert.ok(insertionNamesFor('Medial head of gastrocnemius.r', names).insertions.includes('Triceps surae muscle.er'));
+  assert.ok(insertionNamesFor('Psoas major.l', names).insertions.includes('Iliopsoas muscle.el'));
+  assert.ok(insertionNamesFor('Iliacus muscle.r', names).insertions.includes('Iliopsoas muscle.er'));
+  assert.ok(insertionNamesFor('Extensor digitorum.l', names).origins.includes('Common extensor tendon.ol'));
+});

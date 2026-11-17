@@ -48,3 +48,8 @@ test('insertions.glb holds only origin/insertion meshes not in index', () => {
     assert.ok(!(n in index), n);
   }
 });
+
+test('model license also covers the icons rendered from the model', () => {
+  const text = readFileSync(new URL('LICENSE.txt', MODEL), 'utf8');
+  assert.match(text, /icons\//);
+});

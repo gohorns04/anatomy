@@ -83,6 +83,13 @@ class GroupFor(unittest.TestCase):
         sizes = {'Left upper limb': 5, 'Muscles': 500}
         self.assertEqual(group_for(cols, sizes), 'Muscles')
 
+    def test_scene_collection_and_nerve_groups_are_not_used_for_non_nerve_layers(self):
+        cols = ['4: Muscular system', 'Scene Collection', 'Trigeminal nerve (V)', 'Muscles of head']
+        sizes = {'Scene Collection': 1, 'Trigeminal nerve (V)': 20, 'Muscles of head': 90}
+        self.assertEqual(group_for(cols, sizes), 'Muscles of head')
+        self.assertEqual(group_for(['7: Nervous system & Sense organs', 'Scene Collection'], {'Scene Collection': 1}),
+                         'Nervous system & Sense organs')
+
     def test_falls_back_to_top_level_name(self):
         self.assertEqual(group_for(['5: Cardiovascular system'], {}), 'Cardiovascular system')
 

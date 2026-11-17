@@ -65,8 +65,13 @@ def layer_for(collections):
     return min(found, key=lambda l: LAYER_ORDER[l])
 
 
+_NOT_A_GROUP = re.compile(r'^Scene Collection$|\bnerve\b', re.I)
+
+
 def group_for(collections, sizes):
-    candidates = [c for c in collections if not _TOP.match(c) and not _SIDE_GROUP.match(c)]
+    is_nerve_layer = '7: Nervous system & Sense organs' in collections
+    candidates = [c for c in collections if not _TOP.match(c) and not _SIDE_GROUP.match(c)
+                  and c != 'Scene Collection' and (is_nerve_layer or not _NOT_A_GROUP.search(c))]
     if candidates:
         return min(candidates, key=lambda c: (sizes.get(c, 10**9), c))
     tops = [c for c in collections if _TOP.match(c)]
