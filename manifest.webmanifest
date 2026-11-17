@@ -1,0 +1,17 @@
+{
+  "name": "몸 탐험",
+  "short_name": "몸 탐험",
+  "description": "몸 그림을 눌러 근육과 뼈를 알아보는 해부학 탐험",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EEF0F2",
+  "theme_color": "#EEF0F2",
+  "icons": [
+    { "src": "icons/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
