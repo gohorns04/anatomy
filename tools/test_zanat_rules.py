@@ -42,6 +42,13 @@ class Role(unittest.TestCase):
         for n in ['Iliotibial tract.l', 'Calcaneal tendon.r', 'Tensor fasciae latae.l', 'Palmar aponeurosis.l']:
             self.assertEqual(role(n, 'MESH'), 'display', n)
 
+    def test_membranes_and_lymph_nodes_that_hide_organs_are_skipped(self):
+        for n in ['Pleura', 'Greater omentum', 'Lesser omentum', 'Mesocolon', 'Meso-appendix',
+                  'Intercostal nodes.l', 'Jugulodigastric node.r', 'Intrapulmonary nodes']:
+            self.assertEqual(role(n, 'MESH'), 'skip', n)
+        for n in ['Spleen', 'Palatine tonsil.l', 'Liver', 'Stomach']:
+            self.assertEqual(role(n, 'MESH'), 'display', n)
+
     def test_liver_segments_overlap_whole_liver(self):
         self.assertEqual(role('Anterior lateral segment of liver (VI)', 'MESH'), 'skip')
         self.assertEqual(role('Posterior segment of liver (I)', 'MESH'), 'skip')

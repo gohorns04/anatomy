@@ -47,18 +47,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"(Anterior tibial node).l": {
-"base": "Anterior tibial node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"(Anterior tibial node).r": {
-"base": "Anterior tibial node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
 "(Anteromedial basal segmental bronchus of left lung)": {
 "base": "Anteromedial basal segmental bronchus of left lung",
 "group": "Bronchi",
@@ -89,42 +77,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"(Fibular node).l": {
-"base": "Fibular node",
-"group": "Main divisions",
-"layer": "organ",
-"side": "l"
-},
-"(Fibular node).r": {
-"base": "Fibular node",
-"group": "Main divisions",
-"layer": "organ",
-"side": "r"
-},
-"(Intermediate deep inguinal node).l": {
-"base": "Intermediate deep inguinal node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"(Intermediate deep inguinal node).r": {
-"base": "Intermediate deep inguinal node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
-"(Lateral lacunar node).l": {
-"base": "Lateral lacunar node",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"(Lateral lacunar node).r": {
-"base": "Lateral lacunar node",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "(Opponens digiti minimi muscle of foot).l": {
 "base": "Opponens digiti minimi muscle of foot",
 "group": "Muscles of foot",
@@ -137,42 +89,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"(Posterior tibial node).l": {
-"base": "Posterior tibial node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"(Posterior tibial node).r": {
-"base": "Posterior tibial node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
-"(Proximal deep inguinal node).l": {
-"base": "Proximal deep inguinal node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"(Proximal deep inguinal node).r": {
-"base": "Proximal deep inguinal node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
-"(Retropyloric nodes)": {
-"base": "Retropyloric nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"(Subpyloric nodes)": {
-"base": "Subpyloric nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "(Superficial branch of transverse cervical artery).l": {
 "base": "Superficial branch of transverse cervical artery",
 "group": "Systemic arteries",
@@ -184,12 +100,6 @@
 "group": "Systemic arteries",
 "layer": "vessel",
 "side": "r"
-},
-"(Suprapyloric node)": {
-"base": "Suprapyloric node",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "(Ulnar recurrent artery).l": {
 "base": "Ulnar recurrent artery",
@@ -509,18 +419,6 @@
 "layer": "bone",
 "side": "r"
 },
-"Anterior axillary nodes.l": {
-"base": "Anterior axillary nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Anterior axillary nodes.r": {
-"base": "Anterior axillary nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
 "Anterior basal segmental artery of left lung": {
 "base": "Anterior basal segmental artery of left lung",
 "group": "Pulmonary arteries",
@@ -825,18 +723,6 @@
 "base": "Anterior inferior cerebellar artery",
 "group": "Subclavian artery",
 "layer": "vessel",
-"side": "r"
-},
-"Anterior inferior jugular nodes.l": {
-"base": "Anterior inferior jugular nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Anterior inferior jugular nodes.r": {
-"base": "Anterior inferior jugular nodes",
-"group": "Neck",
-"layer": "organ",
 "side": "r"
 },
 "Anterior inferior pancreaticoduodenal artery": {
@@ -1169,18 +1055,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Apical axillary nodes.l": {
-"base": "Apical axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Apical axillary nodes.r": {
-"base": "Apical axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "Apical segmental artery of left lung": {
 "base": "Apical segmental artery of left lung",
 "group": "Pulmonary arteries",
@@ -1221,12 +1095,6 @@
 "base": "Appendicular artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": ""
-},
-"Appendicular nodes": {
-"base": "Appendicular nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": ""
 },
 "Aqueduct of midbrain": {
@@ -1745,18 +1613,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Brachial nodes.l": {
-"base": "Brachial nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Brachial nodes.r": {
-"base": "Brachial nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
 "Brachial veins.l": {
 "base": "Brachial veins",
 "group": "Systemic veins",
@@ -1780,12 +1636,6 @@
 "group": "Anterior compartment of arm",
 "layer": "muscle",
 "side": "r"
-},
-"Brachiocephalic nodes": {
-"base": "Brachiocephalic nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
 },
 "Brachiocephalic trunk": {
 "base": "Brachiocephalic trunk",
@@ -1839,18 +1689,6 @@
 "base": "Buccal nerve",
 "group": "Trigeminal nerve (V)",
 "layer": "nerve",
-"side": "r"
-},
-"Bucinator node.l": {
-"base": "Bucinator node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Bucinator node.r": {
-"base": "Bucinator node",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Bucinator.l": {
@@ -2027,18 +1865,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Central axillary nodes.l": {
-"base": "Central axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Central axillary nodes.r": {
-"base": "Central axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "Central canal": {
 "base": "Central canal",
 "group": "Scene Collection",
@@ -2080,12 +1906,6 @@
 "group": "Interlobular sulci",
 "layer": "nerve",
 "side": "r"
-},
-"Central superior mesenteric nodes": {
-"base": "Central superior mesenteric nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Cephalic vein.l": {
 "base": "Cephalic vein",
@@ -2302,12 +2122,6 @@
 "group": "Vestibulocochlear nerve (VIII)",
 "layer": "nerve",
 "side": "l"
-},
-"Coeliac nodes": {
-"base": "Coeliac nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Coeliac trunk": {
 "base": "Coeliac trunk",
@@ -2825,18 +2639,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Cubital nodes.l": {
-"base": "Cubital nodes",
-"group": "Main divisions",
-"layer": "organ",
-"side": "l"
-},
-"Cubital nodes.r": {
-"base": "Cubital nodes",
-"group": "Main divisions",
-"layer": "organ",
-"side": "r"
-},
 "Cuboid bone.l": {
 "base": "Cuboid bone",
 "group": "Appendicular skeleton",
@@ -2896,12 +2698,6 @@
 "group": "Occipital lobe",
 "layer": "nerve",
 "side": "r"
-},
-"Cystic node": {
-"base": "Cystic node",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
 },
 "Declive": {
 "base": "Declive",
@@ -3093,18 +2889,6 @@
 "base": "Deep plantar artery",
 "group": "Systemic arteries",
 "layer": "vessel",
-"side": "r"
-},
-"Deep popliteal nodes.l": {
-"base": "Deep popliteal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Deep popliteal nodes.r": {
-"base": "Deep popliteal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Deep transverse metacarpal ligament.l": {
@@ -4901,12 +4685,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Greater omentum": {
-"base": "Greater omentum",
-"group": "Abdominopelvic cavity",
-"layer": "organ",
-"side": ""
-},
 "Greater palatine artery.l": {
 "base": "Greater palatine artery",
 "group": "Common carotid artery",
@@ -5079,12 +4857,6 @@
 "base": "Ileocolic artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": ""
-},
-"Ileocolic nodes": {
-"base": "Ileocolic nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": ""
 },
 "Iliacus branch of iliolumbar artery.l": {
@@ -5303,24 +5075,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Inferior deep lateral cervical nodes.l": {
-"base": "Inferior deep lateral cervical nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Inferior deep lateral cervical nodes.r": {
-"base": "Inferior deep lateral cervical nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "r"
-},
-"Inferior diaphragmatic nodes": {
-"base": "Inferior diaphragmatic nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "Inferior epigastric artery.l": {
 "base": "Inferior epigastric artery",
 "group": "Aorta",
@@ -5331,18 +5085,6 @@
 "base": "Inferior epigastric artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": "r"
-},
-"Inferior epigastric nodes.l": {
-"base": "Inferior epigastric nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Inferior epigastric nodes.r": {
-"base": "Inferior epigastric nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Inferior epigastric vein.l": {
@@ -5427,18 +5169,6 @@
 "base": "Inferior gluteal artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": "r"
-},
-"Inferior gluteal nodes.l": {
-"base": "Inferior gluteal nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Inferior gluteal nodes.r": {
-"base": "Inferior gluteal nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": "r"
 },
 "Inferior gluteal veins.l": {
@@ -5627,12 +5357,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Inferior pancreatic nodes": {
-"base": "Inferior pancreatic nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "Inferior pancreaticoduodenal artery": {
 "base": "Inferior pancreaticoduodenal artery",
 "group": "Aorta",
@@ -5753,18 +5477,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Inferior superficial inguinal nodes.l": {
-"base": "Inferior superficial inguinal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Inferior superficial inguinal nodes.r": {
-"base": "Inferior superficial inguinal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "Inferior suprarenal artery.l": {
 "base": "Inferior suprarenal artery",
 "group": "Aorta",
@@ -5824,12 +5536,6 @@
 "group": "Neck",
 "layer": "vessel",
 "side": "r"
-},
-"Inferior tracheobronchial nodes": {
-"base": "Inferior tracheobronchial nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
 },
 "Inferior transverse scapular ligament.l": {
 "base": "Inferior transverse scapular ligament",
@@ -5891,18 +5597,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Infra-auricular nodes.l": {
-"base": "Infra-auricular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Infra-auricular nodes.r": {
-"base": "Infra-auricular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
 "Infra-orbital artery.l": {
 "base": "Infra-orbital artery",
 "group": "Common carotid artery",
@@ -5913,18 +5607,6 @@
 "base": "Infra-orbital artery",
 "group": "Common carotid artery",
 "layer": "vessel",
-"side": "r"
-},
-"Infraclavicular nodes.l": {
-"base": "Infraclavicular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Infraclavicular nodes.r": {
-"base": "Infraclavicular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Infrapatellar branch of saphenous nerve.l": {
@@ -6059,18 +5741,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Intercostal nodes.l": {
-"base": "Intercostal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Intercostal nodes.r": {
-"base": "Intercostal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "Intercuneiform interosseous ligaments.l": {
 "base": "Intercuneiform interosseous ligaments",
 "group": "Intercuneiform joints",
@@ -6088,12 +5758,6 @@
 "group": "Bronchi",
 "layer": "organ",
 "side": "r"
-},
-"Intermediate common iliac nodes": {
-"base": "Intermediate common iliac nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Intermediate cuneiform bone.l": {
 "base": "Intermediate cuneiform bone",
@@ -6118,24 +5782,6 @@
 "group": "Superficial fibular nerve",
 "layer": "nerve",
 "side": "r"
-},
-"Intermediate external iliac nodes.l": {
-"base": "Intermediate external iliac nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Intermediate external iliac nodes.r": {
-"base": "Intermediate external iliac nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "r"
-},
-"Intermediate lumbar nodes": {
-"base": "Intermediate lumbar nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Intermediate tendon of digastric muscle.l": {
 "base": "Intermediate tendon of digastric muscle",
@@ -6339,18 +5985,6 @@
 "base": "Interosseous sacro-iliac ligament",
 "group": "Sacro-iliac joint",
 "layer": "bone",
-"side": "r"
-},
-"Interpectoral nodes.l": {
-"base": "Interpectoral nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Interpectoral nodes.r": {
-"base": "Interpectoral nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": "r"
 },
 "Interpeduncular fossa.l": {
@@ -6575,18 +6209,6 @@
 "layer": "bone",
 "side": "r"
 },
-"Intraglandular parotid nodes.l": {
-"base": "Intraglandular parotid nodes",
-"group": "Head",
-"layer": "organ",
-"side": "l"
-},
-"Intraglandular parotid nodes.r": {
-"base": "Intraglandular parotid nodes",
-"group": "Head",
-"layer": "organ",
-"side": "r"
-},
 "Intraparietal sulcus.l": {
 "base": "Intraparietal sulcus",
 "group": "Parietal lobe",
@@ -6598,12 +6220,6 @@
 "group": "Parietal lobe",
 "layer": "nerve",
 "side": "r"
-},
-"Intrapulmonary nodes": {
-"base": "Intrapulmonary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
 },
 "Intrarenal arteries of left kidney": {
 "base": "Intrarenal arteries of left kidney",
@@ -6656,30 +6272,6 @@
 "Jejunum": {
 "base": "Jejunum",
 "group": "Digestive canal",
-"layer": "organ",
-"side": ""
-},
-"Jugulodigastric node.l": {
-"base": "Jugulodigastric node",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Jugulodigastric node.r": {
-"base": "Jugulodigastric node",
-"group": "Neck",
-"layer": "organ",
-"side": "r"
-},
-"Juxta-intestinal mesenteric nodes": {
-"base": "Juxta-intestinal mesenteric nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"Juxta-oesophageal nodes": {
-"base": "Juxta-oesophageal nodes",
-"group": "Scene Collection",
 "layer": "organ",
 "side": ""
 },
@@ -6809,24 +6401,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Lateral aortic nodes": {
-"base": "Lateral aortic nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"Lateral axillary nodes.l": {
-"base": "Lateral axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Lateral axillary nodes.r": {
-"base": "Lateral axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "Lateral basal segmental artery of left lung": {
 "base": "Lateral basal segmental artery of left lung",
 "group": "Pulmonary arteries",
@@ -6848,12 +6422,6 @@
 "Lateral basal segmental bronchus of right lung (BIX)": {
 "base": "Lateral basal segmental bronchus of right lung (BIX)",
 "group": "Bronchi",
-"layer": "organ",
-"side": ""
-},
-"Lateral caval nodes": {
-"base": "Lateral caval nodes",
-"group": "Trunk",
 "layer": "organ",
 "side": ""
 },
@@ -6880,12 +6448,6 @@
 "group": "Systemic veins",
 "layer": "vessel",
 "side": "r"
-},
-"Lateral common iliac nodes": {
-"base": "Lateral common iliac nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Lateral corticospinal tract": {
 "base": "Lateral corticospinal tract",
@@ -7073,12 +6635,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Lateral pericardial nodes": {
-"base": "Lateral pericardial nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
-},
 "Lateral plantar artery.l": {
 "base": "Lateral plantar artery",
 "group": "Systemic arteries",
@@ -7157,18 +6713,6 @@
 "layer": "nerve",
 "side": ""
 },
-"Lateral sacral nodes.l": {
-"base": "Lateral sacral nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Lateral sacral nodes.r": {
-"base": "Lateral sacral nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "r"
-},
 "Lateral sacral veins.l": {
 "base": "Lateral sacral veins",
 "group": "Systemic veins",
@@ -7198,18 +6742,6 @@
 "group": "Scene Collection",
 "layer": "nerve",
 "side": ""
-},
-"Lateral superior jugular node.l": {
-"base": "Lateral superior jugular node",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Lateral superior jugular node.r": {
-"base": "Lateral superior jugular node",
-"group": "Neck",
-"layer": "organ",
-"side": "r"
 },
 "Lateral talocalcaneal ligament.l": {
 "base": "Lateral talocalcaneal ligament",
@@ -7301,18 +6833,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Lateral vesical nodes.l": {
-"base": "Lateral vesical nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Lateral vesical nodes.r": {
-"base": "Lateral vesical nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "r"
-},
 "Lateral vestibulospinal tract": {
 "base": "Lateral vestibulospinal tract",
 "group": "Scene Collection",
@@ -7353,12 +6873,6 @@
 "base": "Left colic artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": ""
-},
-"Left colic nodes": {
-"base": "Left colic nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": ""
 },
 "Left common carotid artery": {
@@ -7516,12 +7030,6 @@
 "group": "Internal capsule",
 "layer": "nerve",
 "side": "r"
-},
-"Lesser omentum": {
-"base": "Lesser omentum",
-"group": "Abdominopelvic cavity",
-"layer": "organ",
-"side": ""
 },
 "Levator anguli oris.l": {
 "base": "Levator anguli oris",
@@ -8039,18 +7547,6 @@
 "layer": "bone",
 "side": ""
 },
-"Mandibular node.l": {
-"base": "Mandibular node",
-"group": "Head",
-"layer": "organ",
-"side": "l"
-},
-"Mandibular node.r": {
-"base": "Mandibular node",
-"group": "Head",
-"layer": "organ",
-"side": "r"
-},
 "Manubrium of sternum": {
 "base": "Manubrium of sternum",
 "group": "Sternum",
@@ -8062,18 +7558,6 @@
 "group": "Aorta",
 "layer": "vessel",
 "side": ""
-},
-"Mastoid nodes.l": {
-"base": "Mastoid nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Mastoid nodes.r": {
-"base": "Mastoid nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
 },
 "Maxilla.l": {
 "base": "Maxilla",
@@ -8195,12 +7679,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Medial common iliac nodes": {
-"base": "Medial common iliac nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
 "Medial crural cutaneous branches of saphenous nerve.l": {
 "base": "Medial crural cutaneous branches of saphenous nerve",
 "group": "Saphenous nerve",
@@ -8235,18 +7713,6 @@
 "base": "Medial dorsal cutaneous nerve of foot",
 "group": "Superficial fibular nerve",
 "layer": "nerve",
-"side": "r"
-},
-"Medial external iliac nodes.l": {
-"base": "Medial external iliac nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Medial external iliac nodes.r": {
-"base": "Medial external iliac nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Medial geniculate body.l": {
@@ -8609,21 +8075,9 @@
 "layer": "muscle",
 "side": "r"
 },
-"Meso-appendix": {
-"base": "Meso-appendix",
-"group": "Abdomen",
-"layer": "organ",
-"side": ""
-},
 "Mesocolic taenia": {
 "base": "Mesocolic taenia",
 "group": "Digestive canal",
-"layer": "organ",
-"side": ""
-},
-"Mesocolon": {
-"base": "Mesocolon",
-"group": "Abdominopelvic cavity",
 "layer": "organ",
 "side": ""
 },
@@ -8697,12 +8151,6 @@
 "base": "Middle colic artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": ""
-},
-"Middle colic nodes": {
-"base": "Middle colic nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": ""
 },
 "Middle colic vein": {
@@ -9135,18 +8583,6 @@
 "base": "Nasalis muscle",
 "group": "Facial muscles",
 "layer": "muscle",
-"side": "r"
-},
-"Nasolabial node.l": {
-"base": "Nasolabial node",
-"group": "Head",
-"layer": "organ",
-"side": "l"
-},
-"Nasolabial node.r": {
-"base": "Nasolabial node",
-"group": "Head",
-"layer": "organ",
 "side": "r"
 },
 "Nasolacrimal duct.l": {
@@ -9623,18 +9059,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Obturator nodes.l": {
-"base": "Obturator nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Obturator nodes.r": {
-"base": "Obturator nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "r"
-},
 "Occipital artery.l": {
 "base": "Occipital artery",
 "group": "Common carotid artery",
@@ -9652,18 +9076,6 @@
 "group": "Cranium",
 "layer": "bone",
 "side": ""
-},
-"Occipital nodes.l": {
-"base": "Occipital nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Occipital nodes.r": {
-"base": "Occipital nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
 },
 "Occipital pole.l": {
 "base": "Occipital pole",
@@ -10265,42 +9677,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Paracolic superior mesenteric nodes": {
-"base": "Paracolic superior mesenteric nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"Pararectal nodes": {
-"base": "Pararectal nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"Parasternal nodes.l": {
-"base": "Parasternal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Parasternal nodes.r": {
-"base": "Parasternal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
-"Paratracheal cervical nodes": {
-"base": "Paratracheal cervical nodes",
-"group": "Neck",
-"layer": "organ",
-"side": ""
-},
-"Paratracheal thoracic nodes": {
-"base": "Paratracheal thoracic nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
-},
 "Parietal bone.l": {
 "base": "Parietal bone",
 "group": "Cranium",
@@ -10787,12 +10163,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Pleura": {
-"base": "Pleura",
-"group": "Respiratory system",
-"layer": "organ",
-"side": ""
-},
 "Pons.l": {
 "base": "Pons",
 "group": "Pons",
@@ -10911,18 +10281,6 @@
 "base": "Posterior auricular vein",
 "group": "Systemic veins",
 "layer": "vessel",
-"side": "r"
-},
-"Posterior axillary nodes.l": {
-"base": "Posterior axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Posterior axillary nodes.r": {
-"base": "Posterior axillary nodes",
-"group": "Scene Collection",
-"layer": "organ",
 "side": "r"
 },
 "Posterior basal segmental artery of left lung": {
@@ -11585,42 +10943,6 @@
 "layer": "nerve",
 "side": ""
 },
-"Postvesical nodes": {
-"base": "Postvesical nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
-"Pre-aortic nodes": {
-"base": "Pre-aortic nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"Pre-auricular nodes.l": {
-"base": "Pre-auricular nodes",
-"group": "Head",
-"layer": "organ",
-"side": "l"
-},
-"Pre-auricular nodes.r": {
-"base": "Pre-auricular nodes",
-"group": "Head",
-"layer": "organ",
-"side": "r"
-},
-"Precaecal nodes": {
-"base": "Precaecal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
-"Precaval nodes": {
-"base": "Precaval nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "Precentral gyrus.l": {
 "base": "Precentral gyrus",
 "group": "Frontal lobe",
@@ -11680,36 +11002,6 @@
 "group": "Common carotid artery",
 "layer": "vessel",
 "side": "r"
-},
-"Prepericardial nodes": {
-"base": "Prepericardial nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
-},
-"Pretracheal nodes.l": {
-"base": "Pretracheal nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Pretracheal nodes.r": {
-"base": "Pretracheal nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "r"
-},
-"Prevertebral nodes": {
-"base": "Prevertebral nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
-},
-"Prevesical nodes": {
-"base": "Prevesical nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Procerus muscle.l": {
 "base": "Procerus muscle",
@@ -12401,24 +11693,6 @@
 "layer": "nerve",
 "side": "r"
 },
-"Retro-aortic nodes": {
-"base": "Retro-aortic nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
-"Retrocaecal nodes": {
-"base": "Retrocaecal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
-"Retrocaval nodes": {
-"base": "Retrocaval nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
 "Retromandibular vein.l": {
 "base": "Retromandibular vein",
 "group": "Systemic veins",
@@ -12429,18 +11703,6 @@
 "base": "Retromandibular vein",
 "group": "Systemic veins",
 "layer": "vessel",
-"side": "r"
-},
-"Retropharyngeal nodes.l": {
-"base": "Retropharyngeal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Retropharyngeal nodes.r": {
-"base": "Retropharyngeal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Rhomboid major muscle.l": {
@@ -12491,12 +11753,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Right colic nodes": {
-"base": "Right colic nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "Right colic vein": {
 "base": "Right colic vein",
 "group": "Systemic veins",
@@ -12518,18 +11774,6 @@
 "Right coronary leaflet": {
 "base": "Right coronary leaflet",
 "group": "Heart",
-"layer": "organ",
-"side": ""
-},
-"Right gastric nodes": {
-"base": "Right gastric nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
-"Right gastro-omental nodes": {
-"base": "Right gastro-omental nodes",
-"group": "Trunk",
 "layer": "organ",
 "side": ""
 },
@@ -13157,12 +12401,6 @@
 "layer": "organ",
 "side": ""
 },
-"Sigmoid nodes": {
-"base": "Sigmoid nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "Sigmoid sinus.l": {
 "base": "Sigmoid sinus",
 "group": "Systemic veins",
@@ -13347,12 +12585,6 @@
 "base": "Splenic artery",
 "group": "Aorta",
 "layer": "vessel",
-"side": ""
-},
-"Splenic nodes": {
-"base": "Splenic nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": ""
 },
 "Splenic vein": {
@@ -13553,12 +12785,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Subaortic nodes": {
-"base": "Subaortic nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
-},
 "Subclavian nerve.l": {
 "base": "Subclavian nerve",
 "group": "Subclavian nerve",
@@ -13631,18 +12857,6 @@
 "layer": "organ",
 "side": "r"
 },
-"Submandibular nodes.l": {
-"base": "Submandibular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Submandibular nodes.r": {
-"base": "Submandibular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "r"
-},
 "Submental artery.l": {
 "base": "Submental artery",
 "group": "Common carotid artery",
@@ -13653,18 +12867,6 @@
 "base": "Submental artery",
 "group": "Common carotid artery",
 "layer": "vessel",
-"side": "r"
-},
-"Submental nodes.l": {
-"base": "Submental nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Submental nodes.r": {
-"base": "Submental nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Submental vein.l": {
@@ -13738,12 +12940,6 @@
 "group": "Interlobular sulci",
 "layer": "nerve",
 "side": "r"
-},
-"Superficial anterior cervical nodes": {
-"base": "Superficial anterior cervical nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
 },
 "Superficial branch of medial plantar artery.l": {
 "base": "Superficial branch of medial plantar artery",
@@ -13859,18 +13055,6 @@
 "layer": "muscle",
 "side": "r"
 },
-"Superficial lateral cervical nodes.l": {
-"base": "Superficial lateral cervical nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Superficial lateral cervical nodes.r": {
-"base": "Superficial lateral cervical nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "r"
-},
 "Superficial palmar arch.l": {
 "base": "Superficial palmar arch",
 "group": "Systemic arteries",
@@ -13881,18 +13065,6 @@
 "base": "Superficial palmar arch",
 "group": "Systemic arteries",
 "layer": "vessel",
-"side": "r"
-},
-"Superficial parotid nodes.l": {
-"base": "Superficial parotid nodes",
-"group": "Head",
-"layer": "organ",
-"side": "l"
-},
-"Superficial parotid nodes.r": {
-"base": "Superficial parotid nodes",
-"group": "Head",
-"layer": "organ",
 "side": "r"
 },
 "Superficial part of masseter.l": {
@@ -13917,18 +13089,6 @@
 "base": "Superficial part of tibial collateral ligament",
 "group": "Tibial collateral ligament",
 "layer": "bone",
-"side": "r"
-},
-"Superficial popliteal nodes.l": {
-"base": "Superficial popliteal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Superficial popliteal nodes.r": {
-"base": "Superficial popliteal nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Superficial temporal artery.l": {
@@ -14044,12 +13204,6 @@
 "group": "Superior colliculus",
 "layer": "nerve",
 "side": "r"
-},
-"Superior diaphragmatic nodes": {
-"base": "Superior diaphragmatic nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
 },
 "Superior epigastric artery.l": {
 "base": "Superior epigastric artery",
@@ -14169,18 +13323,6 @@
 "base": "Superior gluteal nerve",
 "group": "Sciatic nerve",
 "layer": "nerve",
-"side": "r"
-},
-"Superior gluteal nodes.l": {
-"base": "Superior gluteal nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": "l"
-},
-"Superior gluteal nodes.r": {
-"base": "Superior gluteal nodes",
-"group": "Trunk",
-"layer": "organ",
 "side": "r"
 },
 "Superior gluteal veins.l": {
@@ -14350,18 +13492,6 @@
 "group": "Systemic veins",
 "layer": "vessel",
 "side": "r"
-},
-"Superior pancreatic nodes": {
-"base": "Superior pancreatic nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": ""
-},
-"Superior pancreaticoduodenal nodes": {
-"base": "Superior pancreaticoduodenal nodes",
-"group": "Trunk",
-"layer": "organ",
-"side": ""
 },
 "Superior parathyroid gland.l": {
 "base": "Superior parathyroid gland",
@@ -14549,12 +13679,6 @@
 "layer": "vessel",
 "side": "r"
 },
-"Superior tracheobronchial nodes": {
-"base": "Superior tracheobronchial nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": ""
-},
 "Superior transverse scapular ligament.l": {
 "base": "Superior transverse scapular ligament",
 "group": "Fibrous joints of pectoral girdle",
@@ -14609,30 +13733,6 @@
 "layer": "vessel",
 "side": ""
 },
-"Superolateral superficial inguinal nodes.l": {
-"base": "Superolateral superficial inguinal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Superolateral superficial inguinal nodes.r": {
-"base": "Superolateral superficial inguinal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
-"Superomedial superficial inguinal nodes.l": {
-"base": "Superomedial superficial inguinal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "l"
-},
-"Superomedial superficial inguinal nodes.r": {
-"base": "Superomedial superficial inguinal nodes",
-"group": "Scene Collection",
-"layer": "organ",
-"side": "r"
-},
 "Supinator.l": {
 "base": "Supinator",
 "group": "Posterior compartment of forearm",
@@ -14655,18 +13755,6 @@
 "base": "Supra-orbital artery",
 "group": "Common carotid artery",
 "layer": "vessel",
-"side": "r"
-},
-"Supraclavicular nodes.l": {
-"base": "Supraclavicular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Supraclavicular nodes.r": {
-"base": "Supraclavicular nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Supramarginal gyrus.l": {
@@ -14757,18 +13845,6 @@
 "base": "Supratrochlear artery",
 "group": "Common carotid artery",
 "layer": "vessel",
-"side": "r"
-},
-"Supratrochlear nodes.l": {
-"base": "Supratrochlear nodes",
-"group": "Lymphoid system",
-"layer": "organ",
-"side": "l"
-},
-"Supratrochlear nodes.r": {
-"base": "Supratrochlear nodes",
-"group": "Lymphoid system",
-"layer": "organ",
 "side": "r"
 },
 "Supreme intercostal artery.l": {
@@ -15220,18 +14296,6 @@
 "group": "Endocrine glands",
 "layer": "organ",
 "side": ""
-},
-"Thyroid nodes.l": {
-"base": "Thyroid nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "l"
-},
-"Thyroid nodes.r": {
-"base": "Thyroid nodes",
-"group": "Neck",
-"layer": "organ",
-"side": "r"
 },
 "Tibia.l": {
 "base": "Tibia",

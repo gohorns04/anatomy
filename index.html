@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="ko" data-system="muscle">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>몸 탐험</title>
-  <meta name="description" content="몸 그림을 눌러 근육과 뼈를 알아보는 해부학 탐험">
-  <meta name="theme-color" content="#EEF0F2">
+  <meta name="description" content="층별로 벗겨 보는 3D 인체 해부 탐험">
+  <meta name="theme-color" content="#E6E9ED">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -14,6 +14,14 @@
   <link rel="apple-touch-icon" href="icons/icon-180.png">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/three.module.js",
+      "three/addons/": "./vendor/three/addons/"
+    }
+  }
+  </script>
   <script>
     // 모듈이 실행되지 못하는 경우(file:// 직접 열기, 스크립트 로드 실패)에도 안내가 보이게 한다.
     function showLoadError() {
@@ -25,35 +33,65 @@
   <script type="module" src="js/app.js" onerror="document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', showLoadError) : showLoadError()"></script>
 </head>
 <body>
+  <canvas id="view" aria-label="3D 인체 모델. 한 손가락으로 돌리고 두 손가락으로 확대해요."></canvas>
+
   <header class="top">
-    <h1 class="brand">몸 탐험</h1>
-    <div class="seg" role="group" aria-label="계층" data-control="system">
-      <button type="button" data-value="muscle" aria-pressed="true">근육</button>
-      <button type="button" data-value="bone" aria-pressed="false">뼈</button>
+    <div class="top-row">
+      <h1 class="brand">몸 탐험</h1>
+      <button type="button" class="icon-btn" id="info-open" aria-label="사용법과 출처">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
+      </button>
     </div>
+    <nav class="layers" aria-label="층">
+      <button type="button" class="layer" data-layer="skin"><span class="swatch"></span>피부</button>
+      <button type="button" class="layer" data-layer="muscle"><span class="swatch"></span>근육</button>
+      <button type="button" class="layer" data-layer="bone"><span class="swatch"></span>뼈</button>
+      <button type="button" class="layer" data-layer="organ"><span class="swatch"></span>장기</button>
+      <button type="button" class="layer" data-layer="vessel"><span class="swatch"></span>혈관</button>
+      <button type="button" class="layer" data-layer="nerve"><span class="swatch"></span>신경</button>
+    </nav>
   </header>
 
-  <main class="stage" id="stage">
-    <div class="figure" id="figure" aria-live="polite"></div>
-    <p class="hint" id="hint">궁금한 부위를 눌러 보세요</p>
-    <div class="error-box" id="load-error" role="alert" hidden>
-      <p class="error-title">데이터를 불러오지 못했어요</p>
-      <p>인터넷 연결을 확인한 뒤 새로고침해 주세요. 파일을 직접 열었다면 웹 서버를 통해 열어야 해요.</p>
-    </div>
-  </main>
+  <div class="loading" id="loading" role="status">
+    <p id="loading-text">근육과 뼈를 불러오는 중</p>
+    <div class="bar"><div class="bar-fill" id="loading-bar"></div></div>
+  </div>
 
-  <footer class="bottom">
-    <div class="seg seg-side" role="group" aria-label="보는 면" data-control="side">
-      <button type="button" data-value="front" aria-pressed="true">앞</button>
-      <button type="button" data-value="back" aria-pressed="false">뒤</button>
-    </div>
-  </footer>
+  <div class="error-box" id="load-error" role="alert" hidden>
+    <p class="error-title">모델을 불러오지 못했어요</p>
+    <p>인터넷 연결을 확인한 뒤 새로고침해 주세요. 파일을 직접 열었다면 웹 서버를 통해 열어야 해요.</p>
+  </div>
 
-  <section class="sheet" id="sheet" aria-labelledby="sheet-title" aria-hidden="true" inert>
-    <button type="button" class="sheet-close" id="sheet-close" aria-label="닫기">
+  <p class="toast" id="toast" role="status" hidden></p>
+
+  <button type="button" class="pill show-all" id="show-all" hidden>모두 보이기</button>
+
+  <section class="sheet" id="sheet" aria-labelledby="info-title" aria-hidden="true" inert>
+    <button type="button" class="icon-btn sheet-close" id="sheet-close" aria-label="닫기">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <div class="sheet-body" id="sheet-body"></div>
+    <div class="sheet-actions">
+      <button type="button" class="pill" id="act-hide">숨기기</button>
+      <button type="button" class="pill" id="act-isolate">이것만 보기</button>
+    </div>
   </section>
+
+  <dialog class="about" id="about" aria-labelledby="about-title">
+    <h2 id="about-title">사용법</h2>
+    <ul>
+      <li>한 손가락으로 돌리고, 두 손가락으로 확대하거나 옮겨요. 두 번 탭하면 처음 시점으로 돌아가요.</li>
+      <li>위의 층 버튼을 누를 때마다 켬 → 반투명 → 끔 순서로 바뀌어요.</li>
+      <li>구조물을 누르면 설명이 나와요. 근육은 뼈에 붙는 곳을 빨강(이는곳)과 파랑(닿는곳)으로 보여 줘요.</li>
+    </ul>
+    <h2>출처</h2>
+    <ul class="credits">
+      <li>Z-Anatomy (Gauthier Kervyn, Marcin Zielinski), CC BY-SA 4.0</li>
+      <li>BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International</li>
+    </ul>
+    <p class="fine">3D 모델 파일은 CC BY-SA 4.0으로 배포해요. <a href="model/LICENSE.txt">라이선스 전문</a></p>
+    <p class="fine">이 앱은 교양용이며 의학적 조언을 대신하지 않아요.</p>
+    <form method="dialog"><button class="pill" type="submit">닫기</button></form>
+  </dialog>
 </body>
 </html>

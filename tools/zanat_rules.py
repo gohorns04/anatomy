@@ -35,6 +35,8 @@ EXCLUDE = [
     re.compile(r'segment of liver'),
     # 근육을 덮어 가리는 막 구조물(근막, 윤활주머니, 힘줄집, 근육사이막)은 근육층에서 뺀다.
     re.compile(r'\bfascia\b|bursa|tendon sheath|synovial sheath|intermuscular septum', re.I),
+    # 장기를 덮어 가리는 막(가슴막, 그물막, 창자간막)과 수십 개의 림프절
+    re.compile(r'^(Pleura|Greater omentum|Lesser omentum|Mesocolon|Meso-appendix)$|\bnodes?$', re.I),
 ]
 
 
