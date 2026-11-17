@@ -15,7 +15,7 @@
     "id": "biceps-brachii", "system": "muscle", "sides": ["front"],
     "name_ko": "위팔두갈래근 (이두근)", "name_en": "Biceps brachii", "name_la": "Musculus biceps brachii",
     "summary": "팔꿈치를 굽히고, 손바닥이 위를 보도록 아래팔을 돌려요.",
-    "fact": "이름처럼 위쪽 끝이 두 갈래로 나뉘어 어깨뼈에 붙어요. 병뚜껑을 돌려 열 때도 크게 활약해요."
+    "fact": "이름처럼 위쪽 끝이 두 갈래로 나뉘어 어깨뼈에 붙어요. 나사를 조이거나 코르크 마개뽑이를 돌려 넣을 때도 크게 활약해요."
   },
   {
     "id": "triceps-brachii", "system": "muscle", "sides": ["back"],
@@ -87,7 +87,7 @@
     "id": "gastrocnemius", "system": "muscle", "sides": ["back"],
     "name_ko": "장딴지근 (비복근)", "name_en": "Gastrocnemius", "name_la": "Musculus gastrocnemius",
     "summary": "발끝으로 서게 하고, 무릎 굽히기를 도와요. 걷고 뛰고 점프할 때 써요.",
-    "fact": "아래쪽 끝의 힘줄이 몸에서 가장 굵고 강한 힘줄인 아킬레스힘줄이에요."
+    "fact": "아래쪽에서 가자미근과 함께 몸에서 가장 굵고 강한 힘줄인 아킬레스힘줄을 만들어요."
   },
   {
     "id": "skull", "system": "bone", "sides": ["front", "back"],
@@ -105,7 +105,7 @@
     "id": "scapula", "system": "bone", "sides": ["back"],
     "name_ko": "어깨뼈 (견갑골)", "name_en": "Scapula", "name_la": "Scapula",
     "summary": "팔이 움직이는 토대예요. 여러 어깨 근육이 이 뼈에 붙어 있어요.",
-    "fact": "다른 뼈와는 쇄골하고만 관절로 이어지고, 나머지는 근육에 매달린 채 등 위를 미끄러지듯 움직여요."
+    "fact": "몸통과는 쇄골을 통해서만 관절로 이어지고, 나머지는 근육에 매달린 채 등 위를 미끄러지듯 움직여요."
   },
   {
     "id": "sternum", "system": "bone", "sides": ["front"],

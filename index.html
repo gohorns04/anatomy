@@ -14,7 +14,15 @@
   <link rel="apple-touch-icon" href="icons/icon-180.png">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script type="module" src="js/app.js"></script>
+  <script>
+    // 모듈이 실행되지 못하는 경우(file:// 직접 열기, 스크립트 로드 실패)에도 안내가 보이게 한다.
+    function showLoadError() {
+      document.body.classList.add('error');
+      document.getElementById('load-error').hidden = false;
+    }
+    if (location.protocol === 'file:') document.addEventListener('DOMContentLoaded', showLoadError);
+  </script>
+  <script type="module" src="js/app.js" onerror="document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', showLoadError) : showLoadError()"></script>
 </head>
 <body>
   <header class="top">
@@ -28,6 +36,10 @@
   <main class="stage" id="stage">
     <div class="figure" id="figure" aria-live="polite"></div>
     <p class="hint" id="hint">궁금한 부위를 눌러 보세요</p>
+    <div class="error-box" id="load-error" role="alert" hidden>
+      <p class="error-title">데이터를 불러오지 못했어요</p>
+      <p>인터넷 연결을 확인한 뒤 새로고침해 주세요. 파일을 직접 열었다면 웹 서버를 통해 열어야 해요.</p>
+    </div>
   </main>
 
   <footer class="bottom">

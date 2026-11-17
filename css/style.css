@@ -302,6 +302,11 @@ body.sheet-open .part:not(.selected) path { fill-opacity: 0.35; }
 }
 
 /* 오류 */
+body.error .figure,
+body.error .hint,
+body.error .bottom,
+body.error .top .seg { display: none; }
+
 .error-box {
   max-width: 22rem;
   text-align: center;

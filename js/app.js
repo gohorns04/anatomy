@@ -46,11 +46,7 @@ function render(prev = {}) {
 
 function showError() {
   document.body.classList.add('error');
-  $('stage').innerHTML = `
-    <div class="error-box" role="alert">
-      <p class="error-title">데이터를 불러오지 못했어요</p>
-      <p>인터넷 연결을 확인한 뒤 새로고침해 주세요. 파일을 직접 열었다면 웹 서버를 통해 열어야 해요.</p>
-    </div>`;
+  $('load-error').hidden = false;
 }
 
 function tapAt(target) {

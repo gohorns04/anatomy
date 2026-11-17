@@ -23,6 +23,13 @@ const EXPECTED = {
   },
 };
 
+test('content corrections from review stay fixed', () => {
+  const fact = (id) => parts.find((p) => p.id === id).fact;
+  assert.match(fact('scapula'), /몸통과는 쇄골을 통해서만/);
+  assert.doesNotMatch(fact('biceps-brachii'), /병뚜껑/);
+  assert.match(fact('gastrocnemius'), /가자미근/);
+});
+
 test('parts.json is valid', () => {
   assert.deepEqual(validateParts(parts), []);
 });
