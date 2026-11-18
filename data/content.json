@@ -13,6 +13,29 @@
     "bases": [
       "Acromial part of deltoid muscle",
       "Scapular spinal part of deltoid muscle"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Axillary nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Clavicle",
+          "Scapula",
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior circumflex humeral artery",
+          "Thoraco-acromial artery"
+        ]
+      }
     ]
   },
   "Sternocostal head of pectoralis major muscle": {
@@ -29,6 +52,29 @@
     "bases": [
       "Clavicular head of pectoralis major muscle",
       "Abdominal part of pectoralis major muscle"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Lateral pectoral nerve",
+          "Medial pectoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Clavicle",
+          "Manubrium of sternum",
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Thoraco-acromial artery"
+        ]
+      }
     ]
   },
   "Pectoralis minor muscle": {
@@ -41,7 +87,30 @@
     "insertion": "어깨뼈 부리돌기",
     "action": "어깨뼈 내림·앞으로 당김, 깊이 숨 쉴 때 갈비뼈 올림 보조",
     "innervation": "안쪽가슴신경 (C8–T1)",
-    "fact": "이 근육이 짧아지면 어깨가 앞으로 말린 자세가 되기 쉬워요."
+    "fact": "이 근육이 짧아지면 어깨가 앞으로 말린 자세가 되기 쉬워요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Medial pectoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Third rib",
+          "Fourth rib",
+          "Fifth rib",
+          "Scapula"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Thoraco-acromial artery"
+        ]
+      }
+    ]
   },
   "Long head of biceps brachii": {
     "kind": "muscle",
@@ -56,6 +125,33 @@
     "fact": "이름처럼 위쪽 끝이 두 갈래로 나뉘어 어깨뼈에 붙어요. 나사를 조이거나 코르크 마개뽑이를 돌려 넣을 때도 크게 활약해요.",
     "bases": [
       "Short head of biceps brachii"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Musculocutaneous nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Radius"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Brachial artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Brachialis muscle"
+        ]
+      }
     ]
   },
   "Long head of triceps brachii": {
@@ -72,6 +168,28 @@
     "bases": [
       "Lateral head of triceps brachii",
       "Medial head of triceps brachii"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Radial nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Humerus",
+          "Ulna"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Deep brachial artery"
+        ]
+      }
     ]
   },
   "Brachialis muscle": {
@@ -84,7 +202,34 @@
     "insertion": "자뼈 갈고리돌기와 자뼈거친면",
     "action": "팔꿈치 굽힘 (아래팔의 회전 자세와 관계없이)",
     "innervation": "근육피부신경 (C5–C6), 가쪽 일부는 노신경",
-    "fact": "손바닥이 어느 쪽을 보든 팔꿈치를 굽힐 때마다 일해요."
+    "fact": "손바닥이 어느 쪽을 보든 팔꿈치를 굽힐 때마다 일해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Musculocutaneous nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus",
+          "Ulna"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Brachial artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of biceps brachii"
+        ]
+      }
+    ]
   },
   "Brachioradialis muscle": {
     "kind": "muscle",
@@ -96,7 +241,28 @@
     "insertion": "노뼈 붓돌기 바로 위",
     "action": "팔꿈치 굽힘 (아래팔이 중간 자세일 때 가장 강함)",
     "innervation": "노신경 (C5–C6)",
-    "fact": "굽힘근인데도 폄근을 맡는 노신경의 지배를 받는 특이한 근육이에요."
+    "fact": "굽힘근인데도 폄근을 맡는 노신경의 지배를 받는 특이한 근육이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Radial nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus",
+          "Radius"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Radial artery"
+        ]
+      }
+    ]
   },
   "Flexor carpi radialis": {
     "kind": "muscle",
@@ -108,7 +274,29 @@
     "insertion": "둘째·셋째 손허리뼈 바닥",
     "action": "손목 굽힘, 손목 노쪽 기울임",
     "innervation": "정중신경 (C6–C7)",
-    "fact": "손가락을 움직이는 힘의 대부분은 손이 아니라 아래팔 근육에서 나와요. 긴 힘줄이 손까지 이어져요."
+    "fact": "손가락을 움직이는 힘의 대부분은 손이 아니라 아래팔 근육에서 나와요. 긴 힘줄이 손까지 이어져요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Median nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus",
+          "Second metacarpal bone",
+          "Third metacarpal bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Radial artery"
+        ]
+      }
+    ]
   },
   "Extensor digitorum": {
     "kind": "muscle",
@@ -120,7 +308,27 @@
     "insertion": "둘째~다섯째 손가락의 등쪽 폄근덮개",
     "action": "손가락 폄, 손목 폄 보조",
     "innervation": "뒤뼈사이신경(노신경 깊은가지) (C7–C8)",
-    "fact": "손등의 힘줄끼리 띠로 이어져 있어서, 넷째 손가락만 따로 펴기가 어려워요."
+    "fact": "손등의 힘줄끼리 띠로 이어져 있어서, 넷째 손가락만 따로 펴기가 어려워요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Posterior interosseous nerve of forearm"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior interosseous artery"
+        ]
+      }
+    ]
   },
   "Descending part of trapezius muscle": {
     "kind": "muscle",
@@ -136,6 +344,35 @@
     "bases": [
       "Transverse part of trapezius muscle",
       "Ascending part of trapezius muscle"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Accessory nerve (XI)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Occipital bone",
+          "Clavicle",
+          "Scapula"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Transverse cervical artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Rhomboid major muscle",
+          "Latissimus dorsi muscle"
+        ]
+      }
     ]
   },
   "Latissimus dorsi muscle": {
@@ -148,7 +385,34 @@
     "insertion": "위팔뼈 결절사이고랑 바닥",
     "action": "어깨 폄·모음·안쪽돌림",
     "innervation": "가슴등신경 (C6–C8)",
-    "fact": "이름처럼 등에서 가장 넓은 근육이에요. 허리에서 시작해 위팔뼈까지 이어져요."
+    "fact": "이름처럼 등에서 가장 넓은 근육이에요. 허리에서 시작해 위팔뼈까지 이어져요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Thoracodorsal nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus",
+          "Hip bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Thoracodorsal artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Teres major muscle"
+        ]
+      }
+    ]
   },
   "Rhomboid major muscle": {
     "kind": "muscle",
@@ -163,6 +427,28 @@
     "fact": "등을 펴고 가슴을 내미는 바른 자세를 만드는 핵심 근육이에요.",
     "bases": [
       "Rhomboid minor muscle"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Dorsal scapular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Vertebra C7",
+          "Vertebra T1"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Transverse cervical artery"
+        ]
+      }
     ]
   },
   "Serratus anterior muscle": {
@@ -175,7 +461,28 @@
     "insertion": "어깨뼈 안쪽모서리 앞면",
     "action": "어깨뼈 내밈과 위쪽돌림, 어깨뼈를 가슴벽에 고정",
     "innervation": "긴가슴신경 (C5–C7)",
-    "fact": "이 근육이 마비되면 어깨뼈가 날개처럼 들리는 '날개어깨뼈'가 생겨요."
+    "fact": "이 근육이 마비되면 어깨뼈가 날개처럼 들리는 '날개어깨뼈'가 생겨요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Long thoracic nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "First rib",
+          "Scapula"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Lateral thoracic artery"
+        ]
+      }
+    ]
   },
   "Supraspinatus muscle": {
     "kind": "muscle",
@@ -187,7 +494,35 @@
     "insertion": "위팔뼈 큰결절 위면",
     "action": "팔 벌림 시작, 어깨관절 안정",
     "innervation": "어깨위신경 (C5–C6)",
-    "fact": "회전근띠 네 근육 중 하나로, 어깨 통증에서 가장 흔히 다치는 힘줄이에요."
+    "fact": "회전근띠 네 근육 중 하나로, 어깨 통증에서 가장 흔히 다치는 힘줄이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Suprascapular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Suprascapular artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Infraspinatus muscle",
+          "Subscapularis muscle"
+        ]
+      }
+    ]
   },
   "Infraspinatus muscle": {
     "kind": "muscle",
@@ -199,7 +534,35 @@
     "insertion": "위팔뼈 큰결절 가운데면",
     "action": "팔 가쪽돌림, 어깨관절 안정",
     "innervation": "어깨위신경 (C5–C6)",
-    "fact": "공을 던진 뒤 팔이 앞으로 튀어 나가지 않게 브레이크를 거는 역할도 해요."
+    "fact": "공을 던진 뒤 팔이 앞으로 튀어 나가지 않게 브레이크를 거는 역할도 해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Suprascapular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Suprascapular artery",
+          "Circumflex scapular artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Supraspinatus muscle"
+        ]
+      }
+    ]
   },
   "Subscapularis muscle": {
     "kind": "muscle",
@@ -211,7 +574,35 @@
     "insertion": "위팔뼈 작은결절",
     "action": "팔 안쪽돌림, 어깨관절 안정",
     "innervation": "위·아래어깨밑신경 (C5–C7)",
-    "fact": "회전근띠 네 근육 중 가장 크고 강해요."
+    "fact": "회전근띠 네 근육 중 가장 크고 강해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Superior subscapular nerve",
+          "Inferior subscapular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Subscapular artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Supraspinatus muscle"
+        ]
+      }
+    ]
   },
   "Teres major muscle": {
     "kind": "muscle",
@@ -223,7 +614,34 @@
     "insertion": "위팔뼈 작은결절능선",
     "action": "팔 모음·안쪽돌림·폄",
     "innervation": "아래어깨밑신경 (C5–C7)",
-    "fact": "넓은등근과 함께 움직여서 '넓은등근의 작은 조수'라고도 불려요."
+    "fact": "넓은등근과 함께 움직여서 '넓은등근의 작은 조수'라고도 불려요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Inferior subscapular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Scapula",
+          "Humerus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Circumflex scapular artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Latissimus dorsi muscle"
+        ]
+      }
+    ]
   },
   "Sternocleidomastoid muscle": {
     "kind": "muscle",
@@ -235,7 +653,30 @@
     "insertion": "관자뼈 꼭지돌기, 뒤통수뼈 위목덜미선 가쪽",
     "action": "한쪽: 머리를 같은 쪽으로 기울이고 얼굴을 반대쪽으로 돌림 / 양쪽: 목 굽힘",
     "innervation": "더부신경(XI), 감각은 C2–C3",
-    "fact": "이름에 붙는 곳이 그대로 담겨 있어요. 흉골(sterno), 쇄골(cleido), 귀 뒤 꼭지돌기(mastoid)예요."
+    "fact": "이름에 붙는 곳이 그대로 담겨 있어요. 흉골(sterno), 쇄골(cleido), 귀 뒤 꼭지돌기(mastoid)예요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Accessory nerve (XI)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Manubrium of sternum",
+          "Clavicle",
+          "Temporal bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal jugular vein",
+          "Occipital artery"
+        ]
+      }
+    ]
   },
   "Rectus abdominis muscle": {
     "kind": "muscle",
@@ -247,7 +688,36 @@
     "insertion": "5–7번 갈비연골, 복장뼈 칼돌기",
     "action": "몸통 굽힘, 배압 높임",
     "innervation": "갈비사이신경 (T7–T11), 갈비밑신경 (T12)",
-    "fact": "근육을 가로지르는 힘줄 띠(나눔힘줄) 때문에 이른바 '식스팩' 모양이 생겨요."
+    "fact": "근육을 가로지르는 힘줄 띠(나눔힘줄) 때문에 이른바 '식스팩' 모양이 생겨요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Intercostal nerves"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Manubrium of sternum"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Superior epigastric artery",
+          "Inferior epigastric artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "External abdominal oblique muscle",
+          "Transversus abdominis muscle"
+        ]
+      }
+    ]
   },
   "External abdominal oblique muscle": {
     "kind": "muscle",
@@ -259,7 +729,36 @@
     "insertion": "엉덩뼈능선 앞쪽, 백색선, 두덩뼈결절(아래 모서리가 샅고랑인대를 이룸)",
     "action": "몸통 굽힘·같은 쪽 옆굽힘·반대쪽 돌림, 배압 높임",
     "innervation": "갈비사이신경 (T7–T11), 갈비밑신경 (T12)",
-    "fact": "근육 결이 바지 앞주머니에 손을 넣는 방향처럼 비스듬히 아래 안쪽으로 내려가요."
+    "fact": "근육 결이 바지 앞주머니에 손을 넣는 방향처럼 비스듬히 아래 안쪽으로 내려가요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Intercostal nerves",
+          "Iliohypogastric nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Fifth rib",
+          "Hip bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior intercostal arteries"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Rectus abdominis muscle",
+          "Transversus abdominis muscle"
+        ]
+      }
+    ]
   },
   "Transversus abdominis muscle": {
     "kind": "muscle",
@@ -271,7 +770,35 @@
     "insertion": "백색선, 두덩뼈능선",
     "action": "배를 조여 배압을 높이고 몸통을 안정시킴",
     "innervation": "갈비사이신경 (T7–T11), 갈비밑신경, 엉덩아랫배신경·엉덩샅굴신경 (L1)",
-    "fact": "섬유가 가로로 돌아서 '몸속 코르셋'이라고도 불려요."
+    "fact": "섬유가 가로로 돌아서 '몸속 코르셋'이라고도 불려요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Intercostal nerves",
+          "Iliohypogastric nerve",
+          "Ilio-inguinal nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Inferior epigastric artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "External abdominal oblique muscle"
+        ]
+      }
+    ]
   },
   "Diaphragm": {
     "kind": "muscle",
@@ -283,7 +810,32 @@
     "insertion": "가로막 중심널힘줄",
     "action": "수축하면 아래로 내려가 가슴안을 넓혀 숨을 들이쉬게 함",
     "innervation": "가로막신경 (C3–C5)",
-    "fact": "\"C3, 4, 5가 가로막을 살린다\"는 암기법이 있어요. 목 높은 곳의 척수 손상이 호흡을 위협하는 이유예요."
+    "fact": "\"C3, 4, 5가 가로막을 살린다\"는 암기법이 있어요. 목 높은 곳의 척수 손상이 호흡을 위협하는 이유예요.",
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Manubrium of sternum",
+          "Vertebra L1",
+          "Vertebra L2"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Inferior phrenic artery",
+          "Musculophrenic artery"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Liver",
+          "Superior lobe of left lung",
+          "Left ventricle"
+        ]
+      }
+    ]
   },
   "Psoas major": {
     "kind": "muscle",
@@ -295,7 +847,30 @@
     "insertion": "넙다리뼈 작은돌기 (엉덩근과 함께)",
     "action": "엉덩관절 굽힘, 허리 굽힘 보조",
     "innervation": "허리신경 앞가지 (L1–L3)",
-    "fact": "소나 돼지의 '안심'이 바로 이 근육이에요."
+    "fact": "소나 돼지의 '안심'이 바로 이 근육이에요.",
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Vertebra T12",
+          "Vertebra L1",
+          "Vertebra L3",
+          "Femur"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Lumbar arteries"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Iliacus muscle"
+        ]
+      }
+    ]
   },
   "Iliacus muscle": {
     "kind": "muscle",
@@ -307,7 +882,34 @@
     "insertion": "넙다리뼈 작은돌기 (큰허리근힘줄과 함께)",
     "action": "엉덩관절 굽힘",
     "innervation": "넙다리신경 (L2–L3)",
-    "fact": "큰허리근과 합쳐 '엉덩허리근'이라 부르며, 엉덩관절의 가장 강한 굽힘근이에요."
+    "fact": "큰허리근과 합쳐 '엉덩허리근'이라 부르며, 엉덩관절의 가장 강한 굽힘근이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Femoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Femur"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Iliolumbar artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Psoas major"
+        ]
+      }
+    ]
   },
   "Gluteus maximus muscle": {
     "kind": "muscle",
@@ -319,7 +921,38 @@
     "insertion": "엉덩정강띠, 넙다리뼈 볼기근거친면",
     "action": "엉덩관절 폄·가쪽돌림",
     "innervation": "아래볼기신경 (L5–S2)",
-    "fact": "몸에서 가장 큰 근육이에요. 사람이 두 발로 곧게 서는 데 중요한 역할을 해요."
+    "fact": "몸에서 가장 큰 근육이에요. 사람이 두 발로 곧게 서는 데 중요한 역할을 해요.",
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Sacrum",
+          "Coccyx",
+          "Femur"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Inferior gluteal artery",
+          "Superior gluteal artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Iliotibial tract",
+          "Gluteus medius muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Sciatic nerve"
+        ]
+      }
+    ]
   },
   "Gluteus medius muscle": {
     "kind": "muscle",
@@ -331,7 +964,35 @@
     "insertion": "넙다리뼈 큰돌기 가쪽면",
     "action": "엉덩관절 벌림·안쪽돌림, 한 발로 설 때 골반 수평 유지",
     "innervation": "위볼기신경 (L4–S1)",
-    "fact": "이 근육이 약하면 걸을 때 반대쪽 골반이 처지는 '트렌델렌부르크 징후'가 나타나요."
+    "fact": "이 근육이 약하면 걸을 때 반대쪽 골반이 처지는 '트렌델렌부르크 징후'가 나타나요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Superior gluteal nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Femur"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Superior gluteal artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Tensor fasciae latae",
+          "Gluteus maximus muscle"
+        ]
+      }
+    ]
   },
   "Tensor fasciae latae": {
     "kind": "muscle",
@@ -343,7 +1004,34 @@
     "insertion": "엉덩정강띠를 거쳐 정강뼈 가쪽관절융기",
     "action": "엉덩관절 굽힘·벌림·안쪽돌림, 무릎 바깥쪽 안정",
     "innervation": "위볼기신경 (L4–S1)",
-    "fact": "서 있을 때 무릎을 펴서 고정하는 것을 거들어요."
+    "fact": "서 있을 때 무릎을 펴서 고정하는 것을 거들어요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Superior gluteal nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Lateral circumflex femoral artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Iliotibial tract"
+        ]
+      }
+    ]
   },
   "Rectus femoris muscle": {
     "kind": "muscle",
@@ -355,7 +1043,36 @@
     "insertion": "넙다리네갈래근힘줄 → 무릎뼈 → 무릎인대 → 정강뼈거친면",
     "action": "무릎 폄, 엉덩관절 굽힘",
     "innervation": "넙다리신경 (L2–L4)",
-    "fact": "네 개의 근육이 하나의 힘줄로 모여 무릎뼈를 감싼 뒤 정강뼈에 붙어요."
+    "fact": "네 개의 근육이 하나의 힘줄로 모여 무릎뼈를 감싼 뒤 정강뼈에 붙어요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Femoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Patella",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Lateral circumflex femoral artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Vastus lateralis muscle",
+          "Vastus medialis muscle"
+        ]
+      }
+    ]
   },
   "Vastus lateralis muscle": {
     "kind": "muscle",
@@ -367,7 +1084,35 @@
     "insertion": "넙다리네갈래근힘줄을 거쳐 정강뼈거친면",
     "action": "무릎 폄",
     "innervation": "넙다리신경 (L2–L4)",
-    "fact": "넙다리네갈래근 중 가장 커요. 근육주사를 놓는 부위로도 쓰여요."
+    "fact": "넙다리네갈래근 중 가장 커요. 근육주사를 놓는 부위로도 쓰여요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Femoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Femur",
+          "Patella",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Lateral circumflex femoral artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Rectus femoris muscle"
+        ]
+      }
+    ]
   },
   "Vastus medialis muscle": {
     "kind": "muscle",
@@ -379,7 +1124,35 @@
     "insertion": "넙다리네갈래근힘줄과 무릎뼈 안쪽 모서리",
     "action": "무릎 폄, 무릎뼈가 바깥으로 빠지지 않게 안정",
     "innervation": "넙다리신경 (L2–L4)",
-    "fact": "무릎 위 안쪽의 물방울 모양 볼록한 부분이 이 근육이에요."
+    "fact": "무릎 위 안쪽의 물방울 모양 볼록한 부분이 이 근육이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Femoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Femur",
+          "Patella",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Femoral artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Rectus femoris muscle"
+        ]
+      }
+    ]
   },
   "Sartorius muscle": {
     "kind": "muscle",
@@ -391,7 +1164,35 @@
     "insertion": "정강뼈 몸통 위쪽 안쪽면(거위발)",
     "action": "엉덩관절 굽힘·벌림·가쪽돌림, 무릎 굽힘",
     "innervation": "넙다리신경 (L2–L3)",
-    "fact": "몸에서 가장 긴 근육이에요. 재봉사가 책상다리로 앉는 자세를 만든다고 '재봉사근'이라고도 해요."
+    "fact": "몸에서 가장 긴 근육이에요. 재봉사가 책상다리로 앉는 자세를 만든다고 '재봉사근'이라고도 해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Femoral nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Femoral artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Gracilis muscle",
+          "Semitendinosus muscle"
+        ]
+      }
+    ]
   },
   "Adductor longus": {
     "kind": "muscle",
@@ -403,7 +1204,35 @@
     "insertion": "넙다리뼈 거친선 가운데 1/3",
     "action": "엉덩관절 모음, 굽힘 보조",
     "innervation": "폐쇄신경 (L2–L4)",
-    "fact": "운동선수의 '사타구니 부상'에서 가장 흔히 다치는 근육이에요."
+    "fact": "운동선수의 '사타구니 부상'에서 가장 흔히 다치는 근육이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Obturator nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Femur"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Deep femoral artery",
+          "Obturator artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Gracilis muscle"
+        ]
+      }
+    ]
   },
   "Gracilis muscle": {
     "kind": "muscle",
@@ -415,7 +1244,35 @@
     "insertion": "정강뼈 위쪽 안쪽면(거위발)",
     "action": "엉덩관절 모음, 무릎 굽힘·안쪽돌림",
     "innervation": "폐쇄신경 (L2–L3)",
-    "fact": "없어도 기능 손실이 적어서, 다른 곳을 재건하는 수술에 떼어 쓰기도 해요."
+    "fact": "없어도 기능 손실이 적어서, 다른 곳을 재건하는 수술에 떼어 쓰기도 해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Obturator nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Obturator artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Sartorius muscle",
+          "Semitendinosus muscle"
+        ]
+      }
+    ]
   },
   "Long head of biceps femoris": {
     "kind": "muscle",
@@ -430,6 +1287,37 @@
     "fact": "햄스트링은 넙다리두갈래근, 반힘줄근, 반막근 세 근육을 묶어 부르는 이름이에요.",
     "bases": [
       "Short head of biceps femoris"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Sciatic nerve",
+          "Tibial nerve",
+          "Common fibular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Femur",
+          "Fibula"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Perforating femoral arteries"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Semitendinosus muscle",
+          "Semimembranosus muscle"
+        ]
+      }
     ]
   },
   "Semitendinosus muscle": {
@@ -442,7 +1330,36 @@
     "insertion": "정강뼈 위쪽 안쪽면(거위발)",
     "action": "무릎 굽힘·안쪽돌림, 엉덩관절 폄",
     "innervation": "궁둥신경의 정강신경 부분 (L5–S2)",
-    "fact": "긴 힘줄을 떼어 십자인대 재건 수술의 이식 힘줄로 자주 써요."
+    "fact": "긴 힘줄을 떼어 십자인대 재건 수술의 이식 힘줄로 자주 써요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Sciatic nerve",
+          "Tibial nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Perforating femoral arteries"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of biceps femoris",
+          "Semimembranosus muscle"
+        ]
+      }
+    ]
   },
   "Semimembranosus muscle": {
     "kind": "muscle",
@@ -454,7 +1371,35 @@
     "insertion": "정강뼈 안쪽관절융기 뒷면",
     "action": "무릎 굽힘·안쪽돌림, 엉덩관절 폄",
     "innervation": "궁둥신경의 정강신경 부분 (L5–S2)",
-    "fact": "무릎 뒤 안쪽에서 무릎관절주머니를 당겨 반달이 끼지 않게 도와요."
+    "fact": "무릎 뒤 안쪽에서 무릎관절주머니를 당겨 반달이 끼지 않게 도와요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Sciatic nerve",
+          "Tibial nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Perforating femoral arteries"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Semitendinosus muscle"
+        ]
+      }
+    ]
   },
   "Medial head of gastrocnemius": {
     "kind": "muscle",
@@ -469,6 +1414,34 @@
     "fact": "아래쪽에서 가자미근과 함께 몸에서 가장 굵고 강한 힘줄인 아킬레스힘줄을 만들어요.",
     "bases": [
       "Lateral head of gastrocnemius"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Tibial nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Femur",
+          "Calcaneus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Popliteal artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Soleus muscle",
+          "Calcaneal tendon"
+        ]
+      }
     ]
   },
   "Soleus muscle": {
@@ -481,7 +1454,37 @@
     "insertion": "발꿈치힘줄을 거쳐 발꿈치뼈융기",
     "action": "발목 발바닥쪽굽힘, 서 있을 때 몸이 앞으로 넘어지지 않게 잡음",
     "innervation": "정강신경 (S1–S2)",
-    "fact": "다리의 정맥혈을 심장으로 밀어 올리는 펌프 역할이 커서 '제2의 심장'이라고도 불려요."
+    "fact": "다리의 정맥혈을 심장으로 밀어 올리는 펌프 역할이 커서 '제2의 심장'이라고도 불려요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Tibial nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Tibia",
+          "Fibula",
+          "Calcaneus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior tibial artery",
+          "Fibular artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Medial head of gastrocnemius",
+          "Calcaneal tendon"
+        ]
+      }
+    ]
   },
   "Calcaneal tendon": {
     "kind": "other",
@@ -490,7 +1493,28 @@
     "name_la": "Tendo calcaneus",
     "summary": "종아리 아래쪽에서 발꿈치까지 이어지는 굵은 힘줄이에요.",
     "role": "장딴지근과 가자미근의 힘을 발꿈치뼈에 전달해 발끝으로 서고, 걷고, 뛰게 해요.",
-    "fact": "그리스 신화의 영웅 아킬레우스의 유일한 약점이 발꿈치였다는 이야기에서 이름이 왔어요."
+    "fact": "그리스 신화의 영웅 아킬레우스의 유일한 약점이 발꿈치였다는 이야기에서 이름이 왔어요.",
+    "related": [
+      {
+        "type": "근육",
+        "bases": [
+          "Medial head of gastrocnemius",
+          "Soleus muscle"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Calcaneus"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Sural nerve"
+        ]
+      }
+    ]
   },
   "Tibialis anterior muscle": {
     "kind": "muscle",
@@ -502,7 +1526,29 @@
     "insertion": "안쪽쐐기뼈와 첫째 발허리뼈 바닥",
     "action": "발등굽힘, 발 안쪽번짐",
     "innervation": "깊은종아리신경 (L4–L5)",
-    "fact": "정강이뼈 바로 바깥쪽에 손을 대고 발끝을 들어 보면, 이 근육이 단단해지는 게 느껴져요."
+    "fact": "정강이뼈 바로 바깥쪽에 손을 대고 발끝을 들어 보면, 이 근육이 단단해지는 게 느껴져요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Deep fibular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Tibia",
+          "Medial cuneiform bone",
+          "First metatarsal bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Anterior tibial artery"
+        ]
+      }
+    ]
   },
   "Fibularis longus muscle": {
     "kind": "muscle",
@@ -514,7 +1560,29 @@
     "insertion": "첫째 발허리뼈 바닥과 안쪽쐐기뼈",
     "action": "발 가쪽번짐, 발바닥쪽굽힘, 가로 발아치 지지",
     "innervation": "얕은종아리신경 (L5–S1)",
-    "fact": "힘줄이 가쪽복사 뒤를 돌아 발바닥을 가로질러 반대편까지 가요."
+    "fact": "힘줄이 가쪽복사 뒤를 돌아 발바닥을 가로질러 반대편까지 가요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Superficial fibular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Fibula",
+          "Medial cuneiform bone",
+          "First metatarsal bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Fibular artery"
+        ]
+      }
+    ]
   },
   "Iliotibial tract": {
     "kind": "other",
@@ -523,7 +1591,23 @@
     "name_la": "Tractus iliotibialis",
     "summary": "넙다리 바깥쪽을 따라 내려가는 두꺼운 근막 띠예요.",
     "role": "큰볼기근과 넙다리근막긴장근의 힘을 정강뼈로 전달하고, 무릎 바깥쪽을 안정시켜요.",
-    "fact": "달리기를 많이 하는 사람에게 무릎 바깥쪽 통증(장경인대 증후군)이 생기는 곳이에요."
+    "fact": "달리기를 많이 하는 사람에게 무릎 바깥쪽 통증(장경인대 증후군)이 생기는 곳이에요.",
+    "related": [
+      {
+        "type": "근육",
+        "bases": [
+          "Gluteus maximus muscle",
+          "Tensor fasciae latae"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Tibia"
+        ]
+      }
+    ]
   },
   "Superficial part of masseter": {
     "kind": "muscle",
@@ -538,6 +1622,34 @@
     "fact": "무게에 비해 매우 큰 힘을 내서, 몸에서 가장 강한 근육 후보로 자주 꼽혀요.",
     "bases": [
       "Deep part of masseter"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Anterior division of mandibular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Zygomatic bone",
+          "Mandible"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Maxillary artery",
+          "Transverse facial artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Temporalis muscle"
+        ]
+      }
     ]
   },
   "Temporalis muscle": {
@@ -550,7 +1662,36 @@
     "insertion": "아래턱뼈 근육돌기와 가지 앞모서리",
     "action": "아래턱 올림, 뒤쪽 섬유는 아래턱을 뒤로 당김",
     "innervation": "깊은관자신경 (V3)",
-    "fact": "이를 꽉 물면 관자놀이가 불룩해지는 게 바로 이 근육이에요."
+    "fact": "이를 꽉 물면 관자놀이가 불룩해지는 게 바로 이 근육이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Anterior division of mandibular nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Temporal bone",
+          "Parietal bone",
+          "Mandible"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Anterior deep temporal artery",
+          "Superficial temporal artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Superficial part of masseter"
+        ]
+      }
+    ]
   },
   "Frontalis muscle": {
     "kind": "muscle",
@@ -562,7 +1703,28 @@
     "insertion": "눈썹과 이마 피부",
     "action": "눈썹 올림, 이마에 가로 주름을 만듦",
     "innervation": "얼굴신경 관자가지 (VII)",
-    "fact": "놀라거나 궁금할 때 이마에 주름이 지는 게 이 근육 때문이에요."
+    "fact": "놀라거나 궁금할 때 이마에 주름이 지는 게 이 근육 때문이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Facial nerve (VII)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Frontal bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Supra-orbital artery",
+          "Superficial temporal artery"
+        ]
+      }
+    ]
   },
   "Orbicularis oris muscle": {
     "kind": "muscle",
@@ -574,7 +1736,35 @@
     "insertion": "입술 피부와 점막",
     "action": "입술을 다물고 오므림, 휘파람·빨대 빨기",
     "innervation": "얼굴신경 볼가지·아래턱모서리가지 (VII)",
-    "fact": "말하기, 먹기, 휘파람 불기에 모두 쓰이는 섬세한 근육이에요."
+    "fact": "말하기, 먹기, 휘파람 불기에 모두 쓰이는 섬세한 근육이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Facial nerve (VII)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Maxilla",
+          "Mandible"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Superior labial artery",
+          "Inferior labial artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Zygomaticus major muscle"
+        ]
+      }
+    ]
   },
   "Zygomaticus major muscle": {
     "kind": "muscle",
@@ -586,7 +1776,33 @@
     "insertion": "입꼬리",
     "action": "입꼬리를 위·바깥으로 당겨 웃게 함",
     "innervation": "얼굴신경 광대가지·볼가지 (VII)",
-    "fact": "진짜 웃음에서는 이 근육과 눈둘레근이 함께 움직여요. 이를 '뒤센 미소'라고 해요."
+    "fact": "진짜 웃음에서는 이 근육과 눈둘레근이 함께 움직여요. 이를 '뒤센 미소'라고 해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Facial nerve (VII)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Zygomatic bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Facial artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Orbicularis oris muscle"
+        ]
+      }
+    ]
   },
   "Femur": {
     "kind": "bone",
@@ -596,7 +1812,39 @@
     "summary": "엉덩관절과 무릎을 잇는 허벅지뼈로, 서 있을 때 체중을 받쳐요.",
     "landmarks": "넙다리뼈머리, 넙다리뼈목, 큰돌기·작은돌기, 거친선, 안쪽·가쪽관절융기",
     "joints": "엉덩관절 (볼기뼈), 무릎관절 (정강뼈, 무릎뼈)",
-    "fact": "몸에서 가장 길고 강한 뼈예요. 길이가 보통 키의 약 4분의 1이에요."
+    "fact": "몸에서 가장 길고 강한 뼈예요. 길이가 보통 키의 약 4분의 1이에요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Hip bone",
+          "Tibia",
+          "Patella"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Gluteus maximus muscle",
+          "Vastus lateralis muscle",
+          "Adductor longus",
+          "Psoas major"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Femoral artery",
+          "Deep femoral artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Sciatic nerve"
+        ]
+      }
+    ]
   },
   "Patella": {
     "kind": "bone",
@@ -606,7 +1854,23 @@
     "summary": "무릎 앞을 보호하고, 넙다리네갈래근이 무릎을 더 효율적으로 펴도록 도와요.",
     "landmarks": "무릎뼈바닥, 무릎뼈꼭대기, 관절면",
     "joints": "무릎넙다리관절 (넙다리뼈)",
-    "fact": "힘줄 속에서 생기는 '종자뼈' 중 가장 커요. 아기 때는 연골이라 엑스레이에 잘 보이지 않아요."
+    "fact": "힘줄 속에서 생기는 '종자뼈' 중 가장 커요. 아기 때는 연골이라 엑스레이에 잘 보이지 않아요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Femur"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Rectus femoris muscle",
+          "Vastus lateralis muscle",
+          "Vastus medialis muscle"
+        ]
+      }
+    ]
   },
   "Tibia": {
     "kind": "bone",
@@ -616,7 +1880,32 @@
     "summary": "종아리 안쪽의 굵은 뼈로, 체중의 대부분을 발목까지 전달해요.",
     "landmarks": "안쪽·가쪽관절융기, 정강뼈거친면, 앞모서리, 안쪽복사",
     "joints": "무릎관절 (넙다리뼈), 정강종아리관절 (종아리뼈), 발목관절 (목말뼈)",
-    "fact": "정강이 앞쪽은 피부 바로 아래에 이 뼈가 있어서, 부딪히면 유난히 아파요."
+    "fact": "정강이 앞쪽은 피부 바로 아래에 이 뼈가 있어서, 부딪히면 유난히 아파요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Femur",
+          "Fibula",
+          "Talus"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Tibialis anterior muscle",
+          "Soleus muscle",
+          "Sartorius muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Anterior tibial artery",
+          "Posterior tibial artery"
+        ]
+      }
+    ]
   },
   "Fibula": {
     "kind": "bone",
@@ -626,7 +1915,30 @@
     "summary": "종아리 바깥쪽의 가는 뼈로, 근육이 붙고 발목 관절을 안정시켜요.",
     "landmarks": "종아리뼈머리, 종아리뼈몸통, 가쪽복사",
     "joints": "정강종아리관절 (정강뼈), 발목관절 (목말뼈)",
-    "fact": "체중을 거의 받지 않아서, 다른 곳을 재건하는 수술에 이 뼈의 일부를 떼어 쓰기도 해요."
+    "fact": "체중을 거의 받지 않아서, 다른 곳을 재건하는 수술에 이 뼈의 일부를 떼어 쓰기도 해요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Tibia",
+          "Talus"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of biceps femoris",
+          "Fibularis longus muscle",
+          "Soleus muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Common fibular nerve"
+        ]
+      }
+    ]
   },
   "Talus": {
     "kind": "bone",
@@ -636,7 +1948,18 @@
     "summary": "정강뼈와 발꿈치뼈 사이에서 체중을 발로 전달하는 발목의 핵심 뼈예요.",
     "landmarks": "목말뼈머리, 목말뼈목, 목말뼈도르래",
     "joints": "발목관절 (정강뼈, 종아리뼈), 목말밑관절 (발꿈치뼈), 목말발배관절 (발배뼈)",
-    "fact": "근육이 하나도 붙지 않는 뼈예요. 주변 뼈와 인대에 둘러싸여 움직여요."
+    "fact": "근육이 하나도 붙지 않는 뼈예요. 주변 뼈와 인대에 둘러싸여 움직여요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Tibia",
+          "Fibula",
+          "Calcaneus",
+          "Navicular bone"
+        ]
+      }
+    ]
   },
   "Calcaneus": {
     "kind": "bone",
@@ -646,7 +1969,28 @@
     "summary": "발뒤꿈치를 이루는 뼈로, 서 있을 때 땅에 처음 닿아 체중을 받쳐요.",
     "landmarks": "발꿈치뼈융기, 목말받침돌기",
     "joints": "목말밑관절 (목말뼈), 발꿈치입방관절 (입방뼈)",
-    "fact": "발뼈 중 가장 크고, 아킬레스힘줄이 붙는 곳이에요."
+    "fact": "발뼈 중 가장 크고, 아킬레스힘줄이 붙는 곳이에요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Talus",
+          "Cuboid bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Calcaneal tendon"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior tibial artery"
+        ]
+      }
+    ]
   },
   "Hip bone": {
     "kind": "bone",
@@ -656,7 +2000,38 @@
     "summary": "엉덩뼈·궁둥뼈·두덩뼈가 합쳐진 뼈로, 엉치뼈와 함께 골반을 이뤄요.",
     "landmarks": "엉덩뼈능선, 위앞엉덩뼈가시, 절구, 궁둥뼈결절, 폐쇄구멍, 두덩결합면",
     "joints": "엉덩관절 (넙다리뼈), 엉치엉덩관절 (엉치뼈), 두덩결합 (반대쪽 볼기뼈)",
-    "fact": "어릴 때 따로였던 세 개의 뼈가 사춘기 무렵 절구에서 하나로 합쳐져요."
+    "fact": "어릴 때 따로였던 세 개의 뼈가 사춘기 무렵 절구에서 하나로 합쳐져요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Sacrum",
+          "Femur"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Gluteus maximus muscle",
+          "Gluteus medius muscle",
+          "Iliacus muscle",
+          "Rectus abdominis muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal iliac artery",
+          "External iliac artery"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Urinary bladder"
+        ]
+      }
+    ]
   },
   "Sacrum": {
     "kind": "bone",
@@ -666,7 +2041,29 @@
     "summary": "척추 아래쪽의 삼각형 뼈로, 골반의 뒷벽을 이루고 몸통의 무게를 볼기뼈로 전달해요.",
     "landmarks": "엉치뼈곶, 앞·뒤엉치뼈구멍, 귓바퀴면, 엉치뼈틈새",
     "joints": "허리엉치관절 (L5), 엉치엉덩관절 (볼기뼈), 엉치꼬리관절 (꼬리뼈)",
-    "fact": "어릴 때 다섯 개였던 엉치척추뼈가 어른이 되면서 하나로 합쳐진 뼈예요."
+    "fact": "어릴 때 다섯 개였던 엉치척추뼈가 어른이 되면서 하나로 합쳐진 뼈예요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Hip bone",
+          "Vertebra L5",
+          "Coccyx"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Gluteus maximus muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Median sacral artery"
+        ]
+      }
+    ]
   },
   "Humerus": {
     "kind": "bone",
@@ -676,7 +2073,40 @@
     "summary": "어깨와 팔꿈치 사이의 긴뼈로, 팔 근육들이 붙는 기둥이에요.",
     "landmarks": "위팔뼈머리, 해부목·외과목, 큰결절·작은결절, 세모근거친면, 안쪽·가쪽위관절융기, 위팔뼈도르래·작은머리",
     "joints": "어깨관절 (어깨뼈), 팔꿈치관절 (자뼈, 노뼈)",
-    "fact": "팔꿈치를 부딪혔을 때 찌릿한 느낌은 뼈가 아니라 위팔뼈 끝을 지나는 자신경 때문이에요."
+    "fact": "팔꿈치를 부딪혔을 때 찌릿한 느낌은 뼈가 아니라 위팔뼈 끝을 지나는 자신경 때문이에요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Scapula",
+          "Ulna",
+          "Radius"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Clavicular part of deltoid muscle",
+          "Brachialis muscle",
+          "Long head of triceps brachii"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Brachial artery",
+          "Deep brachial artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Radial nerve",
+          "Axillary nerve",
+          "Ulnar nerve"
+        ]
+      }
+    ]
   },
   "Radius": {
     "kind": "bone",
@@ -686,7 +2116,36 @@
     "summary": "아래팔의 엄지 쪽 뼈예요. 손바닥을 뒤집을 때 자뼈 주위를 돌아요.",
     "landmarks": "노뼈머리, 노뼈거친면, 붓돌기",
     "joints": "팔꿈치관절 (위팔뼈), 몸쪽·먼쪽노자관절 (자뼈), 손목관절 (손배뼈, 반달뼈)",
-    "fact": "넘어지면서 손을 짚을 때 손목 근처에서 가장 흔히 부러지는 뼈예요."
+    "fact": "넘어지면서 손을 짚을 때 손목 근처에서 가장 흔히 부러지는 뼈예요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Humerus",
+          "Ulna",
+          "Scaphoid bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of biceps brachii",
+          "Brachioradialis muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Radial artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Radial nerve"
+        ]
+      }
+    ]
   },
   "Ulna": {
     "kind": "bone",
@@ -696,7 +2155,35 @@
     "summary": "아래팔의 새끼손가락 쪽 뼈예요. 팔꿈치 관절의 주된 부분을 이뤄요.",
     "landmarks": "팔꿈치머리, 갈고리돌기, 도르래패임, 자뼈머리, 붓돌기",
     "joints": "팔꿈치관절 (위팔뼈), 몸쪽·먼쪽노자관절 (노뼈)",
-    "fact": "팔꿈치 뒤쪽에서 만져지는 뾰족한 부분(팔꿈치머리)이 바로 자뼈의 윗끝이에요."
+    "fact": "팔꿈치 뒤쪽에서 만져지는 뾰족한 부분(팔꿈치머리)이 바로 자뼈의 윗끝이에요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Humerus",
+          "Radius"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Brachialis muscle",
+          "Long head of triceps brachii"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Ulnar artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Ulnar nerve"
+        ]
+      }
+    ]
   },
   "Clavicle": {
     "kind": "bone",
@@ -706,7 +2193,31 @@
     "summary": "팔과 몸통을 이어 주는 버팀대예요. 어깨가 몸 옆에 제자리를 잡게 해 줘요.",
     "landmarks": "복장끝, 봉우리끝, 원뿔결절",
     "joints": "복장빗장관절 (복장뼈), 봉우리빗장관절 (어깨뼈)",
-    "fact": "몸에서 가로로 놓인 유일한 긴뼈이고, 넘어질 때 잘 부러지는 뼈 중 하나예요."
+    "fact": "몸에서 가로로 놓인 유일한 긴뼈이고, 넘어질 때 잘 부러지는 뼈 중 하나예요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Manubrium of sternum",
+          "Scapula"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Clavicular part of deltoid muscle",
+          "Sternocleidomastoid muscle",
+          "Descending part of trapezius muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Left subclavian artery",
+          "Right subclavian artery"
+        ]
+      }
+    ]
   },
   "Scapula": {
     "kind": "bone",
@@ -716,7 +2227,32 @@
     "summary": "팔이 움직이는 토대예요. 여러 어깨 근육이 이 뼈에 붙어 있어요.",
     "landmarks": "어깨뼈가시, 어깨뼈봉우리, 부리돌기, 접시오목, 가시위·가시아래오목, 안쪽모서리, 아래각",
     "joints": "어깨관절 (위팔뼈), 봉우리빗장관절 (빗장뼈)",
-    "fact": "몸통과는 쇄골을 통해서만 관절로 이어지고, 나머지는 근육에 매달린 채 등 위를 미끄러지듯 움직여요."
+    "fact": "몸통과는 쇄골을 통해서만 관절로 이어지고, 나머지는 근육에 매달린 채 등 위를 미끄러지듯 움직여요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Humerus",
+          "Clavicle"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Supraspinatus muscle",
+          "Infraspinatus muscle",
+          "Subscapularis muscle",
+          "Serratus anterior muscle",
+          "Long head of biceps brachii"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Suprascapular nerve"
+        ]
+      }
+    ]
   },
   "Manubrium of sternum": {
     "kind": "bone",
@@ -729,6 +2265,34 @@
     "fact": "넥타이처럼 생겼고, 자루·몸통·칼돌기 세 부분으로 나뉘어요.",
     "bases": [
       "Body of sternum"
+    ],
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Clavicle",
+          "First rib"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Sternocostal head of pectoralis major muscle",
+          "Sternocleidomastoid muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal thoracic artery"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Left ventricle"
+        ]
+      }
     ]
   },
   "First rib": {
@@ -752,6 +2316,40 @@
       "Tenth rib",
       "Eleventh rib",
       "Twelfth rib"
+    ],
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Vertebra T1",
+          "Manubrium of sternum"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Serratus anterior muscle",
+          "External abdominal oblique muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior intercostal arteries"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Intercostal nerves"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Superior lobe of left lung"
+        ]
+      }
     ]
   },
   "Vertebra C5": {
@@ -768,6 +2366,34 @@
       "Vertebra C4",
       "Vertebra C6",
       "Vertebra C7"
+    ],
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Atlas (C1)",
+          "Axis (C2)",
+          "Vertebra T1"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Vertebral artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Descending part of trapezius muscle"
+        ]
+      }
     ]
   },
   "Atlas (C1)": {
@@ -778,7 +2404,28 @@
     "summary": "머리를 바로 받치는 첫째 목뼈로, 몸통 없이 고리 모양이에요.",
     "landmarks": "앞고리, 뒤고리, 가쪽덩이, 위관절오목, 치아오목",
     "joints": "고리뒤통수관절 (뒤통수뼈: 고개 끄덕임), 고리중쇠관절 (중쇠뼈: 고개 돌림)",
-    "fact": "그리스 신화에서 하늘을 떠받친 거인 아틀라스의 이름을 땄어요."
+    "fact": "그리스 신화에서 하늘을 떠받친 거인 아틀라스의 이름을 땄어요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Occipital bone",
+          "Axis (C2)"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Vertebral artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      }
+    ]
   },
   "Axis (C2)": {
     "kind": "bone",
@@ -788,7 +2435,22 @@
     "summary": "둘째 목뼈로, 위로 솟은 치아돌기가 고리뼈의 회전축이 돼요.",
     "landmarks": "치아돌기, 크고 갈라진 가시돌기",
     "joints": "고리중쇠관절 (고리뼈), 척추사이원반 (C3)",
-    "fact": "고개를 좌우로 돌리는 움직임의 약 절반이 고리뼈와 중쇠뼈 사이에서 일어나요."
+    "fact": "고개를 좌우로 돌리는 움직임의 약 절반이 고리뼈와 중쇠뼈 사이에서 일어나요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Atlas (C1)",
+          "Vertebra C3"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      }
+    ]
   },
   "Vertebra T6": {
     "kind": "bone",
@@ -811,6 +2473,35 @@
       "Vertebra T10",
       "Vertebra T11",
       "Vertebra T12"
+    ],
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "First rib",
+          "Vertebra C7",
+          "Vertebra L1"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Descending part of trapezius muscle",
+          "Latissimus dorsi muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Thoracic aorta"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      }
     ]
   },
   "Vertebra L3": {
@@ -827,6 +2518,35 @@
       "Vertebra L2",
       "Vertebra L4",
       "Vertebra L5"
+    ],
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Vertebra T12",
+          "Sacrum"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Psoas major",
+          "Latissimus dorsi muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Abdominal aorta",
+          "Lumbar arteries"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      }
     ]
   },
   "Intervertebral disc L4-L5": {
@@ -860,6 +2580,21 @@
       "Intervertebral disc L3-L4",
       "Intervertebral disc L5-S1",
       "Intervertebral disc T4-T5"
+    ],
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Vertebra L4",
+          "Vertebra L5"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      }
     ]
   },
   "Medial meniscus": {
@@ -872,6 +2607,22 @@
     "fact": "안쪽반달은 안쪽곁인대에 붙어 덜 움직이기 때문에 가쪽반달보다 더 자주 찢어져요.",
     "bases": [
       "Lateral meniscus"
+    ],
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Femur",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "관절",
+        "bases": [
+          "Anterior cruciate ligament",
+          "Posterior cruciate ligament"
+        ]
+      }
     ]
   },
   "Anterior cruciate ligament": {
@@ -881,7 +2632,23 @@
     "name_la": "Ligamentum cruciatum anterius",
     "summary": "무릎 속에서 넙다리뼈와 정강뼈를 X자로 잇는 두 인대 중 앞쪽 인대예요.",
     "role": "정강뼈가 넙다리뼈 앞으로 미끄러지는 것을 막고, 무릎의 비틀림을 안정시켜요.",
-    "fact": "축구나 농구처럼 갑자기 멈추고 방향을 바꾸는 운동에서 잘 끊어져요."
+    "fact": "축구나 농구처럼 갑자기 멈추고 방향을 바꾸는 운동에서 잘 끊어져요.",
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Femur",
+          "Tibia"
+        ]
+      },
+      {
+        "type": "관절",
+        "bases": [
+          "Posterior cruciate ligament",
+          "Medial meniscus"
+        ]
+      }
+    ]
   },
   "Mandible": {
     "kind": "bone",
@@ -891,7 +2658,34 @@
     "summary": "아래턱을 이루는 말발굽 모양의 뼈로, 아랫니가 박혀 있어요.",
     "landmarks": "턱뼈몸통, 턱뼈가지, 턱뼈각, 관절돌기, 근육돌기, 턱끝구멍",
     "joints": "턱관절 (관자뼈)",
-    "fact": "머리뼈 중 유일하게 자유롭게 움직이는 뼈이고, 얼굴뼈 중 가장 크고 단단해요."
+    "fact": "머리뼈 중 유일하게 자유롭게 움직이는 뼈이고, 얼굴뼈 중 가장 크고 단단해요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Temporal bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Superficial part of masseter",
+          "Temporalis muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Inferior alveolar nerve"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Inferior alveolar artery"
+        ]
+      }
+    ]
   },
   "Maxilla": {
     "kind": "bone",
@@ -901,7 +2695,35 @@
     "summary": "얼굴 가운데를 이루는 뼈로, 윗니가 박혀 있고 입천장과 눈확 바닥을 만들어요.",
     "landmarks": "이틀돌기, 입천장돌기, 위턱굴, 눈확아래구멍",
     "joints": "이마뼈·광대뼈·코뼈 등과 봉합으로 단단히 연결 (움직이지 않음)",
-    "fact": "안에 있는 위턱굴은 코곁굴 중 가장 커요."
+    "fact": "안에 있는 위턱굴은 코곁굴 중 가장 커요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Frontal bone",
+          "Zygomatic bone",
+          "Nasal bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Orbicularis oris muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Maxillary nerve"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Maxillary artery"
+        ]
+      }
+    ]
   },
   "Frontal bone": {
     "kind": "bone",
@@ -911,7 +2733,29 @@
     "summary": "이마와 눈확 천장을 이루는 뼈예요.",
     "landmarks": "이마뼈비늘, 눈확위모서리, 눈썹활, 이마굴",
     "joints": "관상봉합 (마루뼈), 코뼈·위턱뼈·광대뼈 등과 봉합",
-    "fact": "태어날 때는 좌우 두 조각인데, 생후 몇 년 안에 하나로 붙어요."
+    "fact": "태어날 때는 좌우 두 조각인데, 생후 몇 년 안에 하나로 붙어요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Parietal bone",
+          "Nasal bone",
+          "Zygomatic bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Frontalis muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Supra-orbital artery"
+        ]
+      }
+    ]
   },
   "Parietal bone": {
     "kind": "bone",
@@ -921,7 +2765,23 @@
     "summary": "머리 꼭대기와 옆을 덮는 좌우 한 쌍의 뼈예요.",
     "landmarks": "마루뼈융기, 위·아래관자선",
     "joints": "시상봉합 (반대쪽 마루뼈), 관상봉합 (이마뼈), 시옷봉합 (뒤통수뼈), 비늘봉합 (관자뼈)",
-    "fact": "머리뼈는 아래턱뼈를 포함해 22개의 뼈로 이루어져 있는데, 그중 자유롭게 움직이는 건 아래턱뼈뿐이에요."
+    "fact": "머리뼈는 아래턱뼈를 포함해 22개의 뼈로 이루어져 있는데, 그중 자유롭게 움직이는 건 아래턱뼈뿐이에요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Frontal bone",
+          "Occipital bone",
+          "Temporal bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Temporalis muscle"
+        ]
+      }
+    ]
   },
   "Occipital bone": {
     "kind": "bone",
@@ -931,7 +2791,34 @@
     "summary": "머리 뒤쪽과 바닥을 이루는 뼈예요.",
     "landmarks": "큰구멍, 뒤통수뼈관절융기, 바깥뒤통수뼈융기, 위목덜미선",
     "joints": "고리뒤통수관절 (고리뼈), 시옷봉합 (마루뼈)",
-    "fact": "뇌와 척수가 이어지는 통로인 큰구멍이 이 뼈에 뚫려 있어요."
+    "fact": "뇌와 척수가 이어지는 통로인 큰구멍이 이 뼈에 뚫려 있어요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Parietal bone",
+          "Atlas (C1)"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Descending part of trapezius muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "White matter of spinal cord"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Occipital artery"
+        ]
+      }
+    ]
   },
   "Temporal bone": {
     "kind": "bone",
@@ -941,7 +2828,31 @@
     "summary": "머리 옆 아래쪽을 이루는 뼈로, 귀의 구조물이 이 안에 들어 있어요.",
     "landmarks": "꼭지돌기, 붓돌기, 바깥귀길, 턱관절오목, 광대돌기, 바위부분",
     "joints": "턱관절 (아래턱뼈), 비늘봉합 (마루뼈)",
-    "fact": "몸에서 가장 단단한 뼈 부분(바위부분) 안에 귓속뼈와 속귀가 들어 있어요."
+    "fact": "몸에서 가장 단단한 뼈 부분(바위부분) 안에 귓속뼈와 속귀가 들어 있어요.",
+    "related": [
+      {
+        "type": "관절",
+        "bases": [
+          "Mandible",
+          "Parietal bone",
+          "Zygomatic bone"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Temporalis muscle",
+          "Sternocleidomastoid muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Facial nerve (VII)",
+          "Vestibulocochlear nerve (VIII)"
+        ]
+      }
+    ]
   },
   "Hyoid bone": {
     "kind": "bone",
@@ -951,7 +2862,29 @@
     "summary": "턱 아래 목 앞쪽의 U자 모양 뼈로, 혀와 후두를 받쳐요.",
     "landmarks": "목뿔뼈몸통, 큰뿔, 작은뿔",
     "joints": "다른 뼈와 관절을 이루지 않음 (근육과 인대로 매달림)",
-    "fact": "다른 뼈와 관절로 이어지지 않는 유일한 뼈예요."
+    "fact": "다른 뼈와 관절로 이어지지 않는 유일한 뼈예요.",
+    "related": [
+      {
+        "type": "뼈",
+        "bases": [
+          "Mandible",
+          "Thyroid cartilage"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Sternohyoid muscle",
+          "Mylohyoid muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Hypoglossal nerve (XII)"
+        ]
+      }
+    ]
   },
   "Left ventricle": {
     "kind": "other",
@@ -965,6 +2898,36 @@
       "Right ventricle",
       "Left atrium",
       "Right atrium"
+    ],
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "Ascending aorta",
+          "Pulmonary trunk",
+          "Superior vena cava",
+          "Left coronary artery",
+          "Right coronary artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Vagus nerve (X)"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Superior lobe of left lung"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Manubrium of sternum"
+        ]
+      }
     ]
   },
   "Superior lobe of left lung": {
@@ -980,6 +2943,41 @@
       "Superior lobe of right lung",
       "Middle lobe of right lung",
       "Inferior lobe of right lung"
+    ],
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Trachea",
+          "Left ventricle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Pulmonary trunk",
+          "Left pulmonary artery",
+          "Right pulmonary artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Diaphragm"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "First rib"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Vagus nerve (X)"
+        ]
+      }
     ]
   },
   "Trachea": {
@@ -989,7 +2987,29 @@
     "name_la": "Trachea",
     "summary": "후두에서 허파로 공기를 보내는 관이에요.",
     "role": "목 앞쪽, 식도 앞을 따라 내려가다가 가슴에서 좌우 기관지로 갈라져요.",
-    "fact": "C자 모양 연골 고리들이 관이 찌그러지지 않게 받쳐 줘요."
+    "fact": "C자 모양 연골 고리들이 관이 찌그러지지 않게 받쳐 줘요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Superior lobe of left lung",
+          "Oesophagus",
+          "Thyroid gland"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Thyroid cartilage"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Vagus nerve (X)"
+        ]
+      }
+    ]
   },
   "Oesophagus": {
     "kind": "other",
@@ -998,7 +3018,34 @@
     "name_la": "Oesophagus",
     "summary": "인두에서 위로 음식을 보내는 근육 관이에요.",
     "role": "꿈틀운동으로 음식을 밀어 내려보내요. 기관 뒤, 척추 앞을 따라 내려가 가로막을 지나 위로 이어져요.",
-    "fact": "물구나무를 서도 음식이 위로 내려갈 만큼 근육이 밀어 줘요."
+    "fact": "물구나무를 서도 음식이 위로 내려갈 만큼 근육이 밀어 줘요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Stomach",
+          "Trachea"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Thoracic aorta"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Diaphragm"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Vagus nerve (X)"
+        ]
+      }
+    ]
   },
   "Stomach": {
     "kind": "other",
@@ -1007,7 +3054,38 @@
     "name_la": "Gaster",
     "summary": "음식을 잠시 저장하고 잘게 소화하는 주머니 모양 기관이에요.",
     "role": "위산과 소화효소로 음식을 분해해 샘창자로 보내요. 왼쪽 위배, 가로막 바로 아래에 있어요.",
-    "fact": "비어 있을 때는 작게 줄어들지만, 식사 후에는 1L 넘게 늘어나요."
+    "fact": "비어 있을 때는 작게 줄어들지만, 식사 후에는 1L 넘게 늘어나요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Oesophagus",
+          "Duodenum",
+          "Liver",
+          "Spleen",
+          "Pancreas"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Left gastric artery",
+          "Coeliac trunk"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Vagus nerve (X)"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Diaphragm"
+        ]
+      }
+    ]
   },
   "Liver": {
     "kind": "other",
@@ -1016,7 +3094,32 @@
     "name_la": "Hepar",
     "summary": "몸에서 가장 큰 샘으로, 수백 가지 화학 작업을 하는 공장이에요.",
     "role": "영양분을 저장·가공하고, 해로운 물질을 해독하며, 쓸개즙을 만들어요. 오른쪽 위배, 가로막 바로 아래에 있어요.",
-    "fact": "일부를 잘라 내도 다시 자라는 재생 능력이 있어서 생체 간이식이 가능해요."
+    "fact": "일부를 잘라 내도 다시 자라는 재생 능력이 있어서 생체 간이식이 가능해요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Gallbladder",
+          "Stomach",
+          "Duodenum"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Hepatic portal vein",
+          "Proper hepatic artery",
+          "Hepatic veins",
+          "Inferior vena cava (abdominal part)"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Diaphragm"
+        ]
+      }
+    ]
   },
   "Gallbladder": {
     "kind": "other",
@@ -1025,7 +3128,22 @@
     "name_la": "Vesica biliaris",
     "summary": "간 아래면에 붙은 작은 주머니예요.",
     "role": "간에서 만든 쓸개즙을 저장·농축했다가, 기름진 음식이 들어오면 샘창자로 내보내 지방 소화를 도와요.",
-    "fact": "쓸개즙 성분이 굳으면 담석이 생겨요."
+    "fact": "쓸개즙 성분이 굳으면 담석이 생겨요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Liver",
+          "Duodenum"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Proper hepatic artery"
+        ]
+      }
+    ]
   },
   "Pancreas": {
     "kind": "other",
@@ -1034,7 +3152,25 @@
     "name_la": "Pancreas",
     "summary": "위 뒤쪽에 가로로 놓인 길쭉한 샘이에요.",
     "role": "소화효소를 샘창자로 보내고, 인슐린과 글루카곤으로 혈당을 조절해요. 배 뒤벽에 붙어 있어요.",
-    "fact": "소화(외분비)와 호르몬(내분비) 두 가지 일을 함께 하는 장기예요."
+    "fact": "소화(외분비)와 호르몬(내분비) 두 가지 일을 함께 하는 장기예요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Duodenum",
+          "Stomach",
+          "Spleen"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Splenic artery",
+          "Superior mesenteric artery",
+          "Splenic vein"
+        ]
+      }
+    ]
   },
   "Spleen": {
     "kind": "other",
@@ -1043,7 +3179,30 @@
     "name_la": "Splen",
     "summary": "왼쪽 위배 깊숙한 곳에 있는 주먹만 한 기관이에요.",
     "role": "낡은 적혈구를 걸러 내고, 면역세포가 모여 감염과 싸워요. 왼쪽 9–11번 갈비뼈 뒤에 있어요.",
-    "fact": "없어도 살 수 있지만 특정 세균 감염에 약해져서 예방접종이 필요해요."
+    "fact": "없어도 살 수 있지만 특정 세균 감염에 약해져서 예방접종이 필요해요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Stomach",
+          "Pancreas",
+          "Kidney"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Splenic artery",
+          "Splenic vein"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Diaphragm"
+        ]
+      }
+    ]
   },
   "Transverse colon": {
     "kind": "other",
@@ -1057,6 +3216,26 @@
       "Ascending colon",
       "Descending colon",
       "Sigmoid colon"
+    ],
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Stomach",
+          "Jejunum",
+          "Liver"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Middle colic artery",
+          "Right colic artery",
+          "Left colic artery",
+          "Superior mesenteric artery",
+          "Inferior mesenteric artery"
+        ]
+      }
     ]
   },
   "Kidney": {
@@ -1066,7 +3245,34 @@
     "name_la": "Ren",
     "summary": "강낭콩 모양의 한 쌍의 기관이에요.",
     "role": "피를 걸러 소변을 만들고, 몸의 수분·전해질·혈압을 조절해요. 배 뒤벽, 척추 양옆에 있어요.",
-    "fact": "두 콩팥이 하루에 걸러 내는 피의 양은 약 180L나 돼요."
+    "fact": "두 콩팥이 하루에 걸러 내는 피의 양은 약 180L나 돼요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Ureter",
+          "Urinary bladder",
+          "Liver",
+          "Spleen"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Left renal artery",
+          "Right renal artery",
+          "Left renal vein",
+          "Right renal vein"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Psoas major",
+          "Diaphragm"
+        ]
+      }
+    ]
   },
   "Urinary bladder": {
     "kind": "other",
@@ -1075,7 +3281,37 @@
     "name_la": "Vesica urinaria",
     "summary": "소변을 모아 두는 근육 주머니예요.",
     "role": "콩팥에서 요관을 따라 내려온 소변을 모았다가 내보내요. 골반 안, 두덩결합 바로 뒤에 있어요.",
-    "fact": "150~250mL쯤 차면 처음 마려운 느낌이 들고, 400mL 안팎이면 강하게 마려워요."
+    "fact": "150~250mL쯤 차면 처음 마려운 느낌이 들고, 400mL 안팎이면 강하게 마려워요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Ureter",
+          "Kidney"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal iliac artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Pudendal nerve"
+        ]
+      }
+    ],
+    "bases": [
+      "Urinary bladder (female)"
+    ]
   },
   "Thyroid gland": {
     "kind": "other",
@@ -1084,7 +3320,35 @@
     "name_la": "Glandula thyroidea",
     "summary": "목 앞쪽에 나비 모양으로 붙은 내분비샘이에요.",
     "role": "갑상샘호르몬으로 몸의 대사 속도를 조절해요. 후두 아래에서 기관을 감싸고 있어요.",
-    "fact": "침을 삼키면 후두와 함께 위아래로 움직여요."
+    "fact": "침을 삼키면 후두와 함께 위아래로 움직여요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Trachea"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Thyroid cartilage"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Inferior thyroid artery",
+          "Superior thyroid vein"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Sternohyoid muscle",
+          "Sternothyroid muscle"
+        ]
+      }
+    ]
   },
   "Ascending aorta": {
     "kind": "other",
@@ -1098,6 +3362,32 @@
       "Thoracic aorta",
       "Abdominal aorta",
       "Aortic arch"
+    ],
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Left ventricle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Brachiocephalic trunk",
+          "Left common carotid artery",
+          "Left subclavian artery",
+          "Coeliac trunk",
+          "Superior mesenteric artery",
+          "Common iliac artery"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Vertebra T6",
+          "Vertebra L3"
+        ]
+      }
     ]
   },
   "Superior vena cava": {
@@ -1111,6 +3401,30 @@
     "bases": [
       "Inferior vena cava (abdominal part)",
       "Inferior vena cava (thoracic part)"
+    ],
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Left ventricle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Left brachiocephalic vein",
+          "Right brachiocephalic vein",
+          "Azygos vein",
+          "Common iliac vein",
+          "Hepatic veins"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Liver"
+        ]
+      }
     ]
   },
   "Pulmonary trunk": {
@@ -1123,6 +3437,23 @@
     "fact": "동맥인데도 산소가 적은 피가 흐르는 예외적인 혈관이에요.",
     "bases": [
       "Bifurcation of pulmonary trunk"
+    ],
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Left ventricle",
+          "Superior lobe of left lung"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Left pulmonary artery",
+          "Right pulmonary artery",
+          "Aortic arch"
+        ]
+      }
     ]
   },
   "Internal jugular vein": {
@@ -1132,7 +3463,29 @@
     "name_la": "Vena jugularis interna",
     "summary": "목 양옆을 따라 내려가는 굵은 정맥이에요.",
     "role": "뇌와 얼굴, 목의 피를 모아요. 목빗근 아래 온목동맥 옆을 지나 빗장밑정맥과 만나 팔머리정맥을 이루고, 좌우 팔머리정맥이 합쳐져 위대정맥이 돼요.",
-    "fact": "중심정맥관을 넣을 때 자주 쓰는 혈관이에요."
+    "fact": "중심정맥관을 넣을 때 자주 쓰는 혈관이에요.",
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "Left subclavian vein",
+          "Left brachiocephalic vein",
+          "Right common carotid artery"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Sternocleidomastoid muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Vagus nerve (X)"
+        ]
+      }
+    ]
   },
   "Brachial artery": {
     "kind": "other",
@@ -1141,7 +3494,37 @@
     "name_la": "Arteria brachialis",
     "summary": "위팔 안쪽을 따라 내려가는 팔의 주된 동맥이에요.",
     "role": "팔에 피를 공급하고, 팔꿈치 앞에서 노동맥과 자동맥으로 갈라져요.",
-    "fact": "혈압을 잴 때 커프로 누르고 청진기를 대는 곳이 바로 이 동맥이에요."
+    "fact": "혈압을 잴 때 커프로 누르고 청진기를 대는 곳이 바로 이 동맥이에요.",
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "Axillary artery",
+          "Radial artery",
+          "Ulnar artery",
+          "Deep brachial artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Median nerve"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of biceps brachii",
+          "Brachialis muscle"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus"
+        ]
+      }
+    ]
   },
   "Radial artery": {
     "kind": "other",
@@ -1150,7 +3533,30 @@
     "name_la": "Arteria radialis",
     "summary": "아래팔 엄지 쪽을 따라 손으로 가는 동맥이에요.",
     "role": "아래팔과 손에 피를 공급하고, 손바닥에서 동맥활을 만들어요.",
-    "fact": "손목 엄지 쪽에서 맥박을 재는 곳이 바로 이 동맥이에요."
+    "fact": "손목 엄지 쪽에서 맥박을 재는 곳이 바로 이 동맥이에요.",
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "Brachial artery",
+          "Ulnar artery",
+          "Deep palmar arch"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Brachioradialis muscle",
+          "Flexor carpi radialis"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Radius"
+        ]
+      }
+    ]
   },
   "Femoral artery": {
     "kind": "other",
@@ -1159,7 +3565,37 @@
     "name_la": "Arteria femoralis",
     "summary": "다리 전체로 피를 보내는 주된 동맥이에요.",
     "role": "샅고랑인대 아래에서 시작해 넙다리 앞안쪽을 따라 내려가다, 넙다리 아래쪽의 모음근틈새를 지나 오금으로 들어가며 오금동맥이 돼요.",
-    "fact": "샅고랑 바로 아래에서 맥박을 만질 수 있고, 심장 카테터 시술의 통로로도 쓰여요."
+    "fact": "샅고랑 바로 아래에서 맥박을 만질 수 있고, 심장 카테터 시술의 통로로도 쓰여요.",
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "External iliac artery",
+          "Deep femoral artery",
+          "Popliteal artery",
+          "Femoral vein"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Femoral nerve"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Sartorius muscle",
+          "Adductor longus"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Femur"
+        ]
+      }
+    ]
   },
   "Great saphenous vein": {
     "kind": "other",
@@ -1168,7 +3604,28 @@
     "name_la": "Vena saphena magna",
     "summary": "발등 안쪽에서 시작해 다리 안쪽을 따라 올라가는 얕은 정맥이에요.",
     "role": "다리 피부 쪽 피를 모아 샅고랑 아래에서 넙다리정맥으로 보내요.",
-    "fact": "몸에서 가장 긴 정맥이고, 심장 우회로 수술에 이식 혈관으로 쓰여요."
+    "fact": "몸에서 가장 긴 정맥이고, 심장 우회로 수술에 이식 혈관으로 쓰여요.",
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "Femoral vein",
+          "Dorsal venous arch of foot"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Saphenous nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Tibia"
+        ]
+      }
+    ]
   },
   "White matter of spinal cord": {
     "kind": "other",
@@ -1181,6 +3638,30 @@
     "bases": [
       "Anterior horn of spinal cord",
       "Posterior horn of spinal cord"
+    ],
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Medulla oblongata",
+          "Roots of brachial plexus",
+          "Spinal ganglion"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Vertebra C5",
+          "Vertebra T6",
+          "Vertebra L3"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Anterior spinal artery"
+        ]
+      }
     ]
   },
   "Medulla oblongata": {
@@ -1190,7 +3671,31 @@
     "name_la": "Medulla oblongata",
     "summary": "뇌줄기의 맨 아래 부분으로 척수와 이어져요.",
     "role": "호흡, 심장 박동, 혈압 같은 생명 유지 기능을 조절해요.",
-    "fact": "여기가 손상되면 스스로 숨을 쉬지 못할 수 있어요."
+    "fact": "여기가 손상되면 스스로 숨을 쉬지 못할 수 있어요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Pons",
+          "White matter of spinal cord",
+          "Vagus nerve (X)",
+          "Hypoglossal nerve (XII)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Occipital bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Vertebral artery",
+          "Basilar artery"
+        ]
+      }
+    ]
   },
   "Pons": {
     "kind": "other",
@@ -1199,7 +3704,24 @@
     "name_la": "Pons",
     "summary": "뇌줄기 가운데의 볼록한 부분이에요.",
     "role": "대뇌와 소뇌 사이에 신호를 중계하고, 호흡 조절과 여러 뇌신경핵을 품고 있어요. 중간뇌와 숨뇌 사이에 있어요.",
-    "fact": "라틴어 pons는 '다리'라는 뜻이에요. 양쪽 소뇌를 잇는 다리처럼 보여서 붙은 이름이에요."
+    "fact": "라틴어 pons는 '다리'라는 뜻이에요. 양쪽 소뇌를 잇는 다리처럼 보여서 붙은 이름이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Midbrain",
+          "Medulla oblongata",
+          "Trigeminal nerve (V)",
+          "Facial nerve (VII)"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Basilar artery"
+        ]
+      }
+    ]
   },
   "Thalamus": {
     "kind": "other",
@@ -1207,7 +3729,24 @@
     "name_en": "Thalamus",
     "name_la": "Thalamus",
     "summary": "뇌 한가운데에 있는 달걀 모양의 회백질 덩어리예요.",
-    "role": "후각을 뺀 거의 모든 감각 정보를 대뇌겉질로 중계하고, 의식과 수면에도 관여해요. 셋째뇌실 양옆에 있어요."
+    "role": "후각을 뺀 거의 모든 감각 정보를 대뇌겉질로 중계하고, 의식과 수면에도 관여해요. 셋째뇌실 양옆에 있어요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Hypothalamus",
+          "Midbrain",
+          "Corpus callosum",
+          "Optic nerve (II)"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior cerebral artery"
+        ]
+      }
+    ]
   },
   "Hippocampus": {
     "kind": "other",
@@ -1216,7 +3755,22 @@
     "name_la": "Hippocampus",
     "summary": "관자엽 안쪽 깊은 곳의 구부러진 구조물이에요.",
     "role": "새로운 기억을 만들고, 장소와 길을 기억하는 데 중요해요.",
-    "fact": "모양이 바다생물 해마를 닮아 이 이름이 붙었어요. 알츠하이머병에서 일찍 손상되는 곳이에요."
+    "fact": "모양이 바다생물 해마를 닮아 이 이름이 붙었어요. 알츠하이머병에서 일찍 손상되는 곳이에요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Thalamus",
+          "Corpus callosum"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Posterior cerebral artery"
+        ]
+      }
+    ]
   },
   "Corpus callosum": {
     "kind": "other",
@@ -1225,7 +3779,23 @@
     "name_la": "Corpus callosum",
     "summary": "좌우 대뇌반구를 잇는 가장 큰 신경섬유 다발이에요.",
     "role": "두 반구가 정보를 주고받게 해요. 대뇌반구 사이 깊은 곳, 가쪽뇌실 지붕을 이뤄요.",
-    "fact": "약 2억 개의 신경섬유로 이루어져 있어요."
+    "fact": "약 2억 개의 신경섬유로 이루어져 있어요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Thalamus",
+          "Hippocampus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Pericallosal artery",
+          "Anterior cerebral artery"
+        ]
+      }
+    ]
   },
   "Optic nerve (II)": {
     "kind": "other",
@@ -1234,7 +3804,35 @@
     "name_la": "Nervus opticus",
     "summary": "눈에서 뇌로 가는 신경이에요.",
     "role": "망막에서 받은 시각 정보를 뇌로 전달해요. 눈확을 지나 시각신경교차에서 일부 섬유가 반대쪽으로 건너가요.",
-    "fact": "시각신경이 눈에서 나가는 자리에는 시세포가 없어서 '맹점'이 생겨요."
+    "fact": "시각신경이 눈에서 나가는 자리에는 시세포가 없어서 '맹점'이 생겨요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Thalamus",
+          "Oculomotor nerve (III)"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Retina"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Ophthalmic artery",
+          "Central retinal artery"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Sphenoid bone"
+        ]
+      }
+    ]
   },
   "Facial nerve (VII)": {
     "kind": "other",
@@ -1243,7 +3841,36 @@
     "name_la": "Nervus facialis",
     "summary": "얼굴 표정을 만드는 뇌신경이에요.",
     "role": "얼굴 표정근을 움직이고, 혀 앞쪽 3분의 2의 맛과 눈물·침 분비를 맡아요. 관자뼈 속을 지나 귀밑샘 안에서 다섯 가지로 갈라져요.",
-    "fact": "이 신경이 마비되면 한쪽 얼굴이 처지는 '벨마비'가 생겨요."
+    "fact": "이 신경이 마비되면 한쪽 얼굴이 처지는 '벨마비'가 생겨요.",
+    "related": [
+      {
+        "type": "근육",
+        "bases": [
+          "Frontalis muscle",
+          "Orbicularis oris muscle",
+          "Zygomaticus major muscle"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Pons",
+          "Vestibulocochlear nerve (VIII)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Temporal bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Superficial temporal artery"
+        ]
+      }
+    ]
   },
   "Vagus nerve (X)": {
     "kind": "other",
@@ -1252,7 +3879,31 @@
     "name_la": "Nervus vagus",
     "summary": "목과 가슴을 지나 배 속까지 내려가는 뇌신경이에요.",
     "role": "심장, 허파, 소화관 등에 부교감 신호를 보내 심장 박동을 늦추고 소화를 촉진해요. 후두와 인두의 근육도 움직여요.",
-    "fact": "'떠돌이 신경'이라는 뜻처럼 뇌신경 중 가장 넓게 퍼져 있어요."
+    "fact": "'떠돌이 신경'이라는 뜻처럼 뇌신경 중 가장 넓게 퍼져 있어요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Medulla oblongata"
+        ]
+      },
+      {
+        "type": "장기",
+        "bases": [
+          "Left ventricle",
+          "Superior lobe of left lung",
+          "Stomach",
+          "Oesophagus"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal jugular vein",
+          "Left common carotid artery"
+        ]
+      }
+    ]
   },
   "Median nerve": {
     "kind": "other",
@@ -1261,7 +3912,34 @@
     "name_la": "Nervus medianus",
     "summary": "팔 한가운데를 따라 손으로 가는 신경이에요 (C5–T1).",
     "role": "아래팔 굽힘근 대부분과 엄지두덩근을 움직이고, 엄지부터 넷째 손가락 절반까지의 손바닥 감각을 맡아요.",
-    "fact": "손목굴에서 눌리면 손이 저리는 '손목굴증후군'이 생겨요."
+    "fact": "손목굴에서 눌리면 손이 저리는 '손목굴증후군'이 생겨요.",
+    "related": [
+      {
+        "type": "근육",
+        "bases": [
+          "Flexor carpi radialis"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Brachial artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Roots of brachial plexus",
+          "Ulnar nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus"
+        ]
+      }
+    ]
   },
   "Ulnar nerve": {
     "kind": "other",
@@ -1270,7 +3948,29 @@
     "name_la": "Nervus ulnaris",
     "summary": "팔 안쪽을 따라 새끼손가락 쪽으로 가는 신경이에요 (C8–T1).",
     "role": "손의 작은 근육 대부분을 움직이고, 새끼손가락과 넷째 손가락 절반의 감각을 맡아요.",
-    "fact": "팔꿈치 안쪽 뒤에서 피부 바로 아래를 지나서, 부딪히면 찌릿해요."
+    "fact": "팔꿈치 안쪽 뒤에서 피부 바로 아래를 지나서, 부딪히면 찌릿해요.",
+    "related": [
+      {
+        "type": "혈관",
+        "bases": [
+          "Ulnar artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Inferior trunk of brachial plexus",
+          "Median nerve"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus",
+          "Ulna"
+        ]
+      }
+    ]
   },
   "Radial nerve": {
     "kind": "other",
@@ -1279,7 +3979,36 @@
     "name_la": "Nervus radialis",
     "summary": "위팔뼈 뒤를 감고 돌아 아래팔 바깥쪽으로 가는 신경이에요 (C5–T1).",
     "role": "위팔과 아래팔의 폄근을 모두 움직이고, 손등 엄지 쪽의 감각을 맡아요.",
-    "fact": "위팔뼈 몸통이 부러지면 이 신경이 다쳐 손목이 처지는 '손목처짐'이 생길 수 있어요."
+    "fact": "위팔뼈 몸통이 부러지면 이 신경이 다쳐 손목이 처지는 '손목처짐'이 생길 수 있어요.",
+    "related": [
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of triceps brachii",
+          "Brachioradialis muscle",
+          "Extensor digitorum"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Posterior cord of brachial plexus",
+          "Posterior interosseous nerve of forearm"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Deep brachial artery"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Humerus"
+        ]
+      }
+    ]
   },
   "Femoral nerve": {
     "kind": "other",
@@ -1288,7 +4017,31 @@
     "name_la": "Nervus femoralis",
     "summary": "허리신경얼기에서 나와 넙다리 앞으로 가는 신경이에요 (L2–L4).",
     "role": "넙다리네갈래근과 넙다리빗근을 움직이고, 넙다리 앞과 종아리 안쪽의 감각을 맡아요.",
-    "fact": "무릎 반사(무릎뼈 아래를 두드리면 다리가 튀어 오르는 것)가 이 신경을 거쳐요."
+    "fact": "무릎 반사(무릎뼈 아래를 두드리면 다리가 튀어 오르는 것)가 이 신경을 거쳐요.",
+    "related": [
+      {
+        "type": "근육",
+        "bases": [
+          "Rectus femoris muscle",
+          "Vastus lateralis muscle",
+          "Vastus medialis muscle",
+          "Sartorius muscle",
+          "Iliacus muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Femoral artery"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Saphenous nerve"
+        ]
+      }
+    ]
   },
   "Sciatic nerve": {
     "kind": "other",
@@ -1297,7 +4050,32 @@
     "name_la": "Nervus ischiadicus",
     "summary": "엉덩이에서 넙다리 뒤쪽으로 내려가는 굵은 신경이에요 (L4–S3).",
     "role": "넙다리 뒤 근육과 무릎 아래 거의 모든 근육·감각을 맡아요. 무릎 뒤쪽에서 정강신경과 온종아리신경으로 갈라져요.",
-    "fact": "몸에서 가장 굵고 긴 신경이에요. 엉덩이에서 다리로 뻗치는 통증을 '좌골신경통'이라 해요."
+    "fact": "몸에서 가장 굵고 긴 신경이에요. 엉덩이에서 다리로 뻗치는 통증을 '좌골신경통'이라 해요.",
+    "related": [
+      {
+        "type": "신경",
+        "bases": [
+          "Tibial nerve",
+          "Common fibular nerve"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Long head of biceps femoris",
+          "Semitendinosus muscle",
+          "Semimembranosus muscle",
+          "Gluteus maximus muscle"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Femur"
+        ]
+      }
+    ]
   },
   "Skin": {
     "kind": "other",
@@ -1306,6 +4084,180 @@
     "name_la": "Cutis",
     "summary": "몸 전체를 감싸는 기관이에요.",
     "role": "세균, 자외선, 수분 손실을 막고, 땀과 혈관으로 체온을 조절하며, 촉각·온도·통증을 느껴요.",
-    "fact": "몸에서 가장 큰 기관으로, 어른의 피부 넓이는 약 2㎡예요."
+    "fact": "몸에서 가장 큰 기관으로, 어른의 피부 넓이는 약 2㎡예요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Superior lobe of left lung"
+        ]
+      },
+      {
+        "type": "근육",
+        "bases": [
+          "Platysma",
+          "Frontalis muscle"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Great saphenous vein",
+          "Cephalic vein"
+        ]
+      },
+      {
+        "type": "신경",
+        "bases": [
+          "Lateral femoral cutaneous nerve",
+          "Sural nerve"
+        ]
+      }
+    ]
+  },
+  "Uterus": {
+    "kind": "other",
+    "name_ko": "자궁",
+    "name_en": "Uterus",
+    "name_la": "Uterus",
+    "summary": "골반 안, 방광과 곧창자 사이에 있는 서양배 모양의 근육 기관이에요.",
+    "role": "임신하면 태아가 자라는 곳이에요. 바닥·몸통·자궁목으로 나뉘고, 위쪽 양옆으로 자궁관이 이어져요.",
+    "fact": "임신 중에는 용적이 수백 배로 커졌다가, 출산 후 몇 주 만에 거의 원래 크기로 돌아와요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Ovary",
+          "Uterine tube",
+          "Urinary bladder (female)"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone",
+          "Sacrum"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal iliac artery"
+        ]
+      }
+    ]
+  },
+  "Ovary": {
+    "kind": "other",
+    "name_ko": "난소",
+    "name_en": "Ovary",
+    "name_la": "Ovarium",
+    "summary": "자궁 양옆에 있는 아몬드만 한 한 쌍의 샘이에요.",
+    "role": "난자를 성숙시켜 내보내고, 에스트로젠과 프로게스테론을 만들어요. 자궁관 끝 가까이 골반 옆벽에 놓여 있어요.",
+    "fact": "태어날 때 이미 평생 쓸 난모세포를 약 100만~200만 개 가지고 있어요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Uterus",
+          "Uterine tube"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal iliac artery",
+          "Abdominal aorta"
+        ]
+      }
+    ]
+  },
+  "Uterine tube": {
+    "kind": "other",
+    "name_ko": "자궁관 (나팔관)",
+    "name_en": "Uterine tube",
+    "name_la": "Tuba uterina",
+    "summary": "자궁 위쪽 양옆에서 난소 쪽으로 뻗은 가는 관이에요.",
+    "role": "난소에서 나온 난자를 받아 자궁으로 옮겨요. 수정은 보통 자궁관의 넓은 부분(팽대부)에서 일어나요.",
+    "fact": "끝의 손가락 모양 술이 난소 표면을 쓸듯이 움직여 난자를 잡아들여요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Uterus",
+          "Ovary"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone"
+        ]
+      }
+    ]
+  },
+  "Prostate": {
+    "kind": "other",
+    "name_ko": "전립샘 (전립선)",
+    "name_en": "Prostate",
+    "name_la": "Prostata",
+    "summary": "방광 바로 아래에서 요도를 감싸는 밤톨만 한 샘이에요.",
+    "role": "정액의 일부가 되는 액을 만들어 요도로 내보내요. 방광목 아래, 곧창자 앞에 있어요.",
+    "fact": "나이가 들면서 커지는 경우가 많아, 소변 줄기가 약해지는 흔한 원인이 돼요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Urinary bladder",
+          "Seminal gland",
+          "Urethra"
+        ]
+      },
+      {
+        "type": "뼈",
+        "bases": [
+          "Hip bone"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Internal iliac artery"
+        ]
+      }
+    ]
+  },
+  "Testis": {
+    "kind": "other",
+    "name_ko": "고환",
+    "name_en": "Testis",
+    "name_la": "Testis",
+    "summary": "음낭 안에 있는 한 쌍의 타원형 샘이에요.",
+    "role": "정자와 남성호르몬(테스토스테론)을 만들어요. 정자는 부고환과 정관을 거쳐 이동해요.",
+    "fact": "정자를 만들려면 체온보다 2~3℃ 낮은 온도가 필요해서 몸 밖 음낭에 있어요.",
+    "related": [
+      {
+        "type": "장기",
+        "bases": [
+          "Epididymis",
+          "Ductus deferens",
+          "Prostate"
+        ]
+      },
+      {
+        "type": "혈관",
+        "bases": [
+          "Left testicular artery",
+          "Right testicular artery",
+          "Left testicular vein"
+        ]
+      }
+    ]
   }
 }

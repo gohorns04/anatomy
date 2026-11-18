@@ -9,6 +9,7 @@ const BY_KIND = {
 };
 
 const filled = (v) => typeof v === 'string' && v.trim() !== '';
+export const RELATED_TYPES = ['신경', '뼈', '혈관', '근육', '장기', '관절'];
 
 export function validateContent(content, index) {
   const known = new Set(Object.values(index).map((v) => v.base));
@@ -21,6 +22,10 @@ export function validateContent(content, index) {
       if (!filled(entry[f])) errors.push(`${key}: missing ${f}`);
     }
     if (entry.fact !== undefined && !filled(entry.fact)) errors.push(`${key}: empty fact`);
+    for (const r of entry.related ?? []) {
+      if (!RELATED_TYPES.includes(r.type)) errors.push(`${key}: unknown related type "${r.type}"`);
+      for (const b of r.bases ?? []) if (!known.has(b)) errors.push(`${key}: related mesh "${b}" not found`);
+    }
     for (const base of [key, ...(entry.bases ?? [])]) {
       if (!known.has(base)) errors.push(`${key}: no mesh named "${base}"`);
       if (claimed.has(base)) errors.push(`${key}: "${base}" already used by ${claimed.get(base)}`);

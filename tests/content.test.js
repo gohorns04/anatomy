@@ -76,3 +76,29 @@ test('aortic arch and pulmonary bifurcation resolve to their vessel entries', ()
   assert.equal(contentFor(name('Aortic arch'), index, content)?.name_ko, '대동맥');
   assert.equal(contentFor(name('Bifurcation of pulmonary trunk'), index, content)?.name_ko, '폐동맥줄기');
 });
+
+const TYPES = ['신경', '뼈', '혈관', '근육', '장기', '관절'];
+const NO_NERVE_MESH = ['Diaphragm', 'Psoas major', 'Gluteus maximus muscle']; // 가로막신경·허리신경얼기·아래볼기신경 메시가 모델에 없음
+
+test('related entries reference existing meshes with known types', () => {
+  const errs = validateContent({ Femur: { ...base, kind: 'bone', landmarks: 'l', joints: 'j', related: [{ type: '뼈', bases: ['Ghost'] }] } }, fakeIndex);
+  assert.ok(errs.some((e) => e.includes('Ghost')));
+  const errs2 = validateContent({ Femur: { ...base, kind: 'bone', landmarks: 'l', joints: 'j', related: [{ type: '질환', bases: ['Femur'] }] } }, fakeIndex);
+  assert.ok(errs2.some((e) => e.includes('질환')));
+});
+
+test('every entry has related structures; every muscle lists its nerve', () => {
+  for (const [key, entry] of Object.entries(content)) {
+    assert.ok(Array.isArray(entry.related) && entry.related.length > 0, key);
+    for (const r of entry.related) assert.ok(TYPES.includes(r.type), `${key} ${r.type}`);
+    if (entry.kind === 'muscle' && !NO_NERVE_MESH.includes(key)) {
+      assert.ok(entry.related.some((r) => r.type === '신경'), `${key} has no nerve`);
+    }
+  }
+});
+
+test('reproductive organ entries exist for both sexes', () => {
+  for (const k of ['Uterus', 'Ovary', 'Uterine tube', 'Prostate', 'Testis']) assert.ok(content[k], k);
+  const name = (b) => Object.keys(index).find((k) => index[k].base === b);
+  assert.equal(contentFor(name('Urinary bladder (female)'), index, content)?.name_ko, '방광');
+});
