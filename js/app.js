@@ -119,13 +119,59 @@ function showError(err) {
   $('load-error').hidden = false;
 }
 
+// ── 세로 막대: 확대했을 때 머리~발 사이를 위아래로 이동 ──
+const vbar = $('vbar');
+const vthumb = $('vbar-thumb');
+let slice = { start: 0, size: 1 };
+
+function renderVbar(next) {
+  slice = next;
+  const zoomed = next.size < 0.97;
+  if (vbar.hidden === zoomed) vbar.hidden = !zoomed;
+  if (!zoomed) return;
+  vthumb.style.top = `${(next.start * 100).toFixed(2)}%`;
+  vthumb.style.height = `${(next.size * 100).toFixed(2)}%`;
+  vbar.setAttribute('aria-valuenow', String(Math.round((next.start / Math.max(1e-6, 1 - next.size)) * 100)));
+}
+
+function bindVbar() {
+  let drag = null; // { offset } 막대 위치(0~1)에서 손잡이 시작점까지의 차이
+  const ratioAt = (clientY) => {
+    const r = vbar.getBoundingClientRect();
+    return (clientY - r.top) / r.height;
+  };
+  const clampStart = (v) => Math.min(1 - slice.size, Math.max(0, v));
+  vbar.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    vbar.setPointerCapture(e.pointerId);
+    const at = ratioAt(e.clientY);
+    const onThumb = at >= slice.start && at <= slice.start + slice.size;
+    drag = { offset: onThumb ? at - slice.start : slice.size / 2 };
+    if (!onThumb) viewer.scrollToThumb(clampStart(at - drag.offset));
+  });
+  vbar.addEventListener('pointermove', (e) => {
+    if (drag) viewer.scrollToThumb(clampStart(ratioAt(e.clientY) - drag.offset));
+  });
+  const end = () => { drag = null; };
+  vbar.addEventListener('pointerup', end);
+  vbar.addEventListener('pointercancel', end);
+  vbar.addEventListener('keydown', (e) => {
+    const step = { ArrowUp: -0.05, ArrowDown: 0.05, PageUp: -slice.size, PageDown: slice.size }[e.key];
+    if (step === undefined) return;
+    e.preventDefault();
+    viewer.scrollToThumb(clampStart(slice.start + step));
+  });
+}
+
 async function start() {
   window.__appStarted = true;
   viewer = createViewer($('view'), {
     index,
     isPickable: (name, layers, hidden) => isPickable(name, index, layers, hidden),
     onPick: (name) => { state = { ...state, selected: name }; render(); },
+    onViewChange: renderVbar,
   });
+  bindVbar();
   loadInsertions = onceUntilSuccess(() => viewer.loadInsertions());
   for (const l of LAYERS) viewer.setLayerState(l.id, state.layers[l.id]);
   renderLayerButtons();
