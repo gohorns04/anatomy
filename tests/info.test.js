@@ -46,3 +46,10 @@ test('text is escaped', () => {
   assert.ok(!html.includes('<b>'));
   assert.equal(escapeHtml(`"'`), '&quot;&#39;');
 });
+
+test('empty panel guides the user to tap a structure', async () => {
+  const { renderEmpty } = await import('../js/info.js');
+  const html = renderEmpty();
+  assert.match(html, /구조물을 누르면/);
+  assert.ok(!html.includes('준비'));
+});

@@ -204,7 +204,7 @@ button { font: inherit; color: inherit; }
 
 .error-box .pill { margin-top: 14px; }
 .error-title { margin: 0 0 6px; font-size: 1.125rem; font-weight: 700; color: var(--ink); }
-body.error #view, body.error .layers, body.error .loading { display: none; }
+body.error #view, body.error .layers, body.error .loading, body.error .sheet { display: none; }
 
 .toast {
   position: absolute;
@@ -326,4 +326,36 @@ body.sheet-open .show-all { bottom: calc(46dvh + 12px); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 1ms !important; animation-duration: 1ms !important; }
+}
+
+/* 선택 전에는 시트의 동작 버튼과 닫기 버튼을 숨긴다 */
+.sheet:not(.has-selection) .sheet-actions,
+.sheet:not(.has-selection) .sheet-close { display: none; }
+
+/* ── 넓은 화면: 모델 왼쪽 3/4, 설명 오른쪽 1/4 ── */
+@media (min-width: 700px) {
+  :root { --panel-w: clamp(300px, 25vw, 460px); }
+
+  #view { width: calc(100% - var(--panel-w)); }
+  .top { right: var(--panel-w); }
+  .toast, .loading { left: calc((100% - var(--panel-w)) / 2); }
+  body.sheet-open .toast,
+  body.sheet-open .show-all { bottom: calc(env(safe-area-inset-bottom) + 20px); }
+
+  .sheet {
+    top: 0;
+    left: auto;
+    right: 0;
+    width: var(--panel-w);
+    max-height: none;
+    padding: calc(env(safe-area-inset-top) + 20px) max(22px, env(safe-area-inset-right)) calc(env(safe-area-inset-bottom) + 22px) 22px;
+    border-radius: 0;
+    border-left: 1px solid var(--line);
+    box-shadow: none;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+  .sheet-close { top: calc(env(safe-area-inset-top) + 12px); }
+  .sheet-actions { flex-wrap: wrap; }
 }

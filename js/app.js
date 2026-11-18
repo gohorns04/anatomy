@@ -1,11 +1,13 @@
 import { createViewer } from './viewer.js';
 import { LAYERS, STATE_LABEL, initialLayerStates, layerEvent, needsLoad } from './layers.js';
 import { isPickable, applyLayerChange, hideSelected, isolateSelected, showAll, insertionNamesFor } from './visibility.js';
-import { renderInfo } from './info.js';
+import { renderInfo, renderEmpty } from './info.js';
 import { onceUntilSuccess } from './retry.js';
 
 const $ = (id) => document.getElementById(id);
 const sheet = $('sheet');
+// 넓은 화면(가로 700px 이상): 모델 왼쪽 3/4, 설명 패널 오른쪽 1/4에 항상 표시
+const wide = window.matchMedia('(min-width: 700px)');
 const loadingBar = $('loading-bar');
 
 let index = {};
@@ -56,13 +58,16 @@ function render() {
   viewer.setSelected(state.selected);
   $('show-all').hidden = state.hidden.length === 0;
 
-  const open = Boolean(state.selected);
-  if (open) $('sheet-body').innerHTML = renderInfo(state.selected, index, content);
+  const selectedNow = Boolean(state.selected);
+  const open = selectedNow || wide.matches;
+  if (selectedNow) $('sheet-body').innerHTML = renderInfo(state.selected, index, content);
+  else if (wide.matches) $('sheet-body').innerHTML = renderEmpty();
   sheet.classList.toggle('open', open);
+  sheet.classList.toggle('has-selection', selectedNow);
   sheet.setAttribute('aria-hidden', String(!open));
   sheet.inert = !open;
-  document.body.classList.toggle('sheet-open', open);
-  if (open) sheet.scrollTop = 0;
+  document.body.classList.toggle('sheet-open', selectedNow);
+  sheet.scrollTop = 0;
   updateInsertions();
 }
 
@@ -100,6 +105,7 @@ function bindUi() {
   $('act-isolate').addEventListener('click', () => { state = isolateSelected(state, index); render(); });
   $('show-all').addEventListener('click', () => { state = showAll(state); render(); });
   $('info-open').addEventListener('click', () => $('about').showModal());
+  wide.addEventListener('change', render);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && state.selected) { state = { ...state, selected: null }; render(); }
   });
@@ -113,6 +119,7 @@ function showError(err) {
 }
 
 async function start() {
+  window.__appStarted = true;
   viewer = createViewer($('view'), {
     index,
     isPickable: (name, layers, hidden) => isPickable(name, index, layers, hidden),

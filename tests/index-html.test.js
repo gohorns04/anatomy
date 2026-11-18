@@ -31,3 +31,9 @@ test('six layer buttons in order', () => {
 test('load error box offers a retry that works without the module', () => {
   assert.match(html, /<button[^>]*id="load-retry"[^>]*onclick="location\.reload\(\)"/);
 });
+
+test('a module linking error (e.g. stale cached module) shows the load error instead of hanging', () => {
+  const classic = [...html.matchAll(/<script(?![^>]*type="(?:module|importmap)")[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]).join('\n');
+  assert.match(classic, /addEventListener\('error'/);
+  assert.match(classic, /__appStarted/);
+});

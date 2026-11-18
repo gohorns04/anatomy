@@ -75,7 +75,8 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   const HOME_TARGET = new THREE.Vector3(0, 0.9, 0);
   function resetView() {
     const fit = 1.95 / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
-    const dist = camera.aspect < 0.75 ? fit * (0.75 / camera.aspect) * 0.9 : fit;
+    // 세로 화면은 폭에 맞추고, 가로 화면은 위쪽 층 버튼에 머리가 걸리지 않게 조금 물러난다.
+    const dist = camera.aspect < 0.75 ? fit * (0.75 / camera.aspect) * 0.9 : fit * 1.18;
     controls.target.copy(HOME_TARGET);
     camera.position.set(0, 0.95, dist);
     controls.update();

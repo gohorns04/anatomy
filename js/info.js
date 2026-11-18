@@ -47,3 +47,15 @@ export function renderInfo(meshName, index, content) {
     ${table(rows)}
     ${fact}`;
 }
+
+// 넓은 화면의 오른쪽 패널에 아무것도 선택하지 않았을 때 보이는 안내
+export function renderEmpty() {
+  return `<h2 class="info-title" id="info-title">몸 탐험</h2>
+    <p class="info-summary">구조물을 누르면 이름과 설명이 여기에 나와요.</p>
+    <dl class="info-table">
+      <div><dt>돌리기</dt><dd>한 손가락(마우스)으로 끌어요.</dd></div>
+      <div><dt>확대</dt><dd>두 손가락으로 벌리거나 휠을 굴려요.</dd></div>
+      <div><dt>층</dt><dd>위의 버튼을 누를 때마다 켬 → 반투명 → 끔으로 바뀌어요.</dd></div>
+      <div><dt>처음 시점</dt><dd>빈 곳을 두 번 탭해요.</dd></div>
+    </dl>`;
+}

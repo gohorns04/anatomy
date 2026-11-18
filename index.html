@@ -29,6 +29,12 @@
       document.getElementById('load-error').hidden = false;
     }
     if (location.protocol === 'file:') document.addEventListener('DOMContentLoaded', showLoadError);
+    // 모듈 연결 단계 오류(예: 업데이트 직후 캐시에 남은 옛 파일과 섞임)는 onerror가 아니라 window error로 온다.
+    window.addEventListener('error', function () {
+      if (window.__appStarted) return;
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showLoadError);
+      else showLoadError();
+    });
   </script>
   <script type="module" src="js/app.js" onerror="document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', showLoadError) : showLoadError()"></script>
 </head>
