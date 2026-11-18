@@ -1,6 +1,10 @@
 # 몸 탐험
 
-층별로 벗겨 보는 3D 인체 해부 웹앱이에요. 피부, 근육, 뼈, 장기, 혈관, 신경 층을 켜고 끄며 구조물을 눌러 한국어 설명을 볼 수 있어요. 빌드 도구 없이 정적 파일로 동작해요. 런타임 라이브러리는 `vendor/three/`의 three.js 0.170.0 하나뿐이에요.
+층별로 벗겨 보는 3D 인체 해부 웹앱이에요. 피부, 근육, 뼈, 장기, 혈관, 신경 층을 켜고 끄며 구조물을 눌러 한국어 설명을 볼 수 있어요.
+
+- 이름 검색(한글·영어·라틴어·초성), 부위 바로가기(머리~발, 등), 이름표, 가로 단면
+- 연결된 구조물(지배 신경, 붙는 뼈, 혈관 등)을 눌러 이동
+- 남/여 전환: 여성 모드에서는 골반 장기(자궁·난소·자궁관·방광)가 여성형으로 바뀌어요. 근육·뼈·신경·혈관은 공통이고 피부층은 지원하지 않아요. 빌드 도구 없이 정적 파일로 동작해요. 런타임 라이브러리는 `vendor/three/`의 three.js 0.170.0 하나뿐이에요.
 
 ## 로컬에서 실행
 
@@ -36,7 +40,8 @@ Node 내장 테스트(`tests/`)와 파이썬 `unittest`(`tools/test_*.py`)를 �
 
 1. Z-Anatomy `Z-Anatomy.zip`을 받아 `.cache/zanatomy/`에 풀어요 (`Z-Anatomy/Startup.blend`).
 2. BodyParts3D `partof_BP3D_4.0_obj_99.zip`과 `partof_element_parts.txt`를 받아 `.cache/bp3d/`에 둬요 (OBJ는 `.cache/bp3d/obj/`에 풀어요).
-3. Blender 5.3과 Node가 필요해요.
+3. Human Reference Atlas v1.2 여성 장기(`VH_F_Uterus`, `VH_F_Ovary_L/R`, `VH_F_Fallopian_Tube_L/R`, `VH_F_Urinary_Bladder`, `VH_F_Pelvis`)의 glb를 `.cache/hra/`에 받아요 (GitHub `hubmapconsortium/ccf-releases`의 `v1.2/models`).
+4. Blender 5.3과 Node가 필요해요.
 
 ```bash
 npm run build:model
@@ -48,6 +53,7 @@ npm run build:model
 
 - Z-Anatomy (Gauthier Kervyn, Marcin Zielinski), CC BY-SA 4.0
 - BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International
+- 여성 골반 장기: Browne, K., Schlehlein, H., Herr II, B. W., Quardokus, E., Bueckle, A., Börner, K. (2022). HuBMAP CCF 3D Reference Object Library (Human Reference Atlas), CC BY 4.0
 
 `model/`의 변환된 모델 파일과, 그 모델을 렌더한 아이콘(`icons/`)은 CC BY-SA 4.0으로 배포해요(`model/LICENSE.txt`). 한국어 내용은 표준 해부학 지식을 바탕으로 작성한 교양용 설명이며 의학적 조언이 아니에요.
 
