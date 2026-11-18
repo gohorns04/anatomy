@@ -27,3 +27,7 @@ test('six layer buttons in order', () => {
   const ids = [...html.matchAll(/data-layer="([a-z]+)"/g)].map((m) => m[1]);
   assert.deepEqual(ids, ['skin', 'muscle', 'bone', 'organ', 'vessel', 'nerve']);
 });
+
+test('load error box offers a retry that works without the module', () => {
+  assert.match(html, /<button[^>]*id="load-retry"[^>]*onclick="location\.reload\(\)"/);
+});

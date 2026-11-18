@@ -2,6 +2,7 @@ import { createViewer } from './viewer.js';
 import { LAYERS, STATE_LABEL, initialLayerStates, layerEvent, needsLoad } from './layers.js';
 import { isPickable, applyLayerChange, hideSelected, isolateSelected, showAll, insertionNamesFor } from './visibility.js';
 import { renderInfo } from './info.js';
+import { onceUntilSuccess } from './retry.js';
 
 const $ = (id) => document.getElementById(id);
 const sheet = $('sheet');
@@ -12,8 +13,8 @@ let content = {};
 let state = { layers: initialLayerStates(), hidden: [], selected: null };
 const loaded = new Set();
 const loading = new Set();
-let insertionNames = null;
-let insertionsPromise = null;
+let insertionNames = [];
+let loadInsertions = null;
 let viewer;
 
 function toast(text) {
@@ -40,8 +41,12 @@ async function updateInsertions() {
     viewer.showInsertions();
     return;
   }
-  insertionsPromise ??= viewer.loadInsertions().then((names) => { insertionNames = names; }).catch(() => { insertionNames = []; });
-  await insertionsPromise;
+  try {
+    insertionNames = await loadInsertions();
+  } catch (err) {
+    console.error('insertions failed', err); // 다음 근육 선택 때 다시 시도한다
+    return;
+  }
   if (state.selected === sel) viewer.showInsertions(insertionNamesFor(sel, insertionNames));
 }
 
@@ -113,6 +118,7 @@ async function start() {
     isPickable: (name, layers, hidden) => isPickable(name, index, layers, hidden),
     onPick: (name) => { state = { ...state, selected: name }; render(); },
   });
+  loadInsertions = onceUntilSuccess(() => viewer.loadInsertions());
   for (const l of LAYERS) viewer.setLayerState(l.id, state.layers[l.id]);
   renderLayerButtons();
 

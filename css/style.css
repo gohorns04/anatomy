@@ -202,6 +202,7 @@ button { font: inherit; color: inherit; }
   color: var(--muted);
 }
 
+.error-box .pill { margin-top: 14px; }
 .error-title { margin: 0 0 6px; font-size: 1.125rem; font-weight: 700; color: var(--ink); }
 body.error #view, body.error .layers, body.error .loading { display: none; }
 

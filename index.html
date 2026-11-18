@@ -59,7 +59,8 @@
 
   <div class="error-box" id="load-error" role="alert" hidden>
     <p class="error-title">모델을 불러오지 못했어요</p>
-    <p>인터넷 연결을 확인한 뒤 새로고침해 주세요. 파일을 직접 열었다면 웹 서버를 통해 열어야 해요.</p>
+    <p>인터넷 연결을 확인한 뒤 다시 시도해 주세요. 파일을 직접 열었다면 웹 서버를 통해 열어야 해요.</p>
+    <button type="button" class="pill" id="load-retry" onclick="location.reload()">다시 시도</button>
   </div>
 
   <p class="toast" id="toast" role="status" hidden></p>

@@ -89,7 +89,7 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   let hidden = new Set();
   let selected = null;
   let selectedMaterial = null;
-  const markers = new Map(); // insertion name → mesh
+  const markers = new Map(); // insertion name → [선명한 메시, 비쳐 보이는 메시]
   let dirty = true;
 
   function materialsFor(kind) {
@@ -151,13 +151,21 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   async function loadInsertions() {
     const gltf = await loadGlb('model/insertions.glb');
     const names = await originalNames(gltf);
-    const originMat = new THREE.MeshBasicMaterial({ color: ORIGIN, depthTest: false, transparent: true, opacity: 0.92 });
-    const insertionMat = new THREE.MeshBasicMaterial({ color: INSERTION, depthTest: false, transparent: true, opacity: 0.92 });
+    // 두 번 그린다: 가려지지 않은 곳은 선명하게(깊이 검사, 뼈 표면 위로 살짝 당김),
+    // 가려진 곳은 흐리게 비쳐 보이게(깊이 검사 없음). 근육이 자기 부착부를 덮어도 위치를 알 수 있다.
+    const front = (color) => new THREE.MeshBasicMaterial({ color, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+    const through = (color) => new THREE.MeshBasicMaterial({ color, depthTest: false, depthWrite: false, transparent: true, opacity: 0.35 });
+    const mats = { o: [front(ORIGIN), through(ORIGIN)], e: [front(INSERTION), through(INSERTION)] };
     for (const [obj, name] of names) {
-      obj.material = /\.o[lr]?$/.test(name) ? originMat : insertionMat;
-      obj.renderOrder = 10;
-      obj.visible = false;
-      markers.set(name, obj);
+      const [solid, faint] = mats[/\.o[lr]?$/.test(name) ? 'o' : 'e'];
+      const ghost = obj.clone();
+      obj.material = solid;
+      obj.renderOrder = 9;
+      ghost.material = faint;
+      ghost.renderOrder = 10;
+      obj.parent.add(ghost);
+      obj.visible = ghost.visible = false;
+      markers.set(name, [obj, ghost]);
     }
     scene.add(gltf.scene);
     return [...names.values()];
@@ -165,7 +173,7 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
 
   function showInsertions({ origins = [], insertions = [] } = {}) {
     const on = new Set([...origins, ...insertions]);
-    for (const [name, mesh] of markers) mesh.visible = on.has(name);
+    for (const [name, pair] of markers) for (const m of pair) m.visible = on.has(name);
     dirty = true;
   }
 
@@ -183,8 +191,10 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   }
 
   function setSelected(name) {
+    if (name === selected) return;
     const prev = selected;
     selected = name;
+    selectedMaterial?.dispose();
     selectedMaterial = null;
     if (prev) applyMesh(prev);
     if (name) applyMesh(name);
