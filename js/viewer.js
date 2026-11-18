@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { createTapHandler } from './tap.js';
-import { focusDistance, clampTargetY, thumbFromView, targetYFromThumb } from './camera-math.js';
+import { focusDistance } from './camera-math.js';
 
 const COLORS = {
   skin: 0xe3b598,
@@ -53,7 +53,7 @@ async function originalNames(gltf) {
   return names;
 }
 
-export function createViewer(canvas, { onPick, isPickable, index, onViewChange }) {
+export function createViewer(canvas, { onPick, isPickable, index }) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
@@ -100,26 +100,6 @@ export function createViewer(canvas, { onPick, isPickable, index, onViewChange }
     controls.target.lerpVectors(flight.from.target, flight.to.target, k);
     if (t >= 1) flight = null;
     dirty = true;
-  }
-
-  function moveVertically(dy) {
-    const target = controls.target.clone();
-    const newY = clampTargetY(target.y + dy);
-    const shift = newY - target.y;
-    controls.target.y += shift;
-    camera.position.y += shift;
-    controls.update();
-    dirty = true;
-  }
-
-  // 세로 스크롤바용: 지금 보이는 몸 구간과, 막대 위치로 시점 옮기기
-  const visibleHeight = () => 2 * camera.position.distanceTo(controls.target) * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
-  function viewSlice() {
-    return thumbFromView(controls.target.y, visibleHeight());
-  }
-  function scrollToThumb(start) {
-    flight = null;
-    moveVertically(targetYFromThumb(start, visibleHeight()) - controls.target.y);
   }
 
   function focusOn(name) {
@@ -304,7 +284,6 @@ export function createViewer(canvas, { onPick, isPickable, index, onViewChange }
     controls.update();
     if (dirty) {
       renderer.render(scene, camera);
-      onViewChange?.(viewSlice());
       dirty = false;
     }
     requestAnimationFrame(frame);
@@ -315,5 +294,5 @@ export function createViewer(canvas, { onPick, isPickable, index, onViewChange }
 
   if (new URLSearchParams(location.search).has('debug')) window.__viewer = { THREE, scene, camera, renderer, meshes };
 
-  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn, scrollToThumb };
+  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn };
 }

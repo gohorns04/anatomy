@@ -55,7 +55,7 @@ export function renderEmpty() {
     <dl class="info-table">
       <div><dt>돌리기</dt><dd>한 손가락(마우스)으로 끌어요.</dd></div>
       <div><dt>확대</dt><dd>마우스 휠을 굴리거나 두 손가락으로 벌려요.</dd></div>
-      <div><dt>위아래 이동</dt><dd>확대하면 나타나는 오른쪽 세로 막대를 끌어요.</dd></div>
+      <div><dt>옮기기</dt><dd>마우스 오른쪽 버튼(또는 Shift)으로 끌거나, 두 손가락으로 끌어요.</dd></div>
       <div><dt>가까이 보기</dt><dd>구조물을 고른 뒤 "가까이 보기"를 눌러요.</dd></div>
       <div><dt>층</dt><dd>위의 버튼을 누를 때마다 켬 → 반투명 → 끔으로 바뀌어요.</dd></div>
       <div><dt>처음 시점</dt><dd>빈 곳을 두 번 탭해요.</dd></div>

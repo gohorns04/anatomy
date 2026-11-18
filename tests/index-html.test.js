@@ -37,8 +37,3 @@ test('a module linking error (e.g. stale cached module) shows the load error ins
   assert.match(classic, /addEventListener\('error'/);
   assert.match(classic, /__appStarted/);
 });
-
-test('vertical bar for moving up and down exists and is labeled', () => {
-  assert.match(html, /<div[^>]*id="vbar"[^>]*role="scrollbar"[^>]*aria-orientation="vertical"/);
-  assert.match(html, /id="vbar-thumb"/);
-});
