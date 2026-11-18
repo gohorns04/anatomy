@@ -16,6 +16,12 @@ function representative(base, byBase) {
   return names.find((n) => n.endsWith('.r')) ?? names.find((n) => !/\.[lr]$/.test(n)) ?? names[0];
 }
 
+// 내용 항목의 대표 메시: 지금 성별에서 보이는 base를 우선한다(예: 여성 모드의 "방광").
+function entryMesh(key, entry, byBase, index, sex) {
+  const meshes = [key, ...(entry.bases ?? [])].map((b) => representative(b, byBase)).filter(Boolean);
+  return meshes.find((m) => !index[m].sex || index[m].sex === sex) ?? meshes[0];
+}
+
 function score(fields, q, qCho) {
   let best = Infinity;
   for (const f of fields) {
@@ -32,7 +38,7 @@ function score(fields, q, qCho) {
   return best;
 }
 
-export function search(query, index, content, { limit = 20 } = {}) {
+export function search(query, index, content, { limit = 20, sex = 'male' } = {}) {
   const q = norm(query);
   if (!q) return [];
   const qCho = isChoseong(q.replace(/\s/g, '')) ? q.replace(/\s/g, '') : null;
@@ -47,7 +53,7 @@ export function search(query, index, content, { limit = 20 } = {}) {
   const covered = new Set();
   for (const [key, entry] of Object.entries(content)) {
     for (const b of [key, ...(entry.bases ?? [])]) covered.add(b);
-    const mesh = representative(key, byBase);
+    const mesh = entryMesh(key, entry, byBase, index, sex);
     if (!mesh) continue;
     const ko = entry.name_ko;
     const parts = [ko, ...ko.split(/[()]/).map((s) => s.trim()).filter(Boolean), entry.name_en, entry.name_la, key];

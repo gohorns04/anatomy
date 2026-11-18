@@ -7,6 +7,7 @@ import { createTapHandler } from './tap.js';
 import { focusDistance } from './camera-math.js';
 import { visibleForSex } from './sex.js';
 import { belowClip } from './clip.js';
+import { onceUntilSuccess } from './retry.js';
 
 const COLORS = {
   skin: 0xe3b598,
@@ -137,6 +138,7 @@ export function createViewer(canvas, { onPick, isPickable, index, onRender }) {
   function materialsFor(kind) {
     if (!materials[kind]) {
       const base = baseMaterial(COLORS[kind], kind);
+      if (clipY != null) base.side = THREE.DoubleSide;
       materials[kind] = { base, ghost: ghostOf(base) };
     }
     return materials[kind];
@@ -174,11 +176,17 @@ export function createViewer(canvas, { onPick, isPickable, index, onRender }) {
     });
   }
 
+  const fileLoads = new Map();
+  function loadFileOnce(file, layer, onProgress) {
+    if (!fileLoads.has(file)) fileLoads.set(file, onceUntilSuccess(() => loadFile(file, layer, onProgress)));
+    return fileLoads.get(file)();
+  }
+
   async function loadLayer(layer, onProgress) {
     if (layer === 'organ') {
-      await Promise.all([loadFile('organ', layer, onProgress), loadFile('female', layer)]);
+      await Promise.all([loadFileOnce('organ', layer, onProgress), loadFileOnce('female', layer)]);
     } else {
-      await loadFile(layer, layer, onProgress);
+      await loadFileOnce(layer, layer, onProgress);
     }
   }
 
@@ -311,27 +319,49 @@ export function createViewer(canvas, { onPick, isPickable, index, onRender }) {
     if (!centerCache.has(mesh)) centerCache.set(mesh, new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3()));
     return centerCache.get(mesh);
   }
-  function labelCandidates(names, size = { w: 80, h: 22 }) {
+  // 켜진 층(on)의 보이는 메시만, 화면 안에 있는 것의 투영 위치. 가림 검사는 labelVisible로 따로 한다.
+  function labelCandidates(names) {
     const rect = canvas.getBoundingClientRect();
-    const visible = [];
-    for (const [name, mesh] of meshes) if (mesh.visible && isPickable(name, layerStates, hidden)) visible.push(mesh);
     const out = [];
     const v = new THREE.Vector3();
     for (const name of names) {
       const mesh = meshes.get(name);
-      if (!mesh || !mesh.visible) continue;
+      if (!mesh || !mesh.visible || !isPickable(name, layerStates, hidden)) continue;
       const c = centerOf(mesh);
       if (!belowClip(c.y, clipY)) continue;
       v.copy(c).project(camera);
       if (v.z > 1 || Math.abs(v.x) > 0.95 || Math.abs(v.y) > 0.95) continue;
       const x = (v.x + 1) / 2 * rect.width;
       const y = (1 - v.y) / 2 * rect.height;
-      raycaster.setFromCamera(new THREE.Vector2(v.x, v.y), camera);
-      const hit = raycaster.intersectObjects(visible, false).find((h) => belowClip(h.point.y, clipY));
-      if (hit && hit.object !== mesh) continue; // 다른 구조물에 가려짐
-      out.push({ mesh: name, x, y, w: size.w, h: size.h, dist: Math.hypot(x - rect.width / 2, y - rect.height / 2) });
+      out.push({ mesh: name, x, y, dist: Math.hypot(x - rect.width / 2, y - rect.height / 2) });
     }
     return out;
+  }
+
+  // 중심점까지만 광선을 쏘아(가까운 거리 제한) 다른 구조물에 가려졌는지 본다.
+  let occluders = null;
+  function labelVisible(name) {
+    const mesh = meshes.get(name);
+    if (!mesh) return false;
+    if (!occluders) {
+      occluders = [];
+      for (const [n, m] of meshes) if (m.visible && isPickable(n, layerStates, hidden)) occluders.push(m);
+    }
+    const c = centerOf(mesh);
+    const dir = c.clone().sub(camera.position);
+    const len = dir.length();
+    raycaster.set(camera.position, dir.normalize());
+    raycaster.near = 0;
+    raycaster.far = len + 0.005;
+    const hit = raycaster.intersectObjects(occluders, false).find((h) => belowClip(h.point.y, clipY));
+    raycaster.far = Infinity;
+    return !hit || hit.object === mesh || hit.distance >= len - 0.01;
+  }
+  function beginLabelPass() { occluders = null; }
+
+  function isAboveClip(name) {
+    const mesh = meshes.get(name);
+    return Boolean(mesh) && clipY != null && !belowClip(centerOf(mesh).y, clipY);
   }
 
   // ── 크기와 렌더 루프 ──
@@ -365,5 +395,5 @@ export function createViewer(canvas, { onPick, isPickable, index, onRender }) {
 
   if (new URLSearchParams(location.search).has('debug')) window.__viewer = { THREE, scene, camera, renderer, meshes };
 
-  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn, flyToPreset, setSex, setClip, labelCandidates };
+  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn, flyToPreset, setSex, setClip, labelCandidates, labelVisible, beginLabelPass, isAboveClip };
 }

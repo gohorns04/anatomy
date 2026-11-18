@@ -700,7 +700,8 @@
         "type": "뼈",
         "bases": [
           "Hip bone",
-          "Manubrium of sternum"
+          "Xiphoid process",
+          "Fifth rib"
         ]
       },
       {
@@ -815,9 +816,10 @@
       {
         "type": "뼈",
         "bases": [
-          "Manubrium of sternum",
+          "Xiphoid process",
           "Vertebra L1",
-          "Vertebra L2"
+          "Vertebra L2",
+          "Seventh rib"
         ]
       },
       {
@@ -944,12 +946,6 @@
         "bases": [
           "Iliotibial tract",
           "Gluteus medius muscle"
-        ]
-      },
-      {
-        "type": "신경",
-        "bases": [
-          "Sciatic nerve"
         ]
       }
     ]
@@ -3301,12 +3297,6 @@
         "bases": [
           "Internal iliac artery"
         ]
-      },
-      {
-        "type": "신경",
-        "bases": [
-          "Pudendal nerve"
-        ]
       }
     ],
     "bases": [
@@ -3406,7 +3396,8 @@
       {
         "type": "장기",
         "bases": [
-          "Left ventricle"
+          "Right atrium",
+          "Liver"
         ]
       },
       {
@@ -3417,12 +3408,6 @@
           "Azygos vein",
           "Common iliac vein",
           "Hepatic veins"
-        ]
-      },
-      {
-        "type": "장기",
-        "bases": [
-          "Liver"
         ]
       }
     ]
@@ -3442,7 +3427,7 @@
       {
         "type": "장기",
         "bases": [
-          "Left ventricle",
+          "Right ventricle",
           "Superior lobe of left lung"
         ]
       },
@@ -4064,8 +4049,7 @@
         "bases": [
           "Long head of biceps femoris",
           "Semitendinosus muscle",
-          "Semimembranosus muscle",
-          "Gluteus maximus muscle"
+          "Semimembranosus muscle"
         ]
       },
       {
@@ -4086,12 +4070,6 @@
     "role": "세균, 자외선, 수분 손실을 막고, 땀과 혈관으로 체온을 조절하며, 촉각·온도·통증을 느껴요.",
     "fact": "몸에서 가장 큰 기관으로, 어른의 피부 넓이는 약 2㎡예요.",
     "related": [
-      {
-        "type": "장기",
-        "bases": [
-          "Superior lobe of left lung"
-        ]
-      },
       {
         "type": "근육",
         "bases": [
@@ -4255,7 +4233,8 @@
         "bases": [
           "Left testicular artery",
           "Right testicular artery",
-          "Left testicular vein"
+          "Left testicular vein",
+          "Right testicular vein"
         ]
       }
     ]

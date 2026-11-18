@@ -2,7 +2,7 @@ import { createViewer } from './viewer.js';
 import { LAYERS, STATE_LABEL, initialLayerStates, layerEvent, needsLoad } from './layers.js';
 import { isPickable, applyLayerChange, hideSelected, isolateSelected, showAll, insertionNamesFor, layersToGhost } from './visibility.js';
 import { renderInfo, renderEmpty, renderRelated, escapeHtml } from './info.js';
-import { onceUntilSuccess } from './retry.js';
+import { onceUntilSuccess, createSequence } from './retry.js';
 import { contentFor } from './content.js';
 import { visibleForSex, resolveTarget, skinAllowed } from './sex.js';
 import { search } from './search.js';
@@ -22,6 +22,7 @@ let state = { layers: initialLayerStates(), hidden: [], selected: null };
 let sex = 'male';
 let labelsOn = false;
 let labelNames = []; // 한국어 내용이 있는 메시들
+const navigation = createSequence();
 
 const loaded = new Set();
 const loading = new Set();
@@ -75,7 +76,7 @@ function render() {
   const open = selectedNow || wide.matches;
   if (selectedNow) $('info-top').innerHTML = renderInfo(state.selected, index, content);
   else if (wide.matches) $('info-top').innerHTML = renderEmpty();
-  $('info-related').innerHTML = renderRelated(selectedNow ? relatedFor(state.selected, index, content) : []);
+  $('info-related').innerHTML = renderRelated(selectedNow ? relatedFor(state.selected, index, content, { sex }) : []);
   $('info-top').scrollTop = 0;
   $('info-related').scrollTop = 0;
   sheet.classList.toggle('open', open);
@@ -136,10 +137,20 @@ function setSex(next) {
 
 // ── 다른 구조물로 이동 (검색, 연결된 구조물, 이름표) ──
 async function goTo(mesh) {
+  const token = navigation.next(); // 늦게 끝난 이전 이동이 새 선택을 덮지 않게
   const target = resolveTarget(mesh, index, { sex, layers: state.layers });
+  if (target.blocked) {
+    toast('여성 모드에서는 피부층을 지원하지 않아요.');
+    return;
+  }
   if (target.sex !== sex) setSex(target.sex);
   for (const layer of target.layersToTurnOn) {
     if (!(await setLayer(layer, 'on'))) return;
+    if (!navigation.isCurrent(token)) return;
+  }
+  if (viewer.isAboveClip(mesh)) {
+    setSection(false);
+    toast('찾는 구조물이 단면 위쪽에 있어서 단면을 껐어요.');
   }
   for (const layer of layersToGhost(index[mesh]?.layer, state.layers)) {
     state = applyLayerChange(state, layer, 'ghost', index);
@@ -150,10 +161,17 @@ async function goTo(mesh) {
   viewer.focusOn(mesh);
 }
 
+// ── 단면 ──
+function setSection(on) {
+  $('section-bar').hidden = !on;
+  $('toggle-section').setAttribute('aria-pressed', String(on));
+  viewer.setClip(on ? Number($('section-height').value) : null);
+}
+
 // ── 검색 ──
 function renderSearch() {
   const q = $('search-input').value;
-  const results = search(q, index, content);
+  const results = search(q, index, content, { sex });
   $('search-results').innerHTML = results
     .map((r) => `<li><button type="button" role="option" data-goto="${escapeHtml(r.mesh)}"><span>${escapeHtml(r.title)}</span>${r.subtitle ? `<small>${escapeHtml(r.subtitle)}</small>` : ''}</button></li>`)
     .join('') || (q.trim() ? '<li class="search-none">찾는 이름이 없어요. 다른 이름이나 영어로 찾아 보세요.</li>' : '');
@@ -167,16 +185,21 @@ function openSearch(open) {
 // ── 이름표 ──
 let labelTimer = null;
 function scheduleLabels() {
-  if (!labelsOn || labelTimer) return;
-  labelTimer = setTimeout(() => { labelTimer = null; drawLabels(); }, 120);
+  if (!labelsOn) return;
+  $('labels').classList.add('moving');
+  clearTimeout(labelTimer);
+  labelTimer = setTimeout(() => { labelTimer = null; drawLabels(); }, 160);
 }
 const shortName = (mesh) => (contentFor(mesh, index, content)?.name_ko ?? '').replace(/\s*\(.*\)\s*/, '');
 function drawLabels() {
   const box = $('labels');
   if (!labelsOn) { box.innerHTML = ''; return; }
   const names = labelNames.filter((n) => visibleForSex(index[n], sex));
-  const cands = viewer.labelCandidates(names).map((c) => ({ ...c, w: shortName(c.mesh).length * 13 + 16 }));
-  const placed = new Set(placeLabels(cands, 24));
+  // 크기는 실제(글자 12px·줄높이·안쪽 여백 16·테두리 2)보다 넉넉하게 잡아 겹치지 않게 한다
+  const cands = viewer.labelCandidates(names).map((c) => ({ ...c, w: shortName(c.mesh).length * 13 + 24, h: 28 }));
+  viewer.beginLabelPass();
+  const placed = new Set(placeLabels(cands, 24, (m) => viewer.labelVisible(m)));
+  box.classList.remove('moving');
   box.innerHTML = cands.filter((c) => placed.has(c.mesh))
     .map((c) => `<button type="button" class="label" data-goto="${escapeHtml(c.mesh)}" style="left:${c.x.toFixed(0)}px;top:${c.y.toFixed(0)}px">${escapeHtml(shortName(c.mesh))}</button>`)
     .join('');
@@ -198,9 +221,12 @@ function bindUi() {
     goTo(el.dataset.goto);
   });
   $('search-open').addEventListener('click', () => openSearch($('search').hidden));
+  document.addEventListener('pointerdown', (e) => {
+    if (!$('search').hidden && !e.target.closest('#search, #search-open')) openSearch(false);
+  });
   $('search-input').addEventListener('input', renderSearch);
   $('search-input').addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') openSearch(false);
+    if (e.key === 'Escape') { e.stopPropagation(); openSearch(false); }
     if (e.key === 'Enter') { const first = $('search-results').querySelector('[data-goto]'); if (first) first.click(); }
   });
   $('toggle-labels').addEventListener('click', () => {
@@ -208,12 +234,7 @@ function bindUi() {
     $('toggle-labels').setAttribute('aria-pressed', String(labelsOn));
     drawLabels();
   });
-  $('toggle-section').addEventListener('click', () => {
-    const on = $('section-bar').hidden;
-    $('section-bar').hidden = !on;
-    $('toggle-section').setAttribute('aria-pressed', String(on));
-    viewer.setClip(on ? Number($('section-height').value) : null);
-  });
+  $('toggle-section').addEventListener('click', () => setSection($('section-bar').hidden));
   $('section-height').addEventListener('input', (e) => viewer.setClip(Number(e.target.value)));
   $('sheet-close').addEventListener('click', () => { state = { ...state, selected: null }; render(); });
   $('act-focus').addEventListener('click', () => { if (state.selected) viewer.focusOn(state.selected); });

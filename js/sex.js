@@ -10,6 +10,7 @@ export function skinAllowed(sex) {
 
 export function resolveTarget(meshName, index, { sex, layers }) {
   const info = index[meshName];
+  if (info?.layer === 'skin' && !skinAllowed(info.sex ?? sex)) return { sex, layersToTurnOn: [], blocked: true };
   return {
     sex: info?.sex ?? sex,
     layersToTurnOn: info && layers[info.layer] !== 'on' ? [info.layer] : [],

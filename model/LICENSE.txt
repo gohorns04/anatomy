@@ -11,6 +11,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 - 여성 골반 장기(female.glb: 자궁, 난소, 자궁관, 여성 방광): Human Reference Atlas, CC BY 4.0
   Browne, K., Schlehlein, H., Herr II, B. W., Quardokus, E., Bueckle, A., Börner, K. (2022).
   HuBMAP CCF 3D Reference Object Library. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html
+  라이선스: https://creativecommons.org/licenses/by/4.0/
 
 변경 사항: 층별 분리, 곡선의 메시 변환, 단순화, meshopt 압축, BodyParts3D 피부 메시와 HRA 여성 장기의 좌표 정렬, 부품 합치기.
 변환 스크립트: tools/ (앱 코드와 변환 스크립트는 이 라이선스의 대상이 아닙니다.)

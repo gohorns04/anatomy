@@ -511,3 +511,9 @@ body.sheet-open .section-bar { bottom: calc(46dvh + 12px); }
   .sheet-actions { order: -1; margin: 0 0 10px; }
 }
 .seg-sex button[aria-pressed="true"] { background: var(--select); color: #fff; box-shadow: none; }
+
+/* 리뷰 수정: 상단 컨트롤이 이름표·시트 위에, 움직이는 동안 이름표 숨김, 휴대폰 검색 목록 높이 */
+.top { z-index: 11; }
+.labels.moving { opacity: 0; }
+.labels { transition: opacity 120ms; }
+.search-results { max-height: 40dvh; }
