@@ -334,7 +334,7 @@ body.sheet-open .show-all { bottom: calc(46dvh + 12px); }
 
 /* ── 넓은 화면: 모델 왼쪽 3/4, 설명 오른쪽 1/4 ── */
 @media (min-width: 700px) {
-  :root { --panel-w: clamp(300px, 25vw, 460px); }
+  :root { --panel-w: clamp(360px, 32vw, 600px); }
 
   #view { width: calc(100% - var(--panel-w)); }
   .top { right: var(--panel-w); }

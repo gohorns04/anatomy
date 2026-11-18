@@ -101,6 +101,7 @@ function bindUi() {
     btn.addEventListener('click', () => onLayerTap(btn.dataset.layer));
   }
   $('sheet-close').addEventListener('click', () => { state = { ...state, selected: null }; render(); });
+  $('act-focus').addEventListener('click', () => { if (state.selected) viewer.focusOn(state.selected); });
   $('act-hide').addEventListener('click', () => { state = hideSelected(state); render(); });
   $('act-isolate').addEventListener('click', () => { state = isolateSelected(state, index); render(); });
   $('show-all').addEventListener('click', () => { state = showAll(state); render(); });

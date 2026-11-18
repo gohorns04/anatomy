@@ -4,6 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { createTapHandler } from './tap.js';
+import { focusDistance, scrollPanAmount, clampTargetY } from './camera-math.js';
 
 const COLORS = {
   skin: 0xe3b598,
@@ -71,16 +72,64 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   controls.minDistance = 0.25;
   controls.maxDistance = 8;
   controls.zoomToCursor = true;
+  controls.screenSpacePanning = true;
 
   const HOME_TARGET = new THREE.Vector3(0, 0.9, 0);
   function resetView() {
     const fit = 1.95 / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)));
     // 세로 화면은 폭에 맞추고, 가로 화면은 위쪽 층 버튼에 머리가 걸리지 않게 조금 물러난다.
     const dist = camera.aspect < 0.75 ? fit * (0.75 / camera.aspect) * 0.9 : fit * 1.18;
+    flight = null;
     controls.target.copy(HOME_TARGET);
     camera.position.set(0, 0.95, dist);
     controls.update();
     dirty = true;
+  }
+
+  // ── 카메라 이동 ──
+  let flight = null; // { from:{pos,target}, to:{pos,target}, start, ms }
+  function flyTo(target, position, ms = 450) {
+    flight = { from: { pos: camera.position.clone(), target: controls.target.clone() }, to: { pos: position, target }, start: performance.now(), ms };
+    dirty = true;
+  }
+  function stepFlight(now) {
+    if (!flight) return;
+    const t = Math.min(1, (now - flight.start) / flight.ms);
+    const k = 1 - (1 - t) ** 3;
+    camera.position.lerpVectors(flight.from.pos, flight.to.pos, k);
+    controls.target.lerpVectors(flight.from.target, flight.to.target, k);
+    if (t >= 1) flight = null;
+    dirty = true;
+  }
+
+  function moveVertically(dy) {
+    const target = controls.target.clone();
+    const newY = clampTargetY(target.y + dy);
+    const shift = newY - target.y;
+    controls.target.y += shift;
+    camera.position.y += shift;
+    controls.update();
+    dirty = true;
+  }
+
+  // 휠·트랙패드 두 손가락 스크롤 = 위아래 이동, 핀치(ctrl+휠)·Ctrl+휠 = 확대
+  window.addEventListener('wheel', (e) => {
+    if (e.target !== canvas || e.ctrlKey || e.metaKey) return;
+    e.preventDefault();
+    e.stopPropagation();
+    flight = null;
+    moveVertically(scrollPanAmount(e.deltaY, camera.position.distanceTo(controls.target)));
+  }, { capture: true, passive: false });
+
+  function focusOn(name) {
+    const mesh = meshes.get(name);
+    if (!mesh) return;
+    const box = new THREE.Box3().setFromObject(mesh);
+    const center = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const dist = focusDistance(Math.max(size.x, size.y, size.z), camera.fov, camera.aspect);
+    const dir = camera.position.clone().sub(controls.target).normalize();
+    flyTo(center, center.clone().add(dir.multiplyScalar(dist)));
   }
 
   const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
@@ -248,8 +297,9 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   window.addEventListener('resize', resize);
   controls.addEventListener('change', () => { dirty = true; });
 
-  function frame() {
+  function frame(now) {
     resize();
+    stepFlight(now ?? performance.now());
     controls.update();
     if (dirty) {
       renderer.render(scene, camera);
@@ -263,5 +313,5 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
 
   if (new URLSearchParams(location.search).has('debug')) window.__viewer = { THREE, scene, camera, renderer, meshes };
 
-  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView };
+  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn };
 }
