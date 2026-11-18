@@ -5,6 +5,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { createTapHandler } from './tap.js';
 import { focusDistance } from './camera-math.js';
+import { visibleForSex } from './sex.js';
+import { belowClip } from './clip.js';
 
 const COLORS = {
   skin: 0xe3b598,
@@ -53,9 +55,10 @@ async function originalNames(gltf) {
   return names;
 }
 
-export function createViewer(canvas, { onPick, isPickable, index }) {
+export function createViewer(canvas, { onPick, isPickable, index, onRender }) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.localClippingEnabled = false;
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(30, 1, 0.01, 30);
@@ -102,6 +105,11 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
     dirty = true;
   }
 
+  function flyToPreset({ target, distance, dir }) {
+    const t = new THREE.Vector3(...target);
+    flyTo(t, t.clone().add(new THREE.Vector3(...dir).multiplyScalar(distance)), 550);
+  }
+
   function focusOn(name) {
     const mesh = meshes.get(name);
     if (!mesh) return;
@@ -122,6 +130,9 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   let selectedMaterial = null;
   const markers = new Map(); // insertion name → [선명한 메시, 비쳐 보이는 메시]
   let dirty = true;
+  let sex = 'male';
+  let clipY = null;
+  const clipPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 0); // y <= clipY만 남긴다
 
   function materialsFor(kind) {
     if (!materials[kind]) {
@@ -138,7 +149,8 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
     if (!mesh) return;
     const layer = mesh.userData.layer;
     const state = layerStates[layer] ?? 'off';
-    mesh.visible = state !== 'off' && !hidden.has(name);
+    const sexOk = visibleForSex(index[name] ?? {}, sex);
+    mesh.visible = state !== 'off' && !hidden.has(name) && sexOk;
     const mats = materialsFor(mesh.userData.kind);
     if (name === selected) {
       if (!selectedMaterial) {
@@ -148,7 +160,7 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
         selectedMaterial.emissiveIntensity = 0.25;
       }
       mesh.material = selectedMaterial;
-      mesh.visible = !hidden.has(name) && state !== 'off';
+      mesh.visible = !hidden.has(name) && state !== 'off' && sexOk;
       mesh.renderOrder = 2;
     } else {
       mesh.material = state === 'ghost' ? mats.ghost : mats.base;
@@ -163,7 +175,15 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
   }
 
   async function loadLayer(layer, onProgress) {
-    const gltf = await loadGlb(`model/${layer}.glb`, onProgress);
+    if (layer === 'organ') {
+      await Promise.all([loadFile('organ', layer, onProgress), loadFile('female', layer)]);
+    } else {
+      await loadFile(layer, layer, onProgress);
+    }
+  }
+
+  async function loadFile(file, layer, onProgress) {
+    const gltf = await loadGlb(`model/${file}.glb`, onProgress);
     const names = await originalNames(gltf);
     const group = new THREE.Group();
     group.name = layer;
@@ -221,6 +241,27 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
     dirty = true;
   }
 
+  function setSex(next) {
+    sex = next;
+    for (const name of meshes.keys()) applyMesh(name);
+    dirty = true;
+  }
+
+  function setClip(y) {
+    clipY = y;
+    const on = y != null;
+    clipPlane.constant = on ? y : 0;
+    renderer.localClippingEnabled = on;
+    renderer.clippingPlanes = on ? [clipPlane] : [];
+    // 잘린 단면 안쪽이 보이도록 양면으로 그린다
+    for (const { base, ghost } of Object.values(materials)) {
+      base.side = ghost.side = on ? THREE.DoubleSide : THREE.FrontSide;
+      base.needsUpdate = ghost.needsUpdate = true;
+    }
+    if (selectedMaterial) { selectedMaterial.side = on ? THREE.DoubleSide : THREE.FrontSide; selectedMaterial.needsUpdate = true; }
+    dirty = true;
+  }
+
   function setSelected(name) {
     if (name === selected) return;
     const prev = selected;
@@ -249,7 +290,7 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
     raycaster.setFromCamera(ndc, camera);
     const candidates = [];
     for (const [name, mesh] of meshes) if (mesh.visible && isPickable(name, layerStates, hidden)) candidates.push(mesh);
-    const hit = raycaster.intersectObjects(candidates, false)[0];
+    const hit = raycaster.intersectObjects(candidates, false).find((h) => belowClip(h.point.y, clipY));
     return hit ? hit.object.userData.name : null;
   }
 
@@ -263,6 +304,35 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
     down = null;
     if (moved <= TAP_SLOP) tap(e.clientX, e.clientY);
   });
+
+  // ── 이름표 후보: 화면 위치와 가림 여부 ──
+  const centerCache = new Map();
+  function centerOf(mesh) {
+    if (!centerCache.has(mesh)) centerCache.set(mesh, new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3()));
+    return centerCache.get(mesh);
+  }
+  function labelCandidates(names, size = { w: 80, h: 22 }) {
+    const rect = canvas.getBoundingClientRect();
+    const visible = [];
+    for (const [name, mesh] of meshes) if (mesh.visible && isPickable(name, layerStates, hidden)) visible.push(mesh);
+    const out = [];
+    const v = new THREE.Vector3();
+    for (const name of names) {
+      const mesh = meshes.get(name);
+      if (!mesh || !mesh.visible) continue;
+      const c = centerOf(mesh);
+      if (!belowClip(c.y, clipY)) continue;
+      v.copy(c).project(camera);
+      if (v.z > 1 || Math.abs(v.x) > 0.95 || Math.abs(v.y) > 0.95) continue;
+      const x = (v.x + 1) / 2 * rect.width;
+      const y = (1 - v.y) / 2 * rect.height;
+      raycaster.setFromCamera(new THREE.Vector2(v.x, v.y), camera);
+      const hit = raycaster.intersectObjects(visible, false).find((h) => belowClip(h.point.y, clipY));
+      if (hit && hit.object !== mesh) continue; // 다른 구조물에 가려짐
+      out.push({ mesh: name, x, y, w: size.w, h: size.h, dist: Math.hypot(x - rect.width / 2, y - rect.height / 2) });
+    }
+    return out;
+  }
 
   // ── 크기와 렌더 루프 ──
   function resize() {
@@ -285,6 +355,7 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
     if (dirty) {
       renderer.render(scene, camera);
       dirty = false;
+      onRender?.();
     }
     requestAnimationFrame(frame);
   }
@@ -294,5 +365,5 @@ export function createViewer(canvas, { onPick, isPickable, index }) {
 
   if (new URLSearchParams(location.search).has('debug')) window.__viewer = { THREE, scene, camera, renderer, meshes };
 
-  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn };
+  return { loadLayer, loadInsertions, setLayerState, setHidden, setSelected, showInsertions, resetView, focusOn, flyToPreset, setSex, setClip, labelCandidates };
 }
