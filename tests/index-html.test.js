@@ -37,3 +37,23 @@ test('a module linking error (e.g. stale cached module) shows the load error ins
   assert.match(classic, /addEventListener\('error'/);
   assert.match(classic, /__appStarted/);
 });
+
+test('v2 controls: search, sex toggle, labels and section toggles, ten region buttons, section slider', () => {
+  assert.match(html, /id="search-open"/);
+  assert.match(html, /<input[^>]*id="search-input"/);
+  assert.match(html, /data-sex="male"/);
+  assert.match(html, /data-sex="female"/);
+  assert.match(html, /id="toggle-labels"/);
+  assert.match(html, /id="toggle-section"/);
+  assert.equal([...html.matchAll(/data-region="/g)].length, 10);
+  assert.match(html, /<input[^>]*type="range"[^>]*id="section-height"/);
+});
+
+test('info panel split into description and related parts', () => {
+  assert.match(html, /id="info-top"/);
+  assert.match(html, /id="info-related"/);
+});
+
+test('Human Reference Atlas is credited in the about dialog', () => {
+  assert.match(html, /HuBMAP CCF 3D Reference Object Library/);
+});

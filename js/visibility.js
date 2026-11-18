@@ -71,3 +71,9 @@ export function insertionNamesFor(meshName, insertionNames) {
   }
   return { origins, insertions };
 }
+
+// 더 깊은 층의 구조물로 이동할 때, 앞을 가리는 층(켜져 있는 피부·근육)을 반투명으로 바꾼다.
+const COVERS = { skin: [], muscle: ['skin'], bone: ['skin', 'muscle'], organ: ['skin', 'muscle'], vessel: ['skin', 'muscle'], nerve: ['skin', 'muscle'] };
+export function layersToGhost(targetLayer, layers) {
+  return (COVERS[targetLayer] ?? []).filter((l) => layers[l] === 'on');
+}

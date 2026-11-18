@@ -61,3 +61,16 @@ export function renderEmpty() {
       <div><dt>처음 시점</dt><dd>빈 곳을 두 번 탭해요.</dd></div>
     </dl>`;
 }
+
+// 패널 아래 칸: 연결된 구조물 목록 (누르면 이동)
+export function renderRelated(groups) {
+  if (!groups.length) {
+    return `<h3 class="related-title">연결된 구조물</h3>
+      <p class="related-empty">구조물을 고르면 연결된 신경·뼈·혈관이 여기 나와요.</p>`;
+  }
+  return `<h3 class="related-title">연결된 구조물</h3>${groups
+    .map((g) => `<div class="related-group"><span class="related-type">${escapeHtml(g.type)}</span><div class="related-items">${g.items
+      .map((i) => `<button type="button" class="related-item" data-goto="${escapeHtml(i.mesh)}">${escapeHtml(i.title)}</button>`)
+      .join('')}</div></div>`)
+    .join('')}`;
+}

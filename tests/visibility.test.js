@@ -100,3 +100,14 @@ test('insertions: muscles whose markers live under a group name (quadriceps, tri
   assert.ok(insertionNamesFor('Iliacus muscle.r', names).insertions.includes('Iliopsoas muscle.er'));
   assert.ok(insertionNamesFor('Extensor digitorum.l', names).origins.includes('Common extensor tendon.ol'));
 });
+
+test('layersToGhost: covering layers that are on become ghost when jumping to a deeper structure', async () => {
+  const { layersToGhost } = await import('../js/visibility.js');
+  const l = { skin: 'on', muscle: 'on', bone: 'on', organ: 'on', vessel: 'off', nerve: 'off' };
+  assert.deepEqual(layersToGhost('organ', l), ['skin', 'muscle']);
+  assert.deepEqual(layersToGhost('nerve', l), ['skin', 'muscle']);
+  assert.deepEqual(layersToGhost('bone', l), ['skin', 'muscle']);
+  assert.deepEqual(layersToGhost('muscle', l), ['skin']);
+  assert.deepEqual(layersToGhost('skin', l), []);
+  assert.deepEqual(layersToGhost('organ', { ...l, muscle: 'ghost', skin: 'off' }), []);
+});

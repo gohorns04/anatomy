@@ -44,9 +44,28 @@
   <header class="top">
     <div class="top-row">
       <h1 class="brand">몸 탐험</h1>
-      <button type="button" class="icon-btn" id="info-open" aria-label="사용법과 출처">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
-      </button>
+      <div class="tools">
+        <button type="button" class="icon-btn" id="search-open" aria-label="검색" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        </button>
+        <div class="seg seg-sex" role="group" aria-label="성별">
+          <button type="button" data-sex="male" aria-pressed="true">남</button>
+          <button type="button" data-sex="female" aria-pressed="false">여</button>
+        </div>
+        <button type="button" class="icon-btn" id="toggle-labels" aria-label="이름표" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12V5a1 1 0 0 1 1-1h7l8 8-8 8-8-8z"/><circle cx="8.5" cy="8.5" r="1.2"/></svg>
+        </button>
+        <button type="button" class="icon-btn" id="toggle-section" aria-label="단면" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="3"/><path d="M2.5 12h19"/></svg>
+        </button>
+        <button type="button" class="icon-btn" id="info-open" aria-label="사용법과 출처">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="search" id="search" hidden>
+      <input type="search" id="search-input" placeholder="이름으로 찾기 (예: 이두근, femur, ㅇㄷㄱ)" autocomplete="off" enterkeyhint="search" aria-label="구조물 이름으로 찾기">
+      <ul class="search-results" id="search-results" role="listbox" aria-label="검색 결과"></ul>
     </div>
     <nav class="layers" aria-label="층">
       <button type="button" class="layer" data-layer="skin"><span class="swatch"></span>피부</button>
@@ -56,7 +75,26 @@
       <button type="button" class="layer" data-layer="vessel"><span class="swatch"></span>혈관</button>
       <button type="button" class="layer" data-layer="nerve"><span class="swatch"></span>신경</button>
     </nav>
+    <nav class="regions" aria-label="부위 바로가기">
+      <button type="button" data-region="head">머리</button>
+      <button type="button" data-region="neck">목</button>
+      <button type="button" data-region="chest">가슴</button>
+      <button type="button" data-region="abdomen">배</button>
+      <button type="button" data-region="pelvis">골반</button>
+      <button type="button" data-region="arm">팔</button>
+      <button type="button" data-region="hand">손</button>
+      <button type="button" data-region="leg">다리</button>
+      <button type="button" data-region="foot">발</button>
+      <button type="button" data-region="back">등</button>
+    </nav>
   </header>
+
+  <div class="labels" id="labels" aria-hidden="true"></div>
+
+  <div class="section-bar" id="section-bar" hidden>
+    <label for="section-height">단면 높이</label>
+    <input type="range" id="section-height" min="0" max="1.85" step="0.005" value="1.3">
+  </div>
 
   <div class="loading" id="loading" role="status">
     <p id="loading-text">근육과 뼈를 불러오는 중</p>
@@ -77,7 +115,10 @@
     <button type="button" class="icon-btn sheet-close" id="sheet-close" aria-label="닫기">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
-    <div class="sheet-body" id="sheet-body"></div>
+    <div class="sheet-body">
+      <div class="info-top" id="info-top"></div>
+      <div class="info-related" id="info-related"></div>
+    </div>
     <div class="sheet-actions">
       <button type="button" class="pill" id="act-focus">가까이 보기</button>
       <button type="button" class="pill" id="act-hide">숨기기</button>
@@ -90,6 +131,8 @@
     <ul>
       <li>한 손가락(마우스 왼쪽 버튼)으로 끌어서 돌리고, 두 손가락으로 벌리거나 마우스 휠로 확대해요.</li>
       <li>두 손가락(마우스 오른쪽 버튼, 또는 Shift+끌기)으로 끌면 위아래·좌우로 옮겨져요.</li>
+      <li>위의 돋보기로 이름(한글·영어·라틴어·초성)을 찾고, 부위 버튼으로 바로 이동해요. 이름표·단면 버튼으로 이름을 띄우거나 몸을 가로로 잘라 볼 수 있어요.</li>
+      <li>"여"를 고르면 골반 장기(자궁·난소·자궁관·방광)가 여성형으로 바뀌어요. 근육·뼈·신경·혈관은 공통이고, 여성 모드에서는 피부층을 지원하지 않으며 요도는 표시되지 않아요.</li>
       <li>구조물을 고른 뒤 "가까이 보기"를 누르면 그 부위로 다가가요. 빈 곳을 두 번 탭하면 처음 시점으로 돌아가요.</li>
       <li>위의 층 버튼을 누를 때마다 켬 → 반투명 → 끔 순서로 바뀌어요.</li>
       <li>구조물을 누르면 설명이 나와요. 근육은 뼈에 붙는 곳을 빨강(이는곳)과 파랑(닿는곳)으로 보여 줘요.</li>
@@ -98,6 +141,7 @@
     <ul class="credits">
       <li>Z-Anatomy (Gauthier Kervyn, Marcin Zielinski), CC BY-SA 4.0</li>
       <li>BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International</li>
+      <li>여성 골반 장기: Browne, K., Schlehlein, H., Herr II, B. W., Quardokus, E., Bueckle, A., Börner, K. (2022). HuBMAP CCF 3D Reference Object Library (Human Reference Atlas), CC BY 4.0</li>
     </ul>
     <p class="fine">3D 모델 파일은 CC BY-SA 4.0으로 배포해요. <a href="model/LICENSE.txt">라이선스 전문</a></p>
     <p class="fine">이 앱은 교양용이며 의학적 조언을 대신하지 않아요.</p>

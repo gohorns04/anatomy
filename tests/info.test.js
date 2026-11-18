@@ -53,3 +53,13 @@ test('empty panel guides the user to tap a structure', async () => {
   assert.match(html, /구조물을 누르면/);
   assert.ok(!html.includes('준비'));
 });
+
+test('renderRelated lists groups with tappable items and escapes text', async () => {
+  const { renderRelated } = await import('../js/info.js');
+  const html = renderRelated([{ type: '신경', items: [{ mesh: 'A.l', title: '<b>' }] }]);
+  assert.match(html, /연결된 구조물/);
+  assert.match(html, /신경/);
+  assert.match(html, /data-goto="A\.l"/);
+  assert.ok(html.includes('&lt;b&gt;'));
+  assert.match(renderRelated([]), /구조물을 고르면/);
+});
