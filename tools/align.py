@@ -13,10 +13,10 @@ def _box(p_min, p_max, axis_map):
     return tuple(min(x, y) for x, y in zip(a, b)), tuple(max(x, y) for x, y in zip(a, b))
 
 
-def fit_bbox(src_min, src_max, dst_min, dst_max, axis_map):
+def fit_bbox(src_min, src_max, dst_min, dst_max, axis_map, scale_axes=(0, 1, 2)):
     s_lo, s_hi = _box(src_min, src_max, axis_map)
     ratios = [(dh - dl) / (sh - sl) for sl, sh, dl, dh in zip(s_lo, s_hi, dst_min, dst_max)]
-    scale = sum(ratios) / len(ratios)
+    scale = sum(ratios[i] for i in scale_axes) / len(scale_axes)
     offset = tuple((dl + dh) / 2 - scale * (sl + sh) / 2 for sl, sh, dl, dh in zip(s_lo, s_hi, dst_min, dst_max))
     return scale, offset
 

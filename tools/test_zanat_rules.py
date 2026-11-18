@@ -3,7 +3,7 @@ import sys
 import unittest
 
 sys.path.insert(0, os.path.dirname(__file__))
-from zanat_rules import LAYERS, split_suffix, role, layer_for, group_for  # noqa: E402
+from zanat_rules import LAYERS, split_suffix, role, layer_for, group_for, sex_for  # noqa: E402
 
 
 class SplitSuffix(unittest.TestCase):
@@ -92,6 +92,22 @@ class GroupFor(unittest.TestCase):
 
     def test_falls_back_to_top_level_name(self):
         self.assertEqual(group_for(['5: Cardiovascular system'], {}), 'Cardiovascular system')
+
+
+class SexFor(unittest.TestCase):
+    def test_male_only_meshes(self):
+        genital = ['8: Visceral systems', "Genital systems'"]
+        self.assertEqual(sex_for('Prostate', genital), 'male')
+        self.assertEqual(sex_for('Testis.l', genital), 'male')
+        self.assertEqual(sex_for('Deep artery of penis.r', ['5: Cardiovascular system', 'Aorta']), 'male')
+        self.assertEqual(sex_for('Left testicular vein', ['5: Cardiovascular system']), 'male')
+        self.assertEqual(sex_for('Urethra', ['8: Visceral systems', 'Urinary system']), 'male')
+        self.assertEqual(sex_for('Urinary bladder', ['8: Visceral systems', 'Urinary system']), 'male')
+
+    def test_shared_meshes(self):
+        self.assertIsNone(sex_for('Liver', ['8: Visceral systems', 'Digestive system']))
+        self.assertIsNone(sex_for('Bulbospongiosus.l', ['4: Muscular system']))
+        self.assertIsNone(sex_for('Kidney.l', ['8: Visceral systems', 'Urinary system']))
 
 
 if __name__ == '__main__':

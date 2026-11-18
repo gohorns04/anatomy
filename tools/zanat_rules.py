@@ -76,3 +76,15 @@ def group_for(collections, sizes):
         return min(candidates, key=lambda c: (sizes.get(c, 10**9), c))
     tops = [c for c in collections if _TOP.match(c)]
     return _TOP.sub('', tops[0]) if tops else ''
+
+
+# 여성 모드에서 숨길 남성 전용 메시
+_MALE_NAME = re.compile(r'penis|penile|testicular|scrot|cremaster', re.I)
+_MALE_EXACT = {'Urethra', 'Urinary bladder'}  # Z-Anatomy 요도·방광은 남성형
+
+
+def sex_for(name, collections):
+    base, _ = split_suffix(name)
+    if "Genital systems'" in collections or base in _MALE_EXACT or _MALE_NAME.search(base):
+        return 'male'
+    return None

@@ -12,7 +12,7 @@ import bpy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from zanat_rules import LAYERS, split_suffix, role, layer_for, group_for  # noqa: E402
+from zanat_rules import LAYERS, split_suffix, role, layer_for, group_for, sex_for  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
 RAW = os.path.join(ROOT, '.cache', 'build', 'raw')
@@ -68,6 +68,8 @@ def main():
             continue
         base, side = split_suffix(obj.name)
         index[obj.name] = {'base': base, 'side': side, 'layer': layer, 'group': group_for(sorted(cols), sizes)}
+        if sex_for(obj.name, cols):
+            index[obj.name]['sex'] = 'male'
         plan[layer].append((obj, obj.name))
 
     # 원본 이름을 비워 두어 복사본이 정확한 이름을 갖게 한다.

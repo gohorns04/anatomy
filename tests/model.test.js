@@ -4,6 +4,7 @@ import { readFileSync, statSync, existsSync } from 'node:fs';
 
 const MODEL = new URL('../model/', import.meta.url);
 const LAYERS = ['skin', 'muscle', 'bone', 'organ', 'vessel', 'nerve'];
+const FEMALE = ['Uterus', 'Ovary.l', 'Ovary.r', 'Uterine tube.l', 'Uterine tube.r', 'Urinary bladder (female)'];
 const index = JSON.parse(readFileSync(new URL('index.json', MODEL), 'utf8'));
 
 // glb의 JSON 청크만 읽어 노드 정보를 얻는다(지오메트리 디코딩 불필요).
@@ -32,10 +33,10 @@ test('all glbs use meshopt compression', () => {
   }
 });
 
-test('each layer glb holds exactly the index meshes of that layer', () => {
+test('each layer glb holds exactly the index meshes of that layer (female organs live in female.glb)', () => {
   for (const l of LAYERS) {
     const inGlb = meshNodeNames(glbJson(`${l}.glb`)).sort();
-    const inIndex = Object.keys(index).filter((k) => index[k].layer === l).sort();
+    const inIndex = Object.keys(index).filter((k) => index[k].layer === l && index[k].sex !== 'female').sort();
     assert.deepEqual(inGlb, inIndex, l);
   }
 });
@@ -52,4 +53,22 @@ test('insertions.glb holds only origin/insertion meshes not in index', () => {
 test('model license also covers the icons rendered from the model', () => {
   const text = readFileSync(new URL('LICENSE.txt', MODEL), 'utf8');
   assert.match(text, /icons\//);
+});
+
+test('female.glb holds the six female organs, compressed, marked female in index', () => {
+  const json = glbJson('female.glb');
+  assert.ok((json.extensionsUsed || []).includes('EXT_meshopt_compression'));
+  assert.deepEqual(meshNodeNames(json).sort(), [...FEMALE].sort());
+  for (const n of FEMALE) assert.equal(index[n]?.sex, 'female', n);
+});
+
+test('male-only meshes are marked and count is as expected', () => {
+  const male = Object.keys(index).filter((k) => index[k].sex === 'male');
+  for (const n of ['Prostate', 'Testis.l', 'Urethra', 'Urinary bladder', 'Deep artery of penis.r']) assert.ok(male.includes(n), n);
+  assert.ok(!male.includes('Kidney.l'));
+});
+
+test('license credits the Human Reference Atlas', () => {
+  const text = readFileSync(new URL('LICENSE.txt', MODEL), 'utf8');
+  assert.match(text, /HuBMAP CCF 3D Reference Object Library/);
 });

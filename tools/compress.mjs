@@ -18,6 +18,7 @@ const SETTINGS = {
   vessel: { ratio: 0.7, error: 0.002 },
   nerve: { ratio: 0.5, error: 0.002 },
   insertions: { ratio: 0.5, error: 0.002 },
+  female: { ratio: 0.6, error: 0.001 },
 };
 
 await MeshoptEncoder.ready;

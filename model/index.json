@@ -2433,12 +2433,14 @@
 "base": "Corpus cavernosum of penis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": ""
 },
 "Corpus spongiosum of penis": {
 "base": "Corpus spongiosum of penis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": ""
 },
 "Corrugator supercilii.l": {
@@ -2709,12 +2711,14 @@
 "base": "Deep artery of penis",
 "group": "Aorta",
 "layer": "vessel",
+"sex": "male",
 "side": "l"
 },
 "Deep artery of penis.r": {
 "base": "Deep artery of penis",
 "group": "Aorta",
 "layer": "vessel",
+"sex": "male",
 "side": "r"
 },
 "Deep brachial artery.l": {
@@ -2769,6 +2773,7 @@
 "base": "Deep dorsal vein of penis",
 "group": "Systemic veins",
 "layer": "vessel",
+"sex": "male",
 "side": ""
 },
 "Deep external pudendal artery.l": {
@@ -3165,12 +3170,14 @@
 "base": "Dorsal artery of penis",
 "group": "Aorta",
 "layer": "vessel",
+"sex": "male",
 "side": "l"
 },
 "Dorsal artery of penis.r": {
 "base": "Dorsal artery of penis",
 "group": "Aorta",
 "layer": "vessel",
+"sex": "male",
 "side": "r"
 },
 "Dorsal branch of ulnar nerve.l": {
@@ -3597,12 +3604,14 @@
 "base": "Ductus deferens",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "l"
 },
 "Ductus deferens.r": {
 "base": "Ductus deferens",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "r"
 },
 "Duodenum": {
@@ -3627,12 +3636,14 @@
 "base": "Ejaculatory duct",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "l"
 },
 "Ejaculatory duct.r": {
 "base": "Ejaculatory duct",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "r"
 },
 "Eleventh rib.l": {
@@ -3663,12 +3674,14 @@
 "base": "Epididymis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "l"
 },
 "Epididymis.r": {
 "base": "Epididymis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "r"
 },
 "Epiglottis": {
@@ -4563,6 +4576,7 @@
 "base": "Glans penis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": ""
 },
 "Glenoid labrum.l": {
@@ -6993,12 +7007,14 @@
 "base": "Left testicular artery",
 "group": "Aorta",
 "layer": "vessel",
+"sex": "male",
 "side": ""
 },
 "Left testicular vein": {
 "base": "Left testicular vein",
 "group": "Systemic veins",
 "layer": "vessel",
+"sex": "male",
 "side": ""
 },
 "Left ventricle": {
@@ -9401,6 +9417,20 @@
 "layer": "organ",
 "side": ""
 },
+"Ovary.l": {
+"base": "Ovary",
+"group": "Female genital organs",
+"layer": "organ",
+"sex": "female",
+"side": "l"
+},
+"Ovary.r": {
+"base": "Ovary",
+"group": "Female genital organs",
+"layer": "organ",
+"sex": "female",
+"side": "r"
+},
 "Palatine bone.l": {
 "base": "Palatine bone",
 "group": "Cranium",
@@ -11109,6 +11139,7 @@
 "base": "Prostate",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": ""
 },
 "Proximal lateral striate branches.l": {
@@ -11883,12 +11914,14 @@
 "base": "Right testicular artery",
 "group": "Aorta",
 "layer": "vessel",
+"sex": "male",
 "side": "r"
 },
 "Right testicular vein": {
 "base": "Right testicular vein",
 "group": "Systemic veins",
 "layer": "vessel",
+"sex": "male",
 "side": ""
 },
 "Right ventricle": {
@@ -12195,12 +12228,14 @@
 "base": "Seminal gland",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "l"
 },
 "Seminal gland.r": {
 "base": "Seminal gland",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "r"
 },
 "Semispinalis colli muscle.l": {
@@ -12981,6 +13016,7 @@
 "base": "Superficial dorsal veins of penis",
 "group": "Systemic veins",
 "layer": "vessel",
+"sex": "male",
 "side": ""
 },
 "Superficial epigastric artery.l": {
@@ -14133,12 +14169,14 @@
 "base": "Testis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "l"
 },
 "Testis.r": {
 "base": "Testis",
 "group": "Genital systems'",
 "layer": "organ",
+"sex": "male",
 "side": "r"
 },
 "Thalamus.l": {
@@ -15027,12 +15065,42 @@
 "base": "Urethra",
 "group": "Urinary system",
 "layer": "organ",
+"sex": "male",
 "side": ""
 },
 "Urinary bladder": {
 "base": "Urinary bladder",
 "group": "Urinary system",
 "layer": "organ",
+"sex": "male",
+"side": ""
+},
+"Urinary bladder (female)": {
+"base": "Urinary bladder (female)",
+"group": "Female genital organs",
+"layer": "organ",
+"sex": "female",
+"side": ""
+},
+"Uterine tube.l": {
+"base": "Uterine tube",
+"group": "Female genital organs",
+"layer": "organ",
+"sex": "female",
+"side": "l"
+},
+"Uterine tube.r": {
+"base": "Uterine tube",
+"group": "Female genital organs",
+"layer": "organ",
+"sex": "female",
+"side": "r"
+},
+"Uterus": {
+"base": "Uterus",
+"group": "Female genital organs",
+"layer": "organ",
+"sex": "female",
 "side": ""
 },
 "Uvula of palate": {

@@ -29,5 +29,13 @@ class FitBbox(unittest.TestCase):
         self.assertAlmostEqual(scale, 0.02)
 
 
+    def test_scale_from_selected_axes_only(self):
+        # 키(z) 비율은 무시하고 좌우·앞뒤 비율(0.5)로만 크기를 정한다
+        scale, offset = fit_bbox((0, 0, 0), (10, 10, 10), (0, 0, 0), (5, 5, 20), IDENTITY, scale_axes=(0, 1))
+        self.assertAlmostEqual(scale, 0.5)
+        center = apply((5, 5, 5), scale, offset, IDENTITY)
+        self.assertAlmostEqual(center[2], 10)
+
+
 if __name__ == '__main__':
     unittest.main()
